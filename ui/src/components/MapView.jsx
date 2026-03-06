@@ -44,7 +44,7 @@ function FitToEmprise({ empriseZone }) {
 // ── Styles des couches ────────────────────────────────────────────────────────
 
 function styleChangement(feature) {
-  const color = feature.properties?.classe === 'fort' ? COULEURS.fort : COULEURS.modere
+  const color = COULEURS[feature.properties?.classe] ?? '#888'
   return { fillColor: color, color, weight: 1.5, fillOpacity: 0.55, opacity: 0.9 }
 }
 
@@ -68,15 +68,13 @@ function onEachChangement(feature, layer) {
   layer.bindPopup(`
     <div style="font-family:sans-serif;font-size:13px;min-width:180px">
       <div style="font-weight:700;margin-bottom:6px;border-bottom:2px solid ${color};padding-bottom:4px">
-        Changement ${p.classe ?? '—'}
+        ${p.classe ?? 'changement'}
       </div>
       <table style="width:100%;border-collapse:collapse">
+        <tr><td style="color:#555">Transition</td>
+            <td style="text-align:right;font-weight:600">${p.transition ?? '—'}</td></tr>
         <tr><td style="color:#555">Surface</td>
             <td style="text-align:right;font-weight:600">${p.surface_m2 != null ? p.surface_m2.toFixed(0) + ' m²' : '—'}</td></tr>
-        <tr><td style="color:#555">Amplitude moy.</td>
-            <td style="text-align:right;font-weight:600">${p.ampl_moy?.toFixed(1) ?? '—'}</td></tr>
-        <tr><td style="color:#555">Amplitude max</td>
-            <td style="text-align:right;font-weight:600">${p.ampl_max?.toFixed(1) ?? '—'}</td></tr>
       </table>
     </div>
   `)

@@ -25,8 +25,9 @@ export const MILLESIME_ANCIEN = '2020'
 export const MILLESIME_RECENT = '2023'
 
 export const COULEURS = {
-  fort:   '#e74c3c',
-  modere: '#f39c12',
+  construction: '#e74c3c',   // rouge   — vég/sol→imperméable
+  demolition:   '#9b59b6',   // violet  — imperméable→sol/vég
+  chantier:     '#f39c12',   // orange  — vég→sol nu
 }
 
 // Étapes du pipeline — ordre et métadonnées
@@ -43,14 +44,14 @@ export const PIPELINE_STEPS = [
     label: 'Prétraitement',
     script: '02_preprocess.py',
     outputKeys: ['proc_t1', 'proc_t2'],
-    description: 'Rééchantillonnage · Recalage · Normalisation radiométrique',
+    description: 'Classification spectrale VARI/ExR · Encodage transitions T1→T2',
   },
   {
     id: 3,
     label: 'Détection de changement',
     script: '03_change_detection.py',
     outputKeys: ['diff', 'geojson'],
-    description: 'CVA · Seuillage Otsu · Polygonisation',
+    description: 'PCC · Transitions spectrales · Polygonisation',
   },
   {
     id: 4,

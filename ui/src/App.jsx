@@ -18,15 +18,13 @@ const INITIAL_LAYERS = {
 
 function computeStats(geojson) {
   if (!geojson?.features?.length) return null
-  const features   = geojson.features
-  const total      = features.length
-  const n_fort     = features.filter(f => f.properties?.classe === 'fort').length
-  const n_modere   = features.filter(f => f.properties?.classe === 'modere').length
-  const surface_m2 = features.reduce((s, f) => s + (f.properties?.surface_m2 ?? 0), 0)
-  const ampl_vals  = features.map(f => f.properties?.ampl_moy ?? 0).filter(Boolean)
-  const ampl_moy   = ampl_vals.length
-    ? (ampl_vals.reduce((a, b) => a + b, 0) / ampl_vals.length).toFixed(1) : '—'
-  return { total, n_fort, n_modere, surface_ha: (surface_m2 / 1e4).toFixed(2), ampl_moy }
+  const features      = geojson.features
+  const total         = features.length
+  const n_construction = features.filter(f => f.properties?.classe === 'construction').length
+  const n_demolition   = features.filter(f => f.properties?.classe === 'demolition').length
+  const n_chantier     = features.filter(f => f.properties?.classe === 'chantier').length
+  const surface_m2     = features.reduce((s, f) => s + (f.properties?.surface_m2 ?? 0), 0)
+  return { total, n_construction, n_demolition, n_chantier, surface_ha: (surface_m2 / 1e4).toFixed(2) }
 }
 
 async function fetchJson(url, opts) {
@@ -278,7 +276,7 @@ export default function App() {
           </span>
           {geojson && (
             <span className="badge-pill active" style={{ '--c': '#e74c3c' }}>
-              {geojsonStats?.total ?? 0} zones détectées
+              {geojsonStats?.total ?? 0} zones · {geojsonStats?.surface_ha ?? 0} ha
             </span>
           )}
         </div>

@@ -1,14 +1,20 @@
 """
-03_change_detection.py — Détection de changement, tuile par tuile
+03_change_detection.py — Détection par comparaison post-classification (PCC)
 Projet Carte42 / PCRS Ille-et-Vilaine — SDE35
 
 Pipeline :
-  1. Échantillonnage des tuiles d'amplitude → seuil d'Otsu global
-  2. Pour chaque tuile : seuillage, nettoyage morphologique, polygonisation
-  3. Fusion de tous les polygones → GeoJSON WGS84
+  1. Pour chaque tuile de transition (uint8, valeur = classe_T1 × 4 + classe_T2) :
+     - Masque binaire des transitions d'intérêt (voirie, construction, démolition)
+     - Nettoyage morphologique, polygonisation
+  2. Fusion → filtres géométriques (surface, compacité)
+  3. Filtre spatial emprise voies → export GeoJSON WGS84
 
-Le seuil Otsu est calculé globalement (sur un échantillon de toutes les tuiles)
-pour être représentatif de l'ensemble du territoire, pas d'une seule tuile.
+Transitions détectées (classes 0=ombre 1=vég 2=sol_nu 3=imperm) :
+   6 = 1→2 : végétation → sol nu      (terrassement, débroussaillement)
+   7 = 1→3 : végétation → imperméable (construction directe)
+  11 = 2→3 : sol nu → imperméable     (mise en œuvre enrobé/béton)
+  13 = 3→1 : imperméable → végétation (réhabilitation, rare)
+  14 = 3→2 : imperméable → sol nu     (démolition, décaissement)
 
 Usage :
   python processing/03_change_detection.py
@@ -24,7 +30,6 @@ import rasterio
 from rasterio.features import shapes as rasterio_shapes, geometry_mask
 from shapely.geometry import shape, mapping
 from shapely.ops import transform as shp_transform
-from skimage.filters import threshold_otsu
 from skimage.morphology import binary_opening, binary_closing, disk
 import geopandas as gpd
 from tqdm import tqdm
@@ -36,6 +41,16 @@ import os
 
 _WGS84_TO_L93 = Transformer.from_crs("EPSG:4326", "EPSG:2154", always_xy=True)
 _L93_TO_WGS84 = Transformer.from_crs("EPSG:2154", "EPSG:4326", always_xy=True)
+
+# Libellés lisibles par code de transition
+LABELS_TRANSITION = {
+    6:  ("veg→sol_nu",          "chantier"),
+    7:  ("veg→imperméable",     "construction"),
+    11: ("sol_nu→imperméable",  "construction"),
+    13: ("imperméable→veg",     "demolition"),
+    14: ("imperméable→sol_nu",  "demolition"),
+}
+
 
 def get_test_bbox():
     """Retourne le bbox de test en WGS84 (converti depuis L93), ou None."""
@@ -50,11 +65,13 @@ def get_test_bbox():
     except KeyError:
         return None
 
+
 def tuile_dans_bbox(chemin: Path, bbox: dict) -> bool:
     with rasterio.open(chemin) as src:
         b = src.bounds
     return not (b.right < bbox['xmin'] or b.left > bbox['xmax'] or
                 b.top  < bbox['ymin'] or b.bottom > bbox['ymax'])
+
 
 logging.basicConfig(
     level=logging.INFO,
@@ -68,44 +85,23 @@ log = logging.getLogger("03_detection")
 # FONCTIONS
 # =============================================================================
 
-def calculer_seuil_global(tuiles_amp: list[Path]) -> float:
+def traiter_tuile(chemin_chg: Path, element) -> tuple[list, str]:
     """
-    Échantillonne toutes les tuiles d'amplitude pour calculer un seuil d'Otsu global.
-
-    5 000 pixels par tuile suffisent pour un histogramme stable.
-    Le seuil final est le max(Otsu, config.SEUIL_DIFFERENCE).
+    Charge une tuile de transition, extrait les pixels d'intérêt,
+    nettoie morphologiquement et polygonise.
+    Retourne (liste de features, crs_string).
     """
-    log.info("Calcul du seuil Otsu global (échantillonnage des tuiles)…")
-    rng    = np.random.default_rng(42)
-    sample = []
-
-    for tuile in tuiles_amp:
-        with rasterio.open(tuile) as src:
-            data = src.read(1).ravel()
-        idx = rng.choice(len(data), min(5_000, len(data)), replace=False)
-        sample.append(data[idx])
-
-    all_vals   = np.concatenate(sample).astype(np.float32)
-    seuil_otsu = float(threshold_otsu(all_vals))
-    seuil      = max(seuil_otsu, float(config.SEUIL_DIFFERENCE))
-
-    log.info(f"Otsu={seuil_otsu:.1f}, config={config.SEUIL_DIFFERENCE}, seuil appliqué={seuil:.1f}")
-    return seuil
-
-
-def traiter_tuile(chemin_amp: Path, seuil: float, element) -> tuple[list, str]:
-    """
-    Charge une tuile d'amplitude, seuille, nettoie et polygonise.
-
-    Retourne (liste de dicts feature, crs_string).
-    """
-    with rasterio.open(chemin_amp) as src:
-        amp       = src.read(1)
+    with rasterio.open(chemin_chg) as src:
+        chg       = src.read(1)
         transform = src.transform
         crs       = src.crs.to_string()
 
+    # Masque binaire des transitions d'intérêt
+    masque = np.isin(chg, config.TRANSITIONS_VOIRIE).astype(bool)
+
+    # Nettoyage morphologique : supprime le bruit isolé et rebouche les trous
     masque = binary_closing(
-        binary_opening(amp >= seuil, element), element
+        binary_opening(masque, element), element
     ).astype(np.uint8)
 
     features = []
@@ -115,30 +111,31 @@ def traiter_tuile(chemin_amp: Path, seuil: float, element) -> tuple[list, str]:
 
         geom     = shape(geom_dict)
         geom_l93 = shp_transform(_WGS84_TO_L93.transform, geom)
-        surface  = geom_l93.area      # m² en Lambert 93
+        surface  = geom_l93.area          # m² en Lambert 93
         if surface < config.SURFACE_MIN_M2:
             continue
 
-        # Filtre compacité : élimine les formes très allongées (ombres portées)
-        perimetre  = geom_l93.length
-        compacite  = (4 * math.pi * surface / perimetre ** 2) if perimetre > 0 else 0
+        perimetre = geom_l93.length
+        compacite = (4 * math.pi * surface / perimetre ** 2) if perimetre > 0 else 0
         if compacite < config.COMPACITE_MIN:
             continue
 
-        msk    = geometry_mask([mapping(geom)], transform=transform, invert=True, out_shape=amp.shape)
-        pixels = amp[msk]
-        if len(pixels) == 0:
+        # Transition dominante dans le polygone
+        msk       = geometry_mask([mapping(geom)], transform=transform,
+                                  invert=True, out_shape=chg.shape)
+        pix       = chg[msk]
+        pix_int   = pix[np.isin(pix, config.TRANSITIONS_VOIRIE)]
+        if len(pix_int) == 0:
             continue
 
-        ampl_moy = float(pixels.mean())
-        ampl_max = float(pixels.max())
-        classe   = "fort" if ampl_moy >= config.SEUIL_DIFFERENCE * 1.5 else "modere"
+        codes, counts  = np.unique(pix_int, return_counts=True)
+        code_dom       = int(codes[np.argmax(counts)])
+        transition, classe = LABELS_TRANSITION.get(code_dom, ("inconnu", "chantier"))
 
         features.append({
-            "geometry":   geom,           # WGS84 — pour GeoJSON direct
-            "surface_m2": round(surface, 1),  # m² calculé en L93
-            "ampl_moy":   round(ampl_moy, 2),
-            "ampl_max":   round(ampl_max, 2),
+            "geometry":   geom,           # WGS84
+            "surface_m2": round(surface, 1),
+            "transition": transition,
             "classe":     classe,
         })
 
@@ -150,30 +147,27 @@ def traiter_tuile(chemin_amp: Path, seuil: float, element) -> tuple[list, str]:
 # =============================================================================
 
 def pipeline() -> bool:
-    tuiles_amp = sorted(config.TILES_AMP_DIR.glob("amp_*.tif"))
-    if not tuiles_amp:
-        log.error(f"Aucune tuile d'amplitude dans {config.TILES_AMP_DIR} → lancez d'abord l'étape 2")
+    tuiles_chg = sorted(config.TILES_CHG_DIR.glob("chg_*.tif"))
+    if not tuiles_chg:
+        log.error(f"Aucune tuile de transition dans {config.TILES_CHG_DIR} "
+                  f"→ lancez d'abord l'étape 2")
         return False
 
     test_bbox = get_test_bbox()
     if test_bbox:
-        tuiles_amp = [t for t in tuiles_amp if tuile_dans_bbox(t, test_bbox)]
-        log.info(f"Zone de test active : {len(tuiles_amp)} tuile(s) sélectionnée(s)")
+        tuiles_chg = [t for t in tuiles_chg if tuile_dans_bbox(t, test_bbox)]
+        log.info(f"Zone de test active : {len(tuiles_chg)} tuile(s) sélectionnée(s)")
     else:
-        log.info(f"{len(tuiles_amp)} tuiles d'amplitude à traiter")
+        log.info(f"{len(tuiles_chg)} tuiles de transition à analyser")
 
-    # --- Seuil global ---
-    seuil   = calculer_seuil_global(tuiles_amp)
-    element = disk(config.MORPH_KERNEL_RADIUS)
-
-    # --- Détection par tuile ---
+    element      = disk(config.MORPH_KERNEL_RADIUS)
     all_features = []
     crs_ref      = None
     erreurs      = 0
 
-    for tuile in tqdm(tuiles_amp, desc="Détection", unit="tuile"):
+    for tuile in tqdm(tuiles_chg, desc="Détection PCC", unit="tuile"):
         try:
-            feats, crs = traiter_tuile(tuile, seuil, element)
+            feats, crs = traiter_tuile(tuile, element)
             if feats:
                 all_features.extend(feats)
                 if crs_ref is None:
@@ -184,46 +178,51 @@ def pipeline() -> bool:
 
     log.info(f"Polygones bruts : {len(all_features)} ({erreurs} tuile(s) en erreur)")
 
-    # --- Assemblage GeoDataFrame ---
     if all_features:
-        gdf = gpd.GeoDataFrame(all_features, crs=crs_ref or "EPSG:2154")
+        gdf = gpd.GeoDataFrame(all_features, crs=crs_ref or "EPSG:4326")
     else:
-        log.warning("Aucun changement détecté sur l'ensemble des tuiles.")
+        log.warning("Aucun changement détecté.")
         gdf = gpd.GeoDataFrame(
-            columns=["geometry", "surface_m2", "ampl_moy", "ampl_max", "classe"],
-            crs="EPSG:2154",
+            columns=["geometry", "surface_m2", "transition", "classe"],
+            crs="EPSG:4326",
         )
 
-    # --- Export GeoJSON (WGS84 — tuiles déjà en EPSG:4326) ---
+    # --- Filtre spatial : emprise voies ---
+    if config.EMPRISE_VOIES.exists():
+        log.info("Filtre spatial : emprise voies…")
+        emprise = gpd.read_file(config.EMPRISE_VOIES)
+        if emprise.crs is None:
+            emprise = emprise.set_crs("EPSG:2154")
+        emprise_union = emprise.buffer(config.BUFFER_EMPRISE_VOIES).union_all()
+        gdf_l93   = gdf.to_crs("EPSG:2154")
+        dans_voie = gdf_l93.geometry.intersects(emprise_union)
+        n_avant   = len(gdf)
+        gdf       = gdf[dans_voie.values].copy()
+        log.info(f"Polygones après filtre voirie : {len(gdf)} / {n_avant}")
+    else:
+        log.warning(f"Emprise voies introuvable ({config.EMPRISE_VOIES}) — filtre ignoré")
+
+    # --- Export GeoJSON (WGS84 — géométries déjà en EPSG:4326) ---
     config.VECTORS_OUT.mkdir(parents=True, exist_ok=True)
     gdf.to_file(config.GEOJSON_CHANGEMENTS, driver="GeoJSON")
 
     # --- Rapport ---
-    n_fort   = int((gdf["classe"] == "fort").sum())   if len(gdf) else 0
-    n_modere = int((gdf["classe"] == "modere").sum()) if len(gdf) else 0
-    surf_ha  = gdf["surface_m2"].sum() / 1e4          if len(gdf) else 0
+    n_const = int((gdf["classe"] == "construction").sum()) if len(gdf) else 0
+    n_demol = int((gdf["classe"] == "demolition").sum())   if len(gdf) else 0
+    n_chant = int((gdf["classe"] == "chantier").sum())     if len(gdf) else 0
+    surf_ha = gdf["surface_m2"].sum() / 1e4                if len(gdf) else 0
 
     log.info("=" * 60)
-    log.info("RAPPORT DE DÉTECTION")
+    log.info("RAPPORT DE DÉTECTION (PCC)")
     log.info("=" * 60)
-    log.info(f"Millésimes comparés  : {config.MILLESIME_ANCIEN} → {config.MILLESIME_RECENT}")
-    log.info(f"Seuil appliqué       : {seuil:.1f}")
-    log.info(f"Polygones détectés   : {len(gdf)}")
-    log.info(f"  dont forts         : {n_fort}")
-    log.info(f"  dont modérés       : {n_modere}")
-    log.info(f"Surface totale       : {surf_ha:.2f} ha")
-    if len(gdf) > 0:
-        log.info(f"Plus grande zone     : {gdf['surface_m2'].max() / 1e4:.2f} ha")
-        log.info(f"Amplitude moy. moy.  : {gdf['ampl_moy'].mean():.1f}")
-    log.info(f"GeoJSON exporté      : {config.GEOJSON_CHANGEMENTS}")
+    log.info(f"Millésimes comparés : {config.MILLESIME_ANCIEN} → {config.MILLESIME_RECENT}")
+    log.info(f"Polygones détectés  : {len(gdf)}")
+    log.info(f"  construction      : {n_const}")
+    log.info(f"  démolition        : {n_demol}")
+    log.info(f"  chantier          : {n_chant}")
+    log.info(f"Surface totale      : {surf_ha:.2f} ha")
+    log.info(f"GeoJSON exporté     : {config.GEOJSON_CHANGEMENTS}")
     log.info("=" * 60)
-
-    emprise_m2  = ((config.BBOX_L93["xmax"] - config.BBOX_L93["xmin"])
-                   * (config.BBOX_L93["ymax"] - config.BBOX_L93["ymin"]))
-    pct_emprise = surf_ha * 1e4 / emprise_m2 * 100
-    if pct_emprise > config.SEUIL_ALERTE_PCT:
-        log.warning(f"ALERTE : {pct_emprise:.1f}% de l'emprise a changé "
-                    f"(seuil alerte = {config.SEUIL_ALERTE_PCT}%)")
 
     return True
 
@@ -233,5 +232,5 @@ def pipeline() -> bool:
 # =============================================================================
 
 if __name__ == "__main__":
-    log.info("Script 03 — Détection de changement tuile par tuile")
+    log.info("Script 03 — Détection PCC (Post-Classification Comparison)")
     sys.exit(0 if pipeline() else 1)

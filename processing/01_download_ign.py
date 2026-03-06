@@ -199,34 +199,60 @@ def telecharger_wms(label: str, layer: str, dossier: Path, prefix: str) -> bool:
 # =============================================================================
 
 if __name__ == "__main__":
-    log.info("Script 01 — Téléchargement orthophotos (WGS84, sans reprojection raster)")
-    log.info(f"T1 : WMS IGN {config.IGN_LAYER_T1} — {config.MILLESIME_ANCIEN}")
-    log.info(f"T2 : WMS IGN {config.IGN_LAYER_T2} — {config.MILLESIME_RECENT}")
+    log.info("Script 01 — Téléchargement orthophotos RGB + IRC (WGS84)")
+    log.info(f"T1 RGB : {config.IGN_LAYER_T1}")
+    log.info(f"T1 IRC : {config.IGN_LAYER_T1_IRC}")
+    log.info(f"T2 RGB : {config.IGN_LAYER_T2}")
+    log.info(f"T2 IRC : {config.IGN_LAYER_T2_IRC}")
 
     config.RAW_DIR.mkdir(parents=True, exist_ok=True)
 
+    # ── T1 RGB ────────────────────────────────────────────────────────────────
     n_t1 = len(list(config.TILES_T1_DIR.glob("tuile_t1_*.tif"))) \
            if config.TILES_T1_DIR.exists() else 0
-    log.info(f"T1 : {n_t1} tuile(s) déjà présentes")
+    log.info(f"T1 RGB : {n_t1} tuile(s) déjà présentes")
     ok_t1 = telecharger_wms(
-        label=f"T1 ({config.MILLESIME_ANCIEN})",
+        label=f"T1 RGB ({config.MILLESIME_ANCIEN})",
         layer=config.IGN_LAYER_T1,
         dossier=config.TILES_T1_DIR,
         prefix="tuile_t1",
     )
 
+    # ── T1 IRC ────────────────────────────────────────────────────────────────
+    n_t1_irc = len(list(config.TILES_T1_IRC_DIR.glob("tuile_t1_irc_*.tif"))) \
+               if config.TILES_T1_IRC_DIR.exists() else 0
+    log.info(f"T1 IRC : {n_t1_irc} tuile(s) déjà présentes")
+    ok_t1_irc = telecharger_wms(
+        label=f"T1 IRC ({config.MILLESIME_ANCIEN})",
+        layer=config.IGN_LAYER_T1_IRC,
+        dossier=config.TILES_T1_IRC_DIR,
+        prefix="tuile_t1_irc",
+    )
+
+    # ── T2 RGB ────────────────────────────────────────────────────────────────
     n_t2 = len(list(config.TILES_T2_DIR.glob("tuile_t2_*.tif"))) \
            if config.TILES_T2_DIR.exists() else 0
-    log.info(f"T2 : {n_t2} tuile(s) déjà présentes")
+    log.info(f"T2 RGB : {n_t2} tuile(s) déjà présentes")
     ok_t2 = telecharger_wms(
-        label=f"T2 ({config.MILLESIME_RECENT})",
+        label=f"T2 RGB ({config.MILLESIME_RECENT})",
         layer=config.IGN_LAYER_T2,
         dossier=config.TILES_T2_DIR,
         prefix="tuile_t2",
     )
 
-    if ok_t1 and ok_t2:
-        log.info("Téléchargement terminé avec succès.")
+    # ── T2 IRC ────────────────────────────────────────────────────────────────
+    n_t2_irc = len(list(config.TILES_T2_IRC_DIR.glob("tuile_t2_irc_*.tif"))) \
+               if config.TILES_T2_IRC_DIR.exists() else 0
+    log.info(f"T2 IRC : {n_t2_irc} tuile(s) déjà présentes")
+    ok_t2_irc = telecharger_wms(
+        label=f"T2 IRC ({config.MILLESIME_RECENT})",
+        layer=config.IGN_LAYER_T2_IRC,
+        dossier=config.TILES_T2_IRC_DIR,
+        prefix="tuile_t2_irc",
+    )
+
+    if ok_t1 and ok_t1_irc and ok_t2 and ok_t2_irc:
+        log.info("Téléchargement terminé avec succès (RGB + IRC).")
         sys.exit(0)
     else:
         log.error("Des erreurs sont survenues.")

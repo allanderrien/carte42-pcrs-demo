@@ -21,7 +21,9 @@ VECTORS_OUT    = OUTPUT_DIR / "vectors"
 TILES_OUT      = OUTPUT_DIR / "tiles"
 MAP_OUT        = OUTPUT_DIR / "map"
 
-ASSETS_DIR     = BASE_DIR / "assets"
+ASSETS_DIR      = BASE_DIR / "assets"
+EMPRISE_DIR     = DATA_DIR / "emprise"
+EMPRISE_VOIES   = EMPRISE_DIR / "emprise_voies.shp"
 
 # =============================================================================
 # EMPRISE ZONE TEST — Lambert 93 (EPSG:2154), région de Vitré (35)
@@ -71,9 +73,10 @@ GEOBRETAGNE_COVERAGE_T1  = GEOBRETAGNE_COVERAGE_RVB
 IGN_WMS_URL = "https://data.geopf.fr/wms-r/wms"
 
 # Couches disponibles (vérifiées sur GetCapabilities mars 2026) :
-IGN_LAYER_T1          = "ORTHOIMAGERY.ORTHOPHOTOS2020"                 # BD ORTHO 2020
-IGN_LAYER_T2          = "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2023"  # Ortho-express 2023
-IGN_LAYER_T2_IRC      = "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2023"    # IRC 2023
+IGN_LAYER_T1          = "ORTHOIMAGERY.ORTHOPHOTOS2020"                 # BD ORTHO 2020 (RGB)
+IGN_LAYER_T2          = "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2023"  # Ortho-express 2023 (RGB)
+IGN_LAYER_T1_IRC      = "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2020"            # BD ORTHO 2020 (IRC — NIR,R,G)
+IGN_LAYER_T2_IRC      = "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2023"    # Ortho-express 2023 (IRC — NIR,R,G)
 IGN_LAYER_PCRS_SDE35  = "PCRS_SDE35"                                   # PCRS SDE35 sur IGN
 
 # Alias utilisé dans les scripts
@@ -88,11 +91,15 @@ MILLESIME_ANCIEN = "2020"
 MILLESIME_RECENT = "2023"
 
 # Tuiles WMS téléchargées (permanentes, pas de merge — traitement tuile par tuile)
-TILES_T1_DIR = RAW_DIR / "tiles_t1"   # T1 — WMS IGN ORTHOPHOTOS2020
-TILES_T2_DIR = RAW_DIR / "tmp_t2"     # T2 — WMS IGN ORTHO-EXPRESS.2023
+TILES_T1_DIR     = RAW_DIR / "tiles_t1"       # T1 RGB  — WMS IGN ORTHOPHOTOS2020
+TILES_T2_DIR     = RAW_DIR / "tiles_t2"       # T2 RGB  — WMS IGN ORTHO-EXPRESS.2023
+TILES_T1_IRC_DIR = RAW_DIR / "tiles_t1_irc"   # T1 IRC  — NIR,R,G (bande NIR = canal 0)
+TILES_T2_IRC_DIR = RAW_DIR / "tiles_t2_irc"   # T2 IRC  — NIR,R,G (bande NIR = canal 0)
 
-# Tuiles d'amplitude CVA produites par l'étape 2 (float32, mono-bande, ~400 Ko chacune)
-TILES_AMP_DIR = PROCESSED_DIR / "tiles_amplitude"
+# Tuiles de transition PCC produites par l'étape 2 (uint8, valeurs 0–15)
+# Valeur = classe_T1 × 4 + classe_T2
+# Classes : 0=ombre  1=végétation  2=sol_nu  3=imperméable
+TILES_CHG_DIR = PROCESSED_DIR / "tiles_changement"
 
 # =============================================================================
 # PARAMÈTRES DE TÉLÉCHARGEMENT
@@ -116,36 +123,43 @@ HTTP_TIMEOUT = 120
 HTTP_RETRIES = 3
 
 # =============================================================================
-# PARAMÈTRES DE DÉTECTION DE CHANGEMENT
+# PARAMÈTRES DE DÉTECTION DE CHANGEMENT (PCC — Post-Classification Comparison)
 # =============================================================================
 
-# Résolution de travail pour la détection (peut différer du raster brut)
-DETECTION_RESOLUTION = 0.50   # m/pixel (compromis vitesse / précision)
+# --- Classification spectrale ---
 
-# Seuil de différence radiométrique (0-255) en dessous duquel on ignore
-SEUIL_DIFFERENCE = 30
-
-# Surface minimale d'un polygone de changement à conserver (m²)
-SURFACE_MIN_M2 = 50.0
-
-# Rayon de lissage morphologique (pixels) pour nettoyer le masque binaire
-MORPH_KERNEL_RADIUS = 3
-
-# Seuil de luminosité (0–255) en dessous duquel un pixel est considéré en ombre.
-# Les pixels sombres dans T1 OU T2 sont exclus du calcul CVA.
+# Luminosité (moyenne R+G+B / 3) en dessous de laquelle → classe 0 (ombre)
 SEUIL_OMBRE = 45
 
-# Compacité minimale d'un polygone pour être conservé (4π·surface/périmètre²).
-# Cercle = 1.0, forme très allongée → 0.  Les ombres portées de bâtiments
-# ont typiquement une compacité < 0.10.
+# NDVI = (NIR − Red) / (NIR + Red)  [bande NIR = canal 0 de l'image IRC IGN]
+# NDVI > SEUIL_NDVI_VEG   → classe 1 (végétation dense)
+# NDVI > SEUIL_NDVI_SOL   → classe 2 (sol nu / chantier / végétation clairsemée)
+# NDVI ≤ SEUIL_NDVI_SOL   → classe 3 (surface imperméable : route, toit, béton)
+SEUIL_NDVI_VEG = 0.25   # seuil typique végétation dense sur orthos 0.5m
+SEUIL_NDVI_SOL = 0.05   # seuil séparant sol nu / impervious
+
+# --- Transitions d'intérêt (code = classe_T1 × 4 + classe_T2) ---
+# Classes : 0=ombre  1=végétation  2=sol_nu  3=imperméable
+#  6 = vég→sol_nu       (terrassement, débroussaillement)
+#  7 = vég→imperméable  (construction directe, enrobé sur prairie)
+# 11 = sol_nu→imperméable (mise en œuvre enrobé/béton)
+# 13 = imperméable→vég  (réhabilitation, rare)
+# 14 = imperméable→sol_nu (démolition, décaissement)
+TRANSITIONS_VOIRIE = [6, 7, 11, 13, 14]
+
+# --- Morphologie et filtres géométriques ---
+
+# Rayon de lissage morphologique (pixels)
+MORPH_KERNEL_RADIUS = 2
+
+# Surface minimale d'un polygone (m²)
+SURFACE_MIN_M2 = 50.0
+
+# Compacité minimale (4π·surface/périmètre²) — filtre les formes très allongées
 COMPACITE_MIN = 0.12
 
-# Seuil de pourcentage de changement par dalle pour alerter (%)
-SEUIL_ALERTE_PCT = 5.0
-
-# Bandes à utiliser pour la comparaison (indices 0-based)
-# Pour orthophoto RVB standard : 0=Rouge, 1=Vert, 2=Bleu
-BANDES_COMPARAISON = [0, 1, 2]
+# Buffer (m) autour de l'emprise voies pour le filtre spatial
+BUFFER_EMPRISE_VOIES = 5
 
 # =============================================================================
 # PARAMÈTRES DE SORTIE & EXPORT
