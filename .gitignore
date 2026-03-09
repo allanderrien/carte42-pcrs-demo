@@ -3,6 +3,17 @@ data/raw/
 data/processed/
 data/vector/
 
+# Shapefiles client (données fournies, non versionnées)
+data/emprise/
+
+# CSV Sitadel source (volumineux)
+data/registre_permis_amenager/*.csv
+data/registre_permis_amenager/*.CSV
+
+# Divers data
+methodes_change_detection.xlsx
+Procedure launch.txt
+
 # Sorties raster (lourdes)
 output/tiles/
 
@@ -26,6 +37,9 @@ env/
 ui/node_modules/
 ui/dist/
 ui/.vite/
+
+# Credentials — ne jamais committer
+credentials.env
 
 # Éditeurs / OS
 .env

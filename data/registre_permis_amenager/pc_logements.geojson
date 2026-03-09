@@ -1,0 +1,4421 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.475623,
+          48.105928
+        ]
+      },
+      "properties": {
+        "num_dau": "03503919M0008",
+        "type_dau": "PC",
+        "commune": "Brecé",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2019-07-26",
+        "adresse": "LE GRAND DOMAINE",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.504
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.494923,
+          48.108343
+        ]
+      },
+      "properties": {
+        "num_dau": "03503919M0014",
+        "type_dau": "PC",
+        "commune": "Brecé",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2019-09-26",
+        "adresse": "Brecé",
+        "an_depot": 2019,
+        "nb_logements": 9,
+        "nb_indiv": 9,
+        "nb_collec": 0,
+        "score_geo": 0.541
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.494923,
+          48.108343
+        ]
+      },
+      "properties": {
+        "num_dau": "03503919M0025",
+        "type_dau": "PC",
+        "commune": "Brecé",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2019-12-16",
+        "adresse": "LOT 6-9",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.485
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.475423,
+          48.105736
+        ]
+      },
+      "properties": {
+        "num_dau": "03503921M0026",
+        "type_dau": "PC",
+        "commune": "Brecé",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-01-06",
+        "adresse": "11 RUE DE LA CADETIERE LOT N_2-6",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.639
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.477665,
+          48.106132
+        ]
+      },
+      "properties": {
+        "num_dau": "03503922M0003",
+        "type_dau": "PC",
+        "commune": "Brecé",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-07-05",
+        "adresse": "LA LOIRIE -  LOT N_ 21.7",
+        "an_depot": 2022,
+        "nb_logements": 7,
+        "nb_indiv": 0,
+        "nb_collec": 7,
+        "score_geo": 0.506
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.47532,
+          48.106395
+        ]
+      },
+      "properties": {
+        "num_dau": "03503922M0004",
+        "type_dau": "PC",
+        "commune": "Brecé",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-07-05",
+        "adresse": "1 RUE DE LA GARENNE",
+        "an_depot": 2022,
+        "nb_logements": 17,
+        "nb_indiv": 0,
+        "nb_collec": 17,
+        "score_geo": 0.803
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.481923,
+          48.109789
+        ]
+      },
+      "properties": {
+        "num_dau": "03503924M0005",
+        "type_dau": "PC",
+        "commune": "Brecé",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2024-12-13",
+        "adresse": "2 RUE DU RUISSEAU",
+        "an_depot": 2024,
+        "nb_logements": 29,
+        "nb_indiv": 0,
+        "nb_collec": 29,
+        "score_geo": 0.804
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.474821,
+          48.104486
+        ]
+      },
+      "properties": {
+        "num_dau": "03503924M0008",
+        "type_dau": "PC",
+        "commune": "Brecé",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-01-13",
+        "adresse": "16 RUE DE  LA FONTENELLE LOT 26-3 ZAC CENTRE-BOURG ET LA LOIRIE",
+        "an_depot": 2024,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.362
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.476012,
+          48.108026
+        ]
+      },
+      "properties": {
+        "num_dau": "03503924M0011",
+        "type_dau": "PC",
+        "commune": "Brecé",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2024-12-31",
+        "adresse": "12 RUE DU CABUSSE",
+        "an_depot": 2024,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.805
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.477665,
+          48.106132
+        ]
+      },
+      "properties": {
+        "num_dau": "0350392500005",
+        "type_dau": "PC",
+        "commune": "Brecé",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-06-30",
+        "adresse": "25.3 ZAC LOIRIE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.481
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.488211,
+          48.10853
+        ]
+      },
+      "properties": {
+        "num_dau": "0350392500010",
+        "type_dau": "PC",
+        "commune": "Brecé",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-09-25",
+        "adresse": "LOT 2 LOTISSEMENT LES ALLEES DE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.421
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.475806,
+          48.107982
+        ]
+      },
+      "properties": {
+        "num_dau": "0350392500013",
+        "type_dau": "PC",
+        "commune": "Brecé",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2026-01-08",
+        "adresse": "8 RUE DU CABUSSE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.803
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.477913,
+          48.104882
+        ]
+      },
+      "properties": {
+        "num_dau": "0350392500014",
+        "type_dau": "PC",
+        "commune": "Brecé",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-23",
+        "adresse": "LOT 2 LES ALL ES DE LA LOIRIE TR",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.468
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.501928,
+          48.055826
+        ]
+      },
+      "properties": {
+        "num_dau": "0350691900070",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-10-09",
+        "adresse": "Châteaugiron",
+        "an_depot": 2019,
+        "nb_logements": 2,
+        "nb_indiv": 2,
+        "nb_collec": 0,
+        "score_geo": 0.473
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.446837,
+          48.057303
+        ]
+      },
+      "properties": {
+        "num_dau": "03506919P0003",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-02-06",
+        "adresse": "12 RUE SIMONE VEIL OSSE",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.83
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.517012,
+          48.056425
+        ]
+      },
+      "properties": {
+        "num_dau": "03506919P0057",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2020-03-05",
+        "adresse": "LE HAUT ROCOMPS",
+        "an_depot": 2019,
+        "nb_logements": 4,
+        "nb_indiv": 4,
+        "nb_collec": 0,
+        "score_geo": 0.494
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.517012,
+          48.056425
+        ]
+      },
+      "properties": {
+        "num_dau": "03506919P0058",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-03-05",
+        "adresse": "LE HAUT ROCOMPS",
+        "an_depot": 2019,
+        "nb_logements": 7,
+        "nb_indiv": 7,
+        "nb_collec": 0,
+        "score_geo": 0.494
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.446998,
+          48.057245
+        ]
+      },
+      "properties": {
+        "num_dau": "03506919P0066",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2019-12-20",
+        "adresse": "3 RUE SIMONE VEIL OSSE",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.829
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.515188,
+          48.041202
+        ]
+      },
+      "properties": {
+        "num_dau": "03506920P0030",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2020-09-28",
+        "adresse": "LES HAUTS ROCOMPS",
+        "an_depot": 2020,
+        "nb_logements": 6,
+        "nb_indiv": 6,
+        "nb_collec": 0,
+        "score_geo": 0.455
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.506088,
+          48.040547
+        ]
+      },
+      "properties": {
+        "num_dau": "03506920P0041",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-11-24",
+        "adresse": "2 RUE ERNEST RENAN LOT 55 - LOTISSEMENT LANN BRAZ 4",
+        "an_depot": 2020,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.474
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.506086,
+          48.040621
+        ]
+      },
+      "properties": {
+        "num_dau": "03506920P0042",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-11-24",
+        "adresse": "4 RUE ERNEST RENAN",
+        "an_depot": 2020,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.962
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.449774,
+          48.059417
+        ]
+      },
+      "properties": {
+        "num_dau": "03506921P0019",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2021-05-17",
+        "adresse": "3 IMPASSE GISELE HALIMI - OS ZAC DE L'YAIGNE -LOT 73",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.548
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.508034,
+          48.056699
+        ]
+      },
+      "properties": {
+        "num_dau": "03506921P0032",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2021-06-21",
+        "adresse": "12 RUE DE LA GRAND-VOILE LOTISSEMENT KASTELLIA -LOT 9",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.521
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.450206,
+          48.055089
+        ]
+      },
+      "properties": {
+        "num_dau": "03506921P0053",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2021-07-19",
+        "adresse": "22 RUE JEAN MOULIN - OSSE ZAC DE L'YAIGNE LOT 103",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.504
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.449472,
+          48.059345
+        ]
+      },
+      "properties": {
+        "num_dau": "03506921P0059",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2021-07-29",
+        "adresse": "2 RUE HUBERTINE AUCLERT - OS ZAC DE L'YAIGNE LOT C6",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.551
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.450206,
+          48.055089
+        ]
+      },
+      "properties": {
+        "num_dau": "03506921P0069",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2021-09-09",
+        "adresse": "20 RUE JEAN MOULIN - OSSE ZAC DE L'YAIGNE - LOT 104",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.524
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.450206,
+          48.055089
+        ]
+      },
+      "properties": {
+        "num_dau": "03506921P0073",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2021-09-20",
+        "adresse": "2 RUE JEAN MOULIN - OSSE ZACDE L'YAIGNE - LOT 107",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.498
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.45839,
+          48.041775
+        ]
+      },
+      "properties": {
+        "num_dau": "03506921P0081",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2021-10-21",
+        "adresse": "20 RUE DES CHENES BLANCS - SA \"\"LE BOIS DE LASSY\"\"  LOT A4-7",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.489
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.448073,
+          48.058965
+        ]
+      },
+      "properties": {
+        "num_dau": "03506921P0085",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2021-10-29",
+        "adresse": "2 RUE VICTOR HUGO -OSSE ZAC DE L'YAIGNE - LOT 85",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.547
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.450206,
+          48.055089
+        ]
+      },
+      "properties": {
+        "num_dau": "03506921P0088",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2022-01-17",
+        "adresse": "10 RUE JEAN MOULIN -OSSE ZAC DE L' YAIGNE - LOT D4",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.531
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.458631,
+          48.041722
+        ]
+      },
+      "properties": {
+        "num_dau": "03506921P0089",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2022-02-04",
+        "adresse": "9 RUE DES CHENES BLANCS - ST \"\"LE BOIS DE LASSY\"\" - LOT A 5-5",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.465
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.44946,
+          48.059264
+        ]
+      },
+      "properties": {
+        "num_dau": "03506921P0092",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2022-01-11",
+        "adresse": "4 RUE HUBERTINE AUCLERT - OS ZAC DE L'YAIGNE -LOT C5",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.551
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.459715,
+          48.041703
+        ]
+      },
+      "properties": {
+        "num_dau": "03506921P0119",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2022-03-18",
+        "adresse": "2 RUE DU BOIS DE LASSY - ST \"\"LE BOIS DE LASSY\"\" LOT A1-8",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.458
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.512668,
+          48.054545
+        ]
+      },
+      "properties": {
+        "num_dau": "03506921P0122",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2022-04-12",
+        "adresse": "1 IMPASSE DU CHAMP D'AHAUT",
+        "an_depot": 2021,
+        "nb_logements": 12,
+        "nb_indiv": 0,
+        "nb_collec": 12,
+        "score_geo": 0.828
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.45893,
+          48.041372
+        ]
+      },
+      "properties": {
+        "num_dau": "03506921P0131",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-01-20",
+        "adresse": "3 RUE DES CHENES BLANCS - ST \"\"LE BOIS DE LASSY\"\" LOT A5.9",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.47
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.448377,
+          48.059457
+        ]
+      },
+      "properties": {
+        "num_dau": "03506922P0012",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-07-07",
+        "adresse": "9 RUE VICTOR HUGO - OSSE ZAC DE L'YAIGNE -LOT 84",
+        "an_depot": 2022,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.547
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.460078,
+          48.042006
+        ]
+      },
+      "properties": {
+        "num_dau": "03506922P0025",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-09-26",
+        "adresse": "5 ALLEE DES CHARMES -ST AUBI LE BOIS DE LASSY -LOT A 1.2",
+        "an_depot": 2022,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.458
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.45912,
+          48.041868
+        ]
+      },
+      "properties": {
+        "num_dau": "03506922P0030",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-06-23",
+        "adresse": "28 RUE DES CHENES BLANCS - ST LOT A 4.3 \"\"LE BOIS DE LASSY\"\"",
+        "an_depot": 2022,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.47
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.466078,
+          48.044271
+        ]
+      },
+      "properties": {
+        "num_dau": "03506922P0033",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2022-06-22",
+        "adresse": "34 RUE JULIE BORIUS - LOTISSE SAINT-AUBIN DU PAVAIL",
+        "an_depot": 2022,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.749
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.459764,
+          48.041447
+        ]
+      },
+      "properties": {
+        "num_dau": "03506922P0050",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2022-09-28",
+        "adresse": "1 ALLEE DES OLIVIERS LOTISSE SAINT-AUBIN DU PAVAIL",
+        "an_depot": 2022,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.746
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.450206,
+          48.055089
+        ]
+      },
+      "properties": {
+        "num_dau": "03506923P0006",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-03-06",
+        "adresse": "4 RUE VICTOR HUGO - OSSE ZAC DE L'YAIGNE LOT 86",
+        "an_depot": 2023,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.518
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.507833,
+          48.051992
+        ]
+      },
+      "properties": {
+        "num_dau": "03506923P0013",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2023-09-05",
+        "adresse": "3 RUE DE NOYAL SUR VILAINE",
+        "an_depot": 2023,
+        "nb_logements": 39,
+        "nb_indiv": 0,
+        "nb_collec": 39,
+        "score_geo": 0.835
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.459764,
+          48.041447
+        ]
+      },
+      "properties": {
+        "num_dau": "03506923P0026",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2023-09-25",
+        "adresse": "1 ALLEE DES OLIVIERS - LOTIS SAINT AUBIN DU PAVAIL",
+        "an_depot": 2023,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.767
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.512668,
+          48.054545
+        ]
+      },
+      "properties": {
+        "num_dau": "03506923P0028",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-10-25",
+        "adresse": "1 IMPASSE DU CHAMP D'AHAUT",
+        "an_depot": 2023,
+        "nb_logements": 12,
+        "nb_indiv": 0,
+        "nb_collec": 12,
+        "score_geo": 0.828
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.50334,
+          48.050236
+        ]
+      },
+      "properties": {
+        "num_dau": "03506923P0035",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2024-04-25",
+        "adresse": "1A LE TERTRE MAL Y PASSE",
+        "an_depot": 2023,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.822
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.498548,
+          48.045059
+        ]
+      },
+      "properties": {
+        "num_dau": "03506924P0020",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2024-09-09",
+        "adresse": "19 RUE SAINTE-CROIX",
+        "an_depot": 2024,
+        "nb_logements": 101,
+        "nb_indiv": 0,
+        "nb_collec": 101,
+        "score_geo": 0.827
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.484534,
+          48.059058
+        ]
+      },
+      "properties": {
+        "num_dau": "03506924P0022",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2024-10-23",
+        "adresse": "9 LIEU DIT LA DEMERIE",
+        "an_depot": 2024,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.818
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5057,
+          48.034306
+        ]
+      },
+      "properties": {
+        "num_dau": "03506924P0038",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-06-30",
+        "adresse": "15-17 RUE DES ODONATES",
+        "an_depot": 2024,
+        "nb_logements": 102,
+        "nb_indiv": 0,
+        "nb_collec": 102,
+        "score_geo": 0.77
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.509358,
+          48.037773
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500003",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-02-26",
+        "adresse": "7 IMPASSE DU GRAND CAPRICORN ZAC DU GRAND LAUNAY - LOT 1-25",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.39
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.448175,
+          48.058046
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500004",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-03-31",
+        "adresse": "24 IMPASSE LOUISE MICHEL OSSE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.834
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.50037,
+          48.054543
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500005",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-07-08",
+        "adresse": "54 RUE AU PREVOT",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.827
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.504959,
+          48.035415
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500007",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-03-18",
+        "adresse": "3 IMPASSE DU GRAND CAPRICORN ZAC LE GRAND LAUNAY -LOT 1-23",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.528
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.503374,
+          48.043768
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500010",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-06-26",
+        "adresse": "RUE DES PRIMEVERES",
+        "an_depot": 2025,
+        "nb_logements": 42,
+        "nb_indiv": 0,
+        "nb_collec": 42,
+        "score_geo": 0.824
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.509358,
+          48.037773
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500012",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-03-25",
+        "adresse": "LOT 1 ZAC LE GRAND LAUNAY",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.586
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.504868,
+          48.034117
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500014",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-04-03",
+        "adresse": "29 RUE DES ODONATES ZAC DU GRAND LAUNAY - LOT 1-41",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.492
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.509358,
+          48.037773
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500016",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-04-28",
+        "adresse": "2 IMPASSE DE LA COCCINELLE ZAC DU GRAND LAUNAY - LOT 1-72",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.413
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.504672,
+          48.035466
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500028",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-06-06",
+        "adresse": "4 IMPASSE DE GRAND CAPRICORN ZAC DU GRAND LAUNAY -LOT 1-20",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.545
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.505826,
+          48.034008
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500029",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-06-06",
+        "adresse": "13 RUE DES ODONATES ZAC DU GRAND LAUNAY - LOT 1-36",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.492
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.463233,
+          48.043647
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500036",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-07-10",
+        "adresse": "10 IMPASSE DES COURTILLONS-ST LOTISSEMENT \"\"PLACE DES COURTILLONS\"\"",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.467
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.44868,
+          48.058027
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500038",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-06-04",
+        "adresse": "16 IMPASSE LOUISE MICHEL OSSE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.834
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.504923,
+          48.033833
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500040",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-06-13",
+        "adresse": "4 IMPASSE DU GRILLON CHAMPET",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.765
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.504755,
+          48.035312
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500042",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-06-18",
+        "adresse": "5 IMPASSE DU GRAND CAPRICORN",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.784
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.505419,
+          48.033609
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500051",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-09-10",
+        "adresse": "7 IMPASSE DU VULCAIN ZAC LE GRAND LAUNAY - LOT 1-58",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.493
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.504876,
+          48.036254
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500057",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-09-26",
+        "adresse": "6 IMPASSE DE LA CETOINE DORE ZAC DU GRAND LAUNAY -LOT 1-01",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.525
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.44885,
+          48.058018
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500064",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-08-06",
+        "adresse": "14 IMPASSE LOUISE MICHEL - LO OSSE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.788
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.499886,
+          48.032033
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500065",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-09-19",
+        "adresse": "5 COURS PEAN",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.588
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.506898,
+          48.035122
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500066",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-11-26",
+        "adresse": "4 ET AVENUE DE LA ROSELIERE ZAC DU GRAND LAUNAY- ILOT E",
+        "an_depot": 2025,
+        "nb_logements": 54,
+        "nb_indiv": 0,
+        "nb_collec": 54,
+        "score_geo": 0.502
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.50258,
+          48.03041
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500067",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-09-19",
+        "adresse": "17BIS RUE VASSELOT",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.826
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.504618,
+          48.047784
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500069",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-05",
+        "adresse": "12 RUE SAINT NICOLAS",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.827
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.506406,
+          48.033585
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500072",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-09-17",
+        "adresse": "8 IMPASSE DE LA COCCINELLE-Z",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.797
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.504759,
+          48.036126
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500073",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-09-23",
+        "adresse": "4 IMPASSE DE LA CETOINE DORE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.814
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.506177,
+          48.033962
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500074",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-10-13",
+        "adresse": "7 RUE DES ODONATES-ZAC DU GR",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.661
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.501848,
+          48.046926
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500079",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-12",
+        "adresse": "21 RUE DU PORCHE",
+        "an_depot": 2025,
+        "nb_logements": 2,
+        "nb_indiv": 2,
+        "nb_collec": 0,
+        "score_geo": 0.824
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.506214,
+          48.033515
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500080",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2026-01-08",
+        "adresse": "9 IMPASSE DE LA COCCINELLE -",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.83
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.464333,
+          48.045309
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500081",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-05",
+        "adresse": "4 IMPASSE DES COTEAUX",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.822
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.448527,
+          48.058027
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500084",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-01",
+        "adresse": "18 IMPASSE LOUIS MICHEL",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.702
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.506418,
+          48.033647
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500085",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-19",
+        "adresse": "6 IMPASSE DE LA COCCINELLE-Z",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.797
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.505033,
+          48.035851
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500086",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-18",
+        "adresse": "1 IMPASSE DE LA CETOINE DORE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.814
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.509438,
+          48.047549
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500088",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-18",
+        "adresse": "8 IMPASSE DE LA BOUTISSE - L",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.795
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.506446,
+          48.033706
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500089",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-18",
+        "adresse": "4 IMPASSE DE LA COCCINELLE-Z",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.797
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.504444,
+          48.033815
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500090",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2026-01-15",
+        "adresse": "6 RUE DES ODONATES-ZAC DU GR",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.661
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.50534,
+          48.034066
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500094",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-18",
+        "adresse": "23 RUE DES ODONATES - ZAC \"\"LE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.707
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.505645,
+          48.033753
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692500095",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-19",
+        "adresse": "4 IMPASSE DU VULCAIN-ZAC \"\"LE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.706
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.509358,
+          48.037773
+        ]
+      },
+      "properties": {
+        "num_dau": "0350692600003",
+        "type_dau": "PC",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2026-01-29",
+        "adresse": "LOT 1 ZAC DU GRAND LAUNAY 4 IMPA",
+        "an_depot": 2026,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.498
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.501919,
+          48.04811
+        ]
+      },
+      "properties": {
+        "num_dau": "03506922P0185",
+        "type_dau": "DP",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-04-12",
+        "adresse": "9 RUE DE LA MADELEINE",
+        "an_depot": 2022,
+        "nb_logements": 6,
+        "nb_indiv": 6,
+        "nb_collec": 0,
+        "score_geo": 0.832
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.503578,
+          48.048247
+        ]
+      },
+      "properties": {
+        "num_dau": "03506923P0123",
+        "type_dau": "DP",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-11-27",
+        "adresse": "54 RUE DE LA MADELEINE",
+        "an_depot": 2023,
+        "nb_logements": 4,
+        "nb_indiv": 0,
+        "nb_collec": 4,
+        "score_geo": 0.833
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.504847,
+          48.048749
+        ]
+      },
+      "properties": {
+        "num_dau": "03506924P0136",
+        "type_dau": "DP",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2024-07-15",
+        "adresse": "5  3 RLE SAINT NICOLAS",
+        "an_depot": 2024,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.714
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.545828,
+          48.042939
+        ]
+      },
+      "properties": {
+        "num_dau": "03509919A0032",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-06-12",
+        "adresse": "15 RTE DES POLDERS",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.502
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.523013,
+          48.056005
+        ]
+      },
+      "properties": {
+        "num_dau": "03509919P0020",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2019-08-20",
+        "adresse": "6 RUE DE HEDE",
+        "an_depot": 2019,
+        "nb_logements": 5,
+        "nb_indiv": 0,
+        "nb_collec": 5,
+        "score_geo": 0.803
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.526314,
+          48.064401
+        ]
+      },
+      "properties": {
+        "num_dau": "03509919P0023",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-09-24",
+        "adresse": "26 BIS  RUE DU CALVAIRE",
+        "an_depot": 2019,
+        "nb_logements": 3,
+        "nb_indiv": 3,
+        "nb_collec": 0,
+        "score_geo": 0.757
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.523825,
+          48.067368
+        ]
+      },
+      "properties": {
+        "num_dau": "03509921P0020",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2021-06-22",
+        "adresse": "6 IMPASSE DU SEMNON ZAC DU TERTRE - LOT 306",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.503
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.519901,
+          48.061862
+        ]
+      },
+      "properties": {
+        "num_dau": "03509921P0035",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2021-10-07",
+        "adresse": "1 IMPASSE DU SEMNON ZAC DU TERTRE - LOT 302",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.328
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.518077,
+          48.061994
+        ]
+      },
+      "properties": {
+        "num_dau": "03509923P0001",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-06-15",
+        "adresse": "2 IMPASSE DU LEON",
+        "an_depot": 2023,
+        "nb_logements": 25,
+        "nb_indiv": 0,
+        "nb_collec": 25,
+        "score_geo": 0.81
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.535546,
+          48.060339
+        ]
+      },
+      "properties": {
+        "num_dau": "03509924P0033",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-02-25",
+        "adresse": "LES NOES",
+        "an_depot": 2024,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.779
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.519901,
+          48.061862
+        ]
+      },
+      "properties": {
+        "num_dau": "0350992500013",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-06-30",
+        "adresse": "3 RUE DE LA CHERE ZAC DU TERTRE - TR. 5.1 (LOT 366)",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.304
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.519901,
+          48.061862
+        ]
+      },
+      "properties": {
+        "num_dau": "0350992500016",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-19",
+        "adresse": "22 AVENUE DE VILAINE ZAC DU TERTRE",
+        "an_depot": 2025,
+        "nb_logements": 15,
+        "nb_indiv": 0,
+        "nb_collec": 15,
+        "score_geo": 0.37
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.519901,
+          48.061862
+        ]
+      },
+      "properties": {
+        "num_dau": "0350992500017",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-22",
+        "adresse": "1 AVENUE DE VILAINE ZAC DU TERTRE",
+        "an_depot": 2025,
+        "nb_logements": 15,
+        "nb_indiv": 0,
+        "nb_collec": 15,
+        "score_geo": 0.377
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.51739,
+          48.061899
+        ]
+      },
+      "properties": {
+        "num_dau": "0350992500018",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-22",
+        "adresse": "1 IMPASSE DU BIGOUDEN",
+        "an_depot": 2025,
+        "nb_logements": 15,
+        "nb_indiv": 0,
+        "nb_collec": 15,
+        "score_geo": 0.816
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.519901,
+          48.061862
+        ]
+      },
+      "properties": {
+        "num_dau": "0350992500023",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-11-25",
+        "adresse": "329 ZAC DU TERTRE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.507
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.527222,
+          48.066891
+        ]
+      },
+      "properties": {
+        "num_dau": "0350992500024",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-08",
+        "adresse": "36 RUE DU DON 35410 DOMLOUP",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.581
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.519901,
+          48.061862
+        ]
+      },
+      "properties": {
+        "num_dau": "0350992500025",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-24",
+        "adresse": "10 IMPASSE DE L'ILLE ZAC DU TERTRE - TR. 5.2 (LOT 374)",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.326
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.524983,
+          48.066042
+        ]
+      },
+      "properties": {
+        "num_dau": "0350992500028",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-01",
+        "adresse": "2 IMPASSE PRE DU CROISSANT",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.822
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.519901,
+          48.061862
+        ]
+      },
+      "properties": {
+        "num_dau": "0350992500029",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-01",
+        "adresse": "5 RUE DE LA CHERE ZAC DU TERTRE - TR. 5.1 (LOT 367)",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.304
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.52772,
+          48.067075
+        ]
+      },
+      "properties": {
+        "num_dau": "0350992500032",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-08",
+        "adresse": "22 RUE DU DON",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.806
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.519901,
+          48.061862
+        ]
+      },
+      "properties": {
+        "num_dau": "0350992500033",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2026-01-26",
+        "adresse": "LE TERTRE LOT 320 ZAC DU TERTRE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.445
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.527449,
+          48.068395
+        ]
+      },
+      "properties": {
+        "num_dau": "0350992500035",
+        "type_dau": "PC",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-24",
+        "adresse": "15 IMPASSE DE L'ILLE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.815
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.539919,
+          48.037303
+        ]
+      },
+      "properties": {
+        "num_dau": "03520419M0026",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2019-05-20",
+        "adresse": "13 RUE OLYMPES DE GOUGES LOT 104 - SECTEUR \"\"LES ENTREES\"\"",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.475
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.543229,
+          48.039786
+        ]
+      },
+      "properties": {
+        "num_dau": "03520419M0032",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-07-15",
+        "adresse": "15 RUE DU TEILLAC",
+        "an_depot": 2019,
+        "nb_logements": 2,
+        "nb_indiv": 2,
+        "nb_collec": 0,
+        "score_geo": 0.816
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.539756,
+          48.037269
+        ]
+      },
+      "properties": {
+        "num_dau": "03520419M0050",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2019-10-10",
+        "adresse": "15 RUE OLYMPE DE GOUGES LOT 105 -SECTEUR \"\"LES ENTREES\"\"",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.549532,
+          48.028706
+        ]
+      },
+      "properties": {
+        "num_dau": "03520419M0059",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-08-20",
+        "adresse": "LOT 96",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.578
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.541264,
+          48.038861
+        ]
+      },
+      "properties": {
+        "num_dau": "03520419M0064",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2019-09-27",
+        "adresse": "4 ALLEE MARIE HACKIN LOT 40 -SECTEUR \"\"LES ENTREES\"\"",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.503
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.542727,
+          48.038148
+        ]
+      },
+      "properties": {
+        "num_dau": "03520419M0091",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-12-30",
+        "adresse": "LOT 80 - SECTEUR \"\"LES ENTREES\"\"",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.558
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.542149,
+          48.041723
+        ]
+      },
+      "properties": {
+        "num_dau": "03520420M0003",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2020-07-15",
+        "adresse": "LE CLOS TINEL LOT 3-114",
+        "an_depot": 2020,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.557
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.547828,
+          48.043356
+        ]
+      },
+      "properties": {
+        "num_dau": "03520421M0002",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2021-02-15",
+        "adresse": "L'ORGERIE LOT 3-58",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.384
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.562752,
+          48.040064
+        ]
+      },
+      "properties": {
+        "num_dau": "03520421M0010",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2021-07-26",
+        "adresse": "LIEUD LE VIEIL ECLOSEL",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.685
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.573483,
+          48.024
+        ]
+      },
+      "properties": {
+        "num_dau": "03520421M0020",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2021-07-26",
+        "adresse": "LOTISSEMENT DU GRAND JARDI",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.48
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.549532,
+          48.028706
+        ]
+      },
+      "properties": {
+        "num_dau": "03520421M0036",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2021-08-27",
+        "adresse": "LOT 3-33",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.53
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.548768,
+          48.041795
+        ]
+      },
+      "properties": {
+        "num_dau": "03520421M0046",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2022-05-09",
+        "adresse": "3 RUE DE VERN",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.808
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.540275,
+          48.037382
+        ]
+      },
+      "properties": {
+        "num_dau": "03520421M0056",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2022-06-01",
+        "adresse": "9 RUE OLYMPE DE GOUGES",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.823
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.541276,
+          48.038997
+        ]
+      },
+      "properties": {
+        "num_dau": "03520422M0019",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-10-14",
+        "adresse": "3 ALLEE MARIE HACKIN",
+        "an_depot": 2022,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.814
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.539961,
+          48.039725
+        ]
+      },
+      "properties": {
+        "num_dau": "03520422M0022",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-05-17",
+        "adresse": "1 RUE ANGELA DAVIS",
+        "an_depot": 2022,
+        "nb_logements": 9,
+        "nb_indiv": 0,
+        "nb_collec": 9,
+        "score_geo": 0.815
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.542149,
+          48.041723
+        ]
+      },
+      "properties": {
+        "num_dau": "03520422M0032",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-01-13",
+        "adresse": "LE CLOS TINEL LOT N_174 - SECTEUR 3",
+        "an_depot": 2022,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.46
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.58123,
+          48.031921
+        ]
+      },
+      "properties": {
+        "num_dau": "03520423M0001",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-08-09",
+        "adresse": "LE BOIS ROND",
+        "an_depot": 2023,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.714
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.539234,
+          48.0396
+        ]
+      },
+      "properties": {
+        "num_dau": "03520423M0004",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-07-11",
+        "adresse": "12 RUE ANGELA DAVIS LOT 3-157",
+        "an_depot": 2023,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.645
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.540161,
+          48.038034
+        ]
+      },
+      "properties": {
+        "num_dau": "03520423M0008",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2023-09-12",
+        "adresse": "LOTISSEMENT ELOGE - LOT 13",
+        "an_depot": 2023,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.372
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.547828,
+          48.043356
+        ]
+      },
+      "properties": {
+        "num_dau": "03520423M0016",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2024-01-10",
+        "adresse": "8 RUE DES LOGES",
+        "an_depot": 2023,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.754
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.54733,
+          48.043676
+        ]
+      },
+      "properties": {
+        "num_dau": "03520424M0002",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2024-07-12",
+        "adresse": "6 ALLEE ANNA COLEMAN",
+        "an_depot": 2024,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.814
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.54838,
+          48.042357
+        ]
+      },
+      "properties": {
+        "num_dau": "03520424M0004",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2024-10-30",
+        "adresse": "6 RUE DE VERN",
+        "an_depot": 2024,
+        "nb_logements": 85,
+        "nb_indiv": 0,
+        "nb_collec": 85,
+        "score_geo": 0.808
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.547828,
+          48.043356
+        ]
+      },
+      "properties": {
+        "num_dau": "03520424M0009",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2024-11-03",
+        "adresse": "8 RUE DES LOGES LOTISSEMENT ELOGE LOT 19",
+        "an_depot": 2024,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.436
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.547481,
+          48.043352
+        ]
+      },
+      "properties": {
+        "num_dau": "03520424M0014",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-01-31",
+        "adresse": "2 ALLIE ANNA COLEMAN",
+        "an_depot": 2024,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.73
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.546853,
+          48.043529
+        ]
+      },
+      "properties": {
+        "num_dau": "03520424M0017",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-01-22",
+        "adresse": "5 ALLIE SUZANNE NOKL LOT 10",
+        "an_depot": 2024,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.593
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.539724,
+          48.037643
+        ]
+      },
+      "properties": {
+        "num_dau": "03520424M0022",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-04-30",
+        "adresse": "20 LOTISSEMENT ELOGE",
+        "an_depot": 2024,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.425
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.547828,
+          48.043356
+        ]
+      },
+      "properties": {
+        "num_dau": "0352042500012",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-08-04",
+        "adresse": "RUE DES LOGES",
+        "an_depot": 2025,
+        "nb_logements": 19,
+        "nb_indiv": 0,
+        "nb_collec": 19,
+        "score_geo": 0.803
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.547454,
+          48.04348
+        ]
+      },
+      "properties": {
+        "num_dau": "0352042500018",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-11-28",
+        "adresse": "4 ALLEE ANNA COLEMAN",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.814
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.539515,
+          48.037912
+        ]
+      },
+      "properties": {
+        "num_dau": "0352042500019",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-11-28",
+        "adresse": "LOT 3 LOTISSEMENT ELOGE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.388
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.546646,
+          48.043552
+        ]
+      },
+      "properties": {
+        "num_dau": "0352042500025",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2026-01-19",
+        "adresse": "6 ALL SUZANNE NOEL",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.727
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.581036,
+          48.045651
+        ]
+      },
+      "properties": {
+        "num_dau": "03520425M0005",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-06-20",
+        "adresse": "LA RIVAUDIERE",
+        "an_depot": 2025,
+        "nb_logements": 2,
+        "nb_indiv": 2,
+        "nb_collec": 0,
+        "score_geo": 0.801
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.581036,
+          48.045651
+        ]
+      },
+      "properties": {
+        "num_dau": "03520425M0007",
+        "type_dau": "PC",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-07-01",
+        "adresse": "LA RIVAUDIERE",
+        "an_depot": 2025,
+        "nb_logements": 2,
+        "nb_indiv": 2,
+        "nb_collec": 0,
+        "score_geo": 0.801
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.485636,
+          48.068092
+        ]
+      },
+      "properties": {
+        "num_dau": "03520719P0026",
+        "type_dau": "PC",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-01-27",
+        "adresse": "LA CLOSERIE",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.816
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.544955,
+          48.121503
+        ]
+      },
+      "properties": {
+        "num_dau": "03520720P0033",
+        "type_dau": "PC",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-11-23",
+        "adresse": "LOT N_9 - LOTISSEMENT \"\"LES",
+        "an_depot": 2020,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.465
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.524544,
+          48.109036
+        ]
+      },
+      "properties": {
+        "num_dau": "03520720P0042",
+        "type_dau": "PC",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2021-02-12",
+        "adresse": "LES JARDINS DES TISSERANDS",
+        "an_depot": 2020,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.649
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.521676,
+          48.109986
+        ]
+      },
+      "properties": {
+        "num_dau": "03520721P0005",
+        "type_dau": "PC",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2021-06-25",
+        "adresse": "34 AVENUE DU GENERAL DE GAULL",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.827
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.544955,
+          48.121503
+        ]
+      },
+      "properties": {
+        "num_dau": "03520721P0032",
+        "type_dau": "PC",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2021-12-21",
+        "adresse": "LOT NA_3 LOTISSEMENT  \"\"LES",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.457
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.524544,
+          48.109036
+        ]
+      },
+      "properties": {
+        "num_dau": "03520721P0037",
+        "type_dau": "PC",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2022-02-16",
+        "adresse": "LOTISSEMENT \"\"LES JARDINS D",
+        "an_depot": 2021,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.489
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.521104,
+          48.111694
+        ]
+      },
+      "properties": {
+        "num_dau": "03520722P0025",
+        "type_dau": "PC",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-04-11",
+        "adresse": "33 RUE PIERRE MARCHAND",
+        "an_depot": 2022,
+        "nb_logements": 21,
+        "nb_indiv": 0,
+        "nb_collec": 21,
+        "score_geo": 0.836
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.532302,
+          48.117531
+        ]
+      },
+      "properties": {
+        "num_dau": "03520722P0033",
+        "type_dau": "PC",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-09-08",
+        "adresse": "14 RUE FRANCIS MONNOYEUR",
+        "an_depot": 2022,
+        "nb_logements": 45,
+        "nb_indiv": 0,
+        "nb_collec": 45,
+        "score_geo": 0.836
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.552734,
+          48.102031
+        ]
+      },
+      "properties": {
+        "num_dau": "03520723P0009",
+        "type_dau": "PC",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-06-12",
+        "adresse": "54 LA LANDE AUX MOINES",
+        "an_depot": 2023,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.827
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.527901,
+          48.118036
+        ]
+      },
+      "properties": {
+        "num_dau": "03520723P0012",
+        "type_dau": "PC",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2023-07-26",
+        "adresse": "41 BOULEVARD BARBOT",
+        "an_depot": 2023,
+        "nb_logements": 42,
+        "nb_indiv": 0,
+        "nb_collec": 42,
+        "score_geo": 0.749
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.521866,
+          48.11406
+        ]
+      },
+      "properties": {
+        "num_dau": "03520724P0002",
+        "type_dau": "PC",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2024-02-27",
+        "adresse": "16 RUE ALEXIS GEFFRAULT",
+        "an_depot": 2024,
+        "nb_logements": 2,
+        "nb_indiv": 2,
+        "nb_collec": 0,
+        "score_geo": 0.834
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.527901,
+          48.118036
+        ]
+      },
+      "properties": {
+        "num_dau": "03520724P0026",
+        "type_dau": "PC",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-07-17",
+        "adresse": "41 BOULEVARD PIERRE BARBOT",
+        "an_depot": 2024,
+        "nb_logements": 34,
+        "nb_indiv": 0,
+        "nb_collec": 34,
+        "score_geo": 0.833
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.552734,
+          48.102031
+        ]
+      },
+      "properties": {
+        "num_dau": "0352072500012",
+        "type_dau": "PC",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-09-04",
+        "adresse": "54 LA LANDE AUX MOINES",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.827
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.534778,
+          48.11763
+        ]
+      },
+      "properties": {
+        "num_dau": "0352072500016",
+        "type_dau": "PC",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-11-07",
+        "adresse": "4 RUE DE L'ETANG",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.822
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.522342,
+          48.113114
+        ]
+      },
+      "properties": {
+        "num_dau": "03520722P0076",
+        "type_dau": "DP",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-11-16",
+        "adresse": "25 RUE PIERRE MARCHAND",
+        "an_depot": 2022,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.836
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.459544,
+          48.128571
+        ]
+      },
+      "properties": {
+        "num_dau": "03532719P0009",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-04-26",
+        "adresse": "12 LA GUINONNIERE",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.828
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.46564,
+          48.109144
+        ]
+      },
+      "properties": {
+        "num_dau": "03532719P0010",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-04-04",
+        "adresse": "LOTISSEMENT  BELLE CHAMPAG LOT 8",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.445
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.459544,
+          48.128571
+        ]
+      },
+      "properties": {
+        "num_dau": "03532719P0036",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-09-20",
+        "adresse": "12 LA GUINONNIERE",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.828
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.452473,
+          48.103266
+        ]
+      },
+      "properties": {
+        "num_dau": "03532719P0038",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-09-13",
+        "adresse": "LOT 2 LE HAMEAU DE LA BUISSONIE",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.497
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.450035,
+          48.097213
+        ]
+      },
+      "properties": {
+        "num_dau": "03532719P0044",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-03-20",
+        "adresse": "LE MORTIER",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.812
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.470578,
+          48.125035
+        ]
+      },
+      "properties": {
+        "num_dau": "03532719P0048",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2019-10-10",
+        "adresse": "LOT 1 LOTISSEMENT BELLE CHAMPAGN",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.482
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.462827,
+          48.123368
+        ]
+      },
+      "properties": {
+        "num_dau": "03532719P0052",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-11-22",
+        "adresse": "LOT 4 LOTISSEMENT LE DOMAINE DU",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.45
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.463607,
+          48.121017
+        ]
+      },
+      "properties": {
+        "num_dau": "03532719P0061",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-11-08",
+        "adresse": "14 RUE JOACHIM DU BELLAY",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.833
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.478115,
+          48.141085
+        ]
+      },
+      "properties": {
+        "num_dau": "03532719P0066",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-12-28",
+        "adresse": "LA PRAIE",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.813
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.462833,
+          48.123369
+        ]
+      },
+      "properties": {
+        "num_dau": "03532719P0067",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-11-21",
+        "adresse": "LOT 2 LOTISSEMENT LE DOMAINE DU",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.45
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.460399,
+          48.12197
+        ]
+      },
+      "properties": {
+        "num_dau": "03532719P0081",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-02-06",
+        "adresse": "13 RUE MARECHAL LECLERC",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.787
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.467994,
+          48.1209
+        ]
+      },
+      "properties": {
+        "num_dau": "03532720P0013",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-08-11",
+        "adresse": "28 RUE DE LA FEE DU MANOIR LOT LE DOMAINE DU GUE - LOT 63",
+        "an_depot": 2020,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.517
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.467969,
+          48.120655
+        ]
+      },
+      "properties": {
+        "num_dau": "03532720P0030",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-07-28",
+        "adresse": "36 RUE DE LA FEE DU MANOIR LOT 67 - LE DOMAINE DU GUE",
+        "an_depot": 2020,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.574
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.466539,
+          48.120606
+        ]
+      },
+      "properties": {
+        "num_dau": "03532720P0031",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-08-25",
+        "adresse": "16 RUE GEORGES DU GUE LOT 44 - LE DOMAINE DU GUE",
+        "an_depot": 2020,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.555
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.467994,
+          48.1209
+        ]
+      },
+      "properties": {
+        "num_dau": "03532720P0032",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-07-28",
+        "adresse": "12 RUE DE LA FEE DU MANOIR LOT 55 - LE DOMAINE DU GUE",
+        "an_depot": 2020,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.542
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.468295,
+          48.119651
+        ]
+      },
+      "properties": {
+        "num_dau": "03532720P0068",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-12-18",
+        "adresse": "17 RUE OLIVE DE SEVIGNE LOT 101 - LE DOMAINE DU GUE",
+        "an_depot": 2020,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.556
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.467974,
+          48.119819
+        ]
+      },
+      "properties": {
+        "num_dau": "03532720P0078",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-12-28",
+        "adresse": "10 RUE OLIVE DE SEVIGNE LOT 81 - LE DOMAINE DU GUE",
+        "an_depot": 2020,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.547
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.463137,
+          48.120975
+        ]
+      },
+      "properties": {
+        "num_dau": "03532722P0002",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2022-04-11",
+        "adresse": "10 RUE JOACHIM DU BELLAY",
+        "an_depot": 2022,
+        "nb_logements": 3,
+        "nb_indiv": 3,
+        "nb_collec": 0,
+        "score_geo": 0.833
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.459469,
+          48.11935
+        ]
+      },
+      "properties": {
+        "num_dau": "03532722P0010",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-07-04",
+        "adresse": "18 RUE DE LA VIGNOURIE",
+        "an_depot": 2022,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.774
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.465067,
+          48.125455
+        ]
+      },
+      "properties": {
+        "num_dau": "03532722P0016",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-09-20",
+        "adresse": "LOT 10 - LE HAMEAU DE LA B",
+        "an_depot": 2022,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.53
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.463867,
+          48.121548
+        ]
+      },
+      "properties": {
+        "num_dau": "03532722P0027",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2022-11-18",
+        "adresse": "10 AVENUE DU GUESCLIN",
+        "an_depot": 2022,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.828
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.466539,
+          48.120606
+        ]
+      },
+      "properties": {
+        "num_dau": "03532723P0002",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-04-06",
+        "adresse": "16 RUE DE L'ORANGERIE LOTISSEMENT LE DOMAINE DU GUE - LOT N_",
+        "an_depot": 2023,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.397
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.464656,
+          48.120455
+        ]
+      },
+      "properties": {
+        "num_dau": "03532723P0009",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 4,
+        "etat_label": "Achèvement déclaré",
+        "date_aut": "2023-04-13",
+        "adresse": "3 RUE DES CHEVALIERS LOTISSEMENT LE DOMAINE DU GUE - LOT N_",
+        "an_depot": 2023,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.392
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.465732,
+          48.120583
+        ]
+      },
+      "properties": {
+        "num_dau": "03532723P0018",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-08-08",
+        "adresse": "30 RUE DE L'ORANGERIE LOTISSEMENT LE DOMAINE DU GUE - LOT N_",
+        "an_depot": 2023,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.382
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.464795,
+          48.120467
+        ]
+      },
+      "properties": {
+        "num_dau": "03532723P0021",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-08-08",
+        "adresse": "5 RUE DES CHEVALIERS LOTISSEMENT LE DOMAINE DU GUE - LOT N_",
+        "an_depot": 2023,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.392
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.456026,
+          48.121871
+        ]
+      },
+      "properties": {
+        "num_dau": "0353272500008",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-05-27",
+        "adresse": "ALLEE VINCENT VAN GOGH",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.825
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.463248,
+          48.122485
+        ]
+      },
+      "properties": {
+        "num_dau": "0353272500010",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-06-17",
+        "adresse": "LOT 1 LOTISSEMENT \"\"DOMAINE DU GU",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.436
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.461857,
+          48.114235
+        ]
+      },
+      "properties": {
+        "num_dau": "0353272500011",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-09-18",
+        "adresse": "12B RUE DE L'ORANGERIE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.546
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.464656,
+          48.120455
+        ]
+      },
+      "properties": {
+        "num_dau": "0353272500015",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-11-20",
+        "adresse": "3 RUE DE L'ORANGERIE LOTISS. LE DOMAINE DU GUE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.462
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.452738,
+          48.122744
+        ]
+      },
+      "properties": {
+        "num_dau": "0353272500017",
+        "type_dau": "PC",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-23",
+        "adresse": "3 ALL DE LA JANAIE",
+        "an_depot": 2025,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.795
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.460399,
+          48.12197
+        ]
+      },
+      "properties": {
+        "num_dau": "03532719P0077",
+        "type_dau": "DP",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-01-06",
+        "adresse": "13 RUE MARECHAL LECLERC",
+        "an_depot": 2019,
+        "nb_logements": 1,
+        "nb_indiv": 1,
+        "nb_collec": 0,
+        "score_geo": 0.787
+      }
+    }
+  ]
+}

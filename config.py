@@ -43,15 +43,15 @@ CRS_WGS84  = "EPSG:4326"   # WGS84 (pour folium / flux WMS géographiques)
 # Emprise en WGS84 (approximative, pour affichage Folium)
 # Convertie manuellement depuis L93 — centre Vitré 35500
 BBOX_WGS84 = {
-    "lon_min": -1.28,
-    "lat_min":  47.97,
-    "lon_max": -1.11,
-    "lat_max":  48.08,
+    "lon_min": -1.590,
+    "lat_min":  48.018,
+    "lon_max": -1.432,
+    "lat_max":  48.136,
 }
 
 CENTER_WGS84 = (
-    (BBOX_WGS84["lat_min"] + BBOX_WGS84["lat_max"]) / 2,
-    (BBOX_WGS84["lon_min"] + BBOX_WGS84["lon_max"]) / 2,
+    (BBOX_WGS84["lat_min"] + BBOX_WGS84["lat_max"]) / 2,   # ~48.077
+    (BBOX_WGS84["lon_min"] + BBOX_WGS84["lon_max"]) / 2,   # ~-1.503
 )
 
 # =============================================================================
@@ -95,6 +95,42 @@ TILES_T1_DIR     = RAW_DIR / "tiles_t1"       # T1 RGB  — WMS IGN ORTHOPHOTOS2
 TILES_T2_DIR     = RAW_DIR / "tiles_t2"       # T2 RGB  — WMS IGN ORTHO-EXPRESS.2023
 TILES_T1_IRC_DIR = RAW_DIR / "tiles_t1_irc"   # T1 IRC  — NIR,R,G (bande NIR = canal 0)
 TILES_T2_IRC_DIR = RAW_DIR / "tiles_t2_irc"   # T2 IRC  — NIR,R,G (bande NIR = canal 0)
+
+# =============================================================================
+# SENTINEL-2 — Série temporelle CDSE (Copernicus Data Space Ecosystem)
+# =============================================================================
+
+# Fichier credentials (ignoré par git)
+CREDENTIALS_FILE = BASE_DIR / "credentials.env"
+
+# Dossiers données Sentinel-2
+S2_DIR      = RAW_DIR / "sentinel2"          # bandes brutes par date (B04, B08, SCL)
+S2_NDVI_DIR = PROCESSED_DIR / "s2_ndvi"      # NDVI float32 par date
+S2_CHANGE   = PROCESSED_DIR / "s2_change_mask.tif"  # masque de changement final
+
+# Plage temporelle de téléchargement
+S2_DATE_DEBUT = "2024-01-01"
+S2_DATE_FIN   = "2025-12-31"
+
+# Couverture nuageuse maximale par image (%)
+S2_CLOUD_MAX = 20
+
+# Année de référence (baseline) et année de détection
+S2_BASELINE_ANNEE = "2024"
+S2_DETECT_ANNEE   = "2025"
+
+# Fenêtre saisonnière — seules les images dans ces mois sont utilisées
+# Avantages : ciel plus dégagé, pas de neige, même phénologie → pas de biais saisonnier
+# Avril–octobre : ~15-20 images propres par composite → médiane robuste
+S2_SAISON_DEBUT = "04"   # mois inclus (avril)
+S2_SAISON_FIN   = "10"   # mois inclus (octobre)
+
+# Seuil ΔNDVI : baisse en dessous de ce seuil = changement potentiel
+S2_SEUIL_DELTA = -0.15
+
+# Filtres géométriques adaptés à la résolution 10m/px
+S2_SURFACE_MIN_M2 = 500.0   # ~5 pixels à 100 m²/px
+S2_COMPACITE_MIN  = 0.04
 
 # Tuiles de transition PCC produites par l'étape 2 (uint8, valeurs 0–15)
 # Valeur = classe_T1 × 4 + classe_T2

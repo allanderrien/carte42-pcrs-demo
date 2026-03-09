@@ -6,12 +6,18 @@ import LayerControls from './components/LayerControls.jsx'
 import LogPanel from './components/LogPanel.jsx'
 
 const INITIAL_LAYERS = {
-  wms_t1:        { visible: false, opacity: 0.85 },
+  google_sat:       { visible: false, opacity: 1 },
+  osm_construction:    { visible: true },
+  osm_nouvelles_voies: { visible: true },
+  osm_pieton:          { visible: false },
+  lotissements:        { visible: true },
+  voies_existantes:    { visible: true },
+  wms_t1:           { visible: false, opacity: 0.85 },
   wms_t2:        { visible: true,  opacity: 0.85 },
-  wms_t2_2024:   { visible: false, opacity: 0.85 },
-  wms_t2_2023:   { visible: false, opacity: 0.85 },
-  pcrs_sde35:    { visible: false, opacity: 0.90 },
-  geojson:       { visible: true },
+  permis_pa:     { visible: true },
+  pc_logements:  { visible: true },
+  permis_demolir:  { visible: true },
+  locaux_non_resid: { visible: true },
   emprise_zone:  { visible: true },
   emprise_voies: { visible: true },
 }
@@ -36,8 +42,18 @@ async function fetchJson(url, opts) {
 
 export default function App() {
   const [layers,          setLayers]          = useState(INITIAL_LAYERS)
+  const [s2Years,         setS2Years]         = useState([])
   const [geojson,         setGeojson]         = useState(null)
   const [geojsonError,    setGeojsonError]    = useState(null)
+  const [permisPA,        setPermisPA]        = useState(null)
+  const [pcLogements,     setPcLogements]     = useState(null)
+  const [permisDemloir,   setPermisDemloir]   = useState(null)
+  const [locauxNonResid,  setLocauxNonResid]  = useState(null)
+  const [osmVoies,        setOsmVoies]        = useState(null)
+  const [osmPieton,       setOsmPieton]       = useState(null)
+  const [osmExistantes,   setOsmExistantes]   = useState(null)
+  const [osmConstruction, setOsmConstruction] = useState(null)
+  const [lotissements,    setLotissements]    = useState(null)
   const [empriseZone,     setEmpriseZone]     = useState(null)
   const [empriseZoneErr,  setEmpriseZoneErr]  = useState(null)
   const [empriseVoies,    setEmpriseVoies]    = useState(null)
@@ -60,6 +76,15 @@ export default function App() {
     fetchJson('/api/emprise/voies')
       .then(d => { setEmpriseVoies(d); setEmpriseVoiesErr(null) })
       .catch(e => setEmpriseVoiesErr(e.message))
+    fetch('/api/permis-pa').then(r => r.json()).then(setPermisPA).catch(() => {})
+    fetch('/api/osm-roads').then(r => r.json()).then(setOsmVoies).catch(() => {})
+    fetch('/api/osm-pieton').then(r => r.json()).then(setOsmPieton).catch(() => {})
+    fetch('/api/osm-existantes').then(r => r.json()).then(setOsmExistantes).catch(() => {})
+    fetch('/api/osm-construction').then(r => r.json()).then(setOsmConstruction).catch(() => {})
+    fetch('/api/lotissements').then(r => r.json()).then(setLotissements).catch(() => {})
+    fetch('/api/pc-logements').then(r => r.json()).then(setPcLogements).catch(() => {})
+    fetch('/api/permis-demolir').then(r => r.json()).then(setPermisDemloir).catch(() => {})
+    fetch('/api/locaux-non-resid').then(r => r.json()).then(setLocauxNonResid).catch(() => {})
   }, [])
 
   const refreshAll = useCallback(() => {
@@ -67,6 +92,19 @@ export default function App() {
     setGeojsonError(null)
     fetchJson('/api/status').then(setPipelineStatus).catch(() => {})
     loadEmprises()
+    // Découvre les composites Sentinel-2 disponibles
+    fetch('/api/s2/layers').then(r => r.json()).then(d => {
+      const years = d.years ?? []
+      setS2Years(years)
+      // Initialise les layers S2 manquants (off par défaut)
+      setLayers(prev => {
+        const next = { ...prev }
+        years.forEach(y => {
+          if (!next[`s2_${y}`]) next[`s2_${y}`] = { visible: false, opacity: 0.75 }
+        })
+        return next
+      })
+    }).catch(() => {})
     fetchJson('/api/geojson')
       .then(d => setGeojson(d))
       .catch(e => { setGeojson(null); setGeojsonError(e.message) })
@@ -236,6 +274,7 @@ export default function App() {
           empriseVoiesState={empriseVoies ? 'ok' : empriseVoiesErr ? 'error' : 'loading'}
           empriseZoneErr={empriseZoneErr}
           empriseVoiesErr={empriseVoiesErr}
+          s2Years={s2Years}
         />
 
         {geojsonError && (
@@ -248,10 +287,20 @@ export default function App() {
         <MapView
           layers={layers}
           geojson={geojson}
+          permisPA={permisPA}
+          pcLogements={pcLogements}
+          permisDemloir={permisDemloir}
+          locauxNonResid={locauxNonResid}
           empriseZone={empriseZone}
           empriseVoies={empriseVoies}
+          osmVoies={osmVoies}
+          osmPieton={osmPieton}
+          osmExistantes={osmExistantes}
+          osmConstruction={osmConstruction}
+          lotissements={lotissements}
           testZone={testZone}
           onTestZoneBbox={useCallback(bbox => setTestZone(z => ({ ...z, bbox, drawing: false })), [])}
+          s2Years={s2Years}
         />
 
         {/* Panel de logs — flottant sur la carte */}

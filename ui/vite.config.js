@@ -40,8 +40,8 @@ const PYTHON_BIN = detectPython()
 // ── Pipeline runner ───────────────────────────────────────────────────────────
 
 const SCRIPTS = {
-  '1': 'processing/01_download_ign.py',
-  '2': 'processing/02_preprocess.py',
+  '1': 'processing/01_download_sentinel2.py',
+  '2': 'processing/02_ndvi_timeseries.py',
   '3': 'processing/03_change_detection.py',
   '4': 'processing/04_export_results.py',
 }
@@ -296,6 +296,156 @@ export default defineConfig({
 
         // Diagnostic : affiche les chemins résolus au démarrage
 
+        // ── GET /api/s2/layers — liste des années disponibles ────────────
+        server.middlewares.use('/api/s2/layers', (req, res) => {
+          const ndviDir = path.resolve(__dirname, '../data/processed/s2_ndvi')
+          let years = []
+          try {
+            years = fs.readdirSync(ndviDir)
+              .filter(f => /^\d{4}_composite\.png$/.test(f))
+              .map(f => f.slice(0, 4))
+              .sort()
+          } catch (_) {}
+          res.setHeader('Content-Type', 'application/json')
+          res.setHeader('Cache-Control', 'no-cache')
+          res.end(JSON.stringify({ years }))
+        })
+
+        // ── GET /api/s2/composite/:year — PNG colorisé NDVI annuel ────────
+        server.middlewares.use('/api/s2/composite', (req, res) => {
+          const year     = req.url.replace(/^\//, '')
+          const filePath = path.resolve(__dirname, `../data/processed/s2_ndvi/${year}_composite.png`)
+          if (fs.existsSync(filePath)) {
+            res.setHeader('Content-Type', 'image/png')
+            res.setHeader('Cache-Control', 'no-cache')
+            res.end(fs.readFileSync(filePath))
+          } else {
+            res.statusCode = 404
+            res.end()
+          }
+        })
+
+        // ── GET /api/pc-logements — Permis de construire logements (points géocodés) ─
+        server.middlewares.use('/api/pc-logements', (req, res) => {
+          const filePath = path.resolve(__dirname,
+            '../data/registre_permis_amenager/pc_logements.geojson')
+          res.setHeader('Content-Type', 'application/json')
+          res.setHeader('Cache-Control', 'no-cache')
+          if (fs.existsSync(filePath)) {
+            res.end(fs.readFileSync(filePath))
+          } else {
+            res.statusCode = 404
+            res.end(JSON.stringify({ error: 'Lancez geocode_pc_logements.py' }))
+          }
+        })
+
+        // ── GET /api/permis-demolir ───────────────────────────────────────────
+        server.middlewares.use('/api/permis-demolir', (req, res) => {
+          const filePath = path.resolve(__dirname,
+            '../data/registre_permis_amenager/permis_demolir.geojson')
+          res.setHeader('Content-Type', 'application/json')
+          res.setHeader('Cache-Control', 'no-cache')
+          if (fs.existsSync(filePath)) {
+            res.end(fs.readFileSync(filePath))
+          } else {
+            res.statusCode = 404
+            res.end(JSON.stringify({ error: 'Lancez geocode_autres_permis.py' }))
+          }
+        })
+
+        // ── GET /api/locaux-non-resid ─────────────────────────────────────────
+        server.middlewares.use('/api/locaux-non-resid', (req, res) => {
+          const filePath = path.resolve(__dirname,
+            '../data/registre_permis_amenager/locaux_non_resid.geojson')
+          res.setHeader('Content-Type', 'application/json')
+          res.setHeader('Cache-Control', 'no-cache')
+          if (fs.existsSync(filePath)) {
+            res.end(fs.readFileSync(filePath))
+          } else {
+            res.statusCode = 404
+            res.end(JSON.stringify({ error: 'Lancez geocode_autres_permis.py' }))
+          }
+        })
+
+        // ── GET /api/osm-roads — Nouvelles voies OSM 2020-2026 ───────────────────
+        server.middlewares.use('/api/osm-roads', (req, res) => {
+          const filePath = path.resolve(__dirname, '../data/osm/nouvelles_voies_osm.geojson')
+          res.setHeader('Content-Type', 'application/json')
+          res.setHeader('Cache-Control', 'no-cache')
+          if (fs.existsSync(filePath)) {
+            res.end(fs.readFileSync(filePath))
+          } else {
+            res.statusCode = 404
+            res.end(JSON.stringify({ error: 'Lancez fetch_osm_roads.py' }))
+          }
+        })
+
+        // ── GET /api/osm-construction — Voies OSM en construction ───────────────
+        server.middlewares.use('/api/osm-construction', (req, res) => {
+          const filePath = path.resolve(__dirname, '../data/osm/voies_construction_osm.geojson')
+          res.setHeader('Content-Type', 'application/json')
+          res.setHeader('Cache-Control', 'no-cache')
+          if (fs.existsSync(filePath)) {
+            res.end(fs.readFileSync(filePath))
+          } else {
+            res.statusCode = 404
+            res.end(JSON.stringify({ error: 'Lancez fetch_osm_roads.py' }))
+          }
+        })
+
+        // ── GET /api/osm-existantes — Réseau OSM existant (avant 2020) ──────────
+        server.middlewares.use('/api/osm-existantes', (req, res) => {
+          const filePath = path.resolve(__dirname, '../data/osm/voies_existantes_osm.geojson')
+          res.setHeader('Content-Type', 'application/json')
+          res.setHeader('Cache-Control', 'no-cache')
+          if (fs.existsSync(filePath)) {
+            res.end(fs.readFileSync(filePath))
+          } else {
+            res.statusCode = 404
+            res.end(JSON.stringify({ error: 'Lancez fetch_osm_roads.py' }))
+          }
+        })
+
+        // ── GET /api/lotissements — Polygones lotissements détectés ─────────────
+        server.middlewares.use('/api/lotissements', (req, res) => {
+          const filePath = path.resolve(__dirname, '../data/osm/lotissements_detectes.geojson')
+          res.setHeader('Content-Type', 'application/json')
+          res.setHeader('Cache-Control', 'no-cache')
+          if (fs.existsSync(filePath)) {
+            res.end(fs.readFileSync(filePath))
+          } else {
+            res.statusCode = 404
+            res.end(JSON.stringify({ error: 'Lancez detect_lotissements.py' }))
+          }
+        })
+
+        // ── GET /api/osm-pieton — Nouveaux trottoirs/pistes cyclables OSM 2020+ ─
+        server.middlewares.use('/api/osm-pieton', (req, res) => {
+          const filePath = path.resolve(__dirname, '../data/osm/nouvelles_voies_pieton_osm.geojson')
+          res.setHeader('Content-Type', 'application/json')
+          res.setHeader('Cache-Control', 'no-cache')
+          if (fs.existsSync(filePath)) {
+            res.end(fs.readFileSync(filePath))
+          } else {
+            res.statusCode = 404
+            res.end(JSON.stringify({ error: 'Lancez fetch_osm_roads.py' }))
+          }
+        })
+
+        // ── GET /api/permis-pa — Permis d'aménager Châteaugiron (points géocodés) ─
+        server.middlewares.use('/api/permis-pa', (req, res) => {
+          const filePath = path.resolve(__dirname,
+            '../data/registre_permis_amenager/permis_chateaugiron.geojson')
+          res.setHeader('Content-Type', 'application/json')
+          res.setHeader('Cache-Control', 'no-cache')
+          if (fs.existsSync(filePath)) {
+            res.end(fs.readFileSync(filePath))
+          } else {
+            res.statusCode = 404
+            res.end(JSON.stringify({ error: 'Lancez geocode_permis.py' }))
+          }
+        })
+
         server.middlewares.use('/api/emprise/zone', serveShapefile(
           path.join(EMPRISE_DIR, 'emprise_zone.shp'),
           path.join(EMPRISE_DIR, 'emprise_zone.dbf'),
@@ -320,20 +470,40 @@ export default defineConfig({
         })
 
         server.middlewares.use('/api/status', (req, res) => {
+          // Compte les images Sentinel-2 téléchargées
+          const s2Dir = path.resolve(__dirname, '../data/raw/sentinel2')
+          let s2Count = 0
+          try {
+            s2Count = fs.readdirSync(s2Dir).filter(d =>
+              fs.statSync(path.join(s2Dir, d)).isDirectory()
+            ).length
+          } catch (_) {}
+
+          // Compte les NDVI calculés
+          const ndviDir = path.resolve(__dirname, '../data/processed/s2_ndvi')
+          let ndviCount = 0
+          try { ndviCount = fs.readdirSync(ndviDir).filter(f => f.endsWith('_ndvi.tif')).length } catch (_) {}
+
           const files = {
-            ortho_t1:   path.resolve(__dirname, '../data/raw/ortho_2020.tif'),
-            ortho_t2:   path.resolve(__dirname, '../data/raw/ortho_2023.tif'),
-            proc_t1:    path.resolve(__dirname, '../data/processed/ortho_2020_proc.tif'),
-            proc_t2:    path.resolve(__dirname, '../data/processed/ortho_2023_proc.tif'),
-            diff:       path.resolve(__dirname, '../data/processed/diff_amplitude.tif'),
+            s2_images:  s2Count > 0
+              ? { ok: true,  size_kb: s2Count, label: `${s2Count} dates` }
+              : { ok: false },
+            s2_ndvi:    ndviCount > 0
+              ? { ok: true,  size_kb: ndviCount, label: `${ndviCount} NDVI` }
+              : { ok: false },
+            s2_change:  path.resolve(__dirname, '../data/processed/s2_change_mask.tif'),
             geojson:    path.resolve(__dirname, '../output/vectors/changements_detectes.geojson'),
             carte_html: path.resolve(__dirname, '../output/map/carte_changements.html'),
           }
           const status = {}
-          for (const [key, p] of Object.entries(files)) {
-            status[key] = fs.existsSync(p)
-              ? { ok: true, size_kb: Math.round(fs.statSync(p).size / 1024) }
-              : { ok: false }
+          for (const [key, val] of Object.entries(files)) {
+            if (typeof val === 'object' && 'ok' in val) {
+              status[key] = val   // déjà résolu (s2_images, s2_ndvi)
+            } else {
+              status[key] = fs.existsSync(val)
+                ? { ok: true, size_kb: Math.round(fs.statSync(val).size / 1024) }
+                : { ok: false }
+            }
           }
           res.setHeader('Content-Type', 'application/json')
           res.end(JSON.stringify(status))

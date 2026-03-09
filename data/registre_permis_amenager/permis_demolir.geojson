@@ -1,0 +1,1505 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.500611,
+          48.04765
+        ]
+      },
+      "properties": {
+        "num": "03506913U0002",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2014-01-23",
+        "adresse": "2 RUE ARISTIDE COURAU",
+        "an_depot": 2013,
+        "score_geo": 0.823
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.500369,
+          48.043094
+        ]
+      },
+      "properties": {
+        "num": "03506915U0001",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2015-05-04",
+        "adresse": "RUE JULES FERRY",
+        "an_depot": 2015,
+        "score_geo": 0.821
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.501111,
+          48.047423
+        ]
+      },
+      "properties": {
+        "num": "03506915U0004",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2015-11-18",
+        "adresse": "1 RUE DES URSULINES",
+        "an_depot": 2015,
+        "score_geo": 0.821
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.501362,
+          48.047705
+        ]
+      },
+      "properties": {
+        "num": "03506915U0005",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2015-11-20",
+        "adresse": "4 RUE DE LA TRINITE",
+        "an_depot": 2015,
+        "score_geo": 0.821
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.503844,
+          48.047493
+        ]
+      },
+      "properties": {
+        "num": "03506915U0006",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2016-01-14",
+        "adresse": "3 RUE ROUAIRIE",
+        "an_depot": 2015,
+        "score_geo": 0.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.501624,
+          48.043813
+        ]
+      },
+      "properties": {
+        "num": "03506916P0001",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2017-01-19",
+        "adresse": "6 RUE DU VERGER",
+        "an_depot": 2016,
+        "score_geo": 0.66
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.503549,
+          48.047824
+        ]
+      },
+      "properties": {
+        "num": "03506916P0002",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2016-07-08",
+        "adresse": "11 RUE SAULNERIE",
+        "an_depot": 2016,
+        "score_geo": 0.707
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.503831,
+          48.048833
+        ]
+      },
+      "properties": {
+        "num": "03506916P0003",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2016-09-06",
+        "adresse": "10 RUE D YAIGNE",
+        "an_depot": 2016,
+        "score_geo": 0.819
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.498493,
+          48.043255
+        ]
+      },
+      "properties": {
+        "num": "03506916P0004",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2016-09-14",
+        "adresse": "34 RUE JULES FERRY",
+        "an_depot": 2016,
+        "score_geo": 0.825
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.506515,
+          48.050809
+        ]
+      },
+      "properties": {
+        "num": "03506917P0002",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2017-07-07",
+        "adresse": "2 RUE DE NOYAL SUR VILAINE",
+        "an_depot": 2017,
+        "score_geo": 0.835
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.512322,
+          48.054818
+        ]
+      },
+      "properties": {
+        "num": "03506918P0002",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2018-05-29",
+        "adresse": "6 IMPASSE DU CHAMP D AHAUT",
+        "an_depot": 2018,
+        "score_geo": 0.792
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.501822,
+          48.046629
+        ]
+      },
+      "properties": {
+        "num": "03506918P0003",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2018-07-04",
+        "adresse": "31 RUE DU PORCHE",
+        "an_depot": 2018,
+        "score_geo": 0.824
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.469723,
+          48.046484
+        ]
+      },
+      "properties": {
+        "num": "03506918P0004",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2018-09-03",
+        "adresse": "222 LE GACEL SAINT AUBIN DU PAVAIL",
+        "an_depot": 2018,
+        "score_geo": 0.766
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.503044,
+          48.048086
+        ]
+      },
+      "properties": {
+        "num": "03506918P0005",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-01-09",
+        "adresse": "25 RUE DE LA MADELEINE",
+        "an_depot": 2018,
+        "score_geo": 0.833
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.450206,
+          48.055089
+        ]
+      },
+      "properties": {
+        "num": "03506919P0001",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-04-24",
+        "adresse": "RUE DE L YAIGNE OSSE",
+        "an_depot": 2019,
+        "score_geo": 0.822
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.501059,
+          48.047732
+        ]
+      },
+      "properties": {
+        "num": "03506919P0002",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-07-11",
+        "adresse": "7 RUE DE LA POTERIE",
+        "an_depot": 2019,
+        "score_geo": 0.828
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.504958,
+          48.036577
+        ]
+      },
+      "properties": {
+        "num": "03506920P0001",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-08-03",
+        "adresse": "4 LA GAUDINAIS",
+        "an_depot": 2020,
+        "score_geo": 0.811
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.513613,
+          48.054218
+        ]
+      },
+      "properties": {
+        "num": "03506921P0001",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2021-04-19",
+        "adresse": "17 RUE DE RENNES",
+        "an_depot": 2021,
+        "score_geo": 0.825
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.497595,
+          48.04411
+        ]
+      },
+      "properties": {
+        "num": "03506921P0003",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2021-08-02",
+        "adresse": "4 RUE SAINTE CROIX",
+        "an_depot": 2021,
+        "score_geo": 0.826
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.504958,
+          48.036577
+        ]
+      },
+      "properties": {
+        "num": "03506921P0004",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2021-10-20",
+        "adresse": "4 LA GAUDINAIS",
+        "an_depot": 2021,
+        "score_geo": 0.811
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.462264,
+          48.043152
+        ]
+      },
+      "properties": {
+        "num": "03506922P0002",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-09-12",
+        "adresse": "2 RUE DES MAISONS NEUVES ST AUBIN DU PAVAIL",
+        "an_depot": 2022,
+        "score_geo": 0.671
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.50427,
+          48.048218
+        ]
+      },
+      "properties": {
+        "num": "03506922P0003",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-10-21",
+        "adresse": "6 RUELLE SAINT-NICOLAS",
+        "an_depot": 2022,
+        "score_geo": 0.825
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.493994,
+          48.038807
+        ]
+      },
+      "properties": {
+        "num": "03506922P0004",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-12-12",
+        "adresse": "3 RUE DES GALLO ROMAINS",
+        "an_depot": 2022,
+        "score_geo": 0.826
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.509358,
+          48.037773
+        ]
+      },
+      "properties": {
+        "num": "03506922P0005",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-01-17",
+        "adresse": "6 LE GRAND LAUNAY",
+        "an_depot": 2022,
+        "score_geo": 0.659
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.515731,
+          48.054845
+        ]
+      },
+      "properties": {
+        "num": "03506923P0001",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-05-30",
+        "adresse": "26 RUE RENE-JOSEPH LEPESTRE D",
+        "an_depot": 2023,
+        "score_geo": 0.535
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.505626,
+          48.05026
+        ]
+      },
+      "properties": {
+        "num": "03506924P0001",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2024-01-16",
+        "adresse": "24BIS RUE R J LE PRESTRE DE LEZO",
+        "an_depot": 2024,
+        "score_geo": 0.752
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.496335,
+          48.045039
+        ]
+      },
+      "properties": {
+        "num": "03506924P0002",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2024-11-05",
+        "adresse": "4 RUE DES TISSERANDS",
+        "an_depot": 2024,
+        "score_geo": 0.783
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.470639,
+          48.04026
+        ]
+      },
+      "properties": {
+        "num": "03506924P0004",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-02-05",
+        "adresse": "208 LA GUINAIS SAINT-AUBIN DU",
+        "an_depot": 2024,
+        "score_geo": 0.735
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.502304,
+          48.030628
+        ]
+      },
+      "properties": {
+        "num": "0350692500001",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-02-05",
+        "adresse": "17 BI RUE VASSELOT",
+        "an_depot": 2025,
+        "score_geo": 0.759
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.45586,
+          48.056382
+        ]
+      },
+      "properties": {
+        "num": "0350692500002",
+        "commune": "Châteaugiron",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-02-28",
+        "adresse": "11 IMPASSE ALFRED DE MUSSET O",
+        "an_depot": 2025,
+        "score_geo": 0.757
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.542315,
+          48.072918
+        ]
+      },
+      "properties": {
+        "num": "03509912U0001",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2013-01-14",
+        "adresse": "LD LE CLOS",
+        "an_depot": 2012,
+        "score_geo": 0.683
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.553258,
+          48.081882
+        ]
+      },
+      "properties": {
+        "num": "03509914U0001",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2014-05-31",
+        "adresse": "LE NUGUE",
+        "an_depot": 2014,
+        "score_geo": 0.668
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.519979,
+          48.057164
+        ]
+      },
+      "properties": {
+        "num": "03509915U0001",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2015-05-28",
+        "adresse": "LE PETIT HEDE",
+        "an_depot": 2015,
+        "score_geo": 0.795
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.563776,
+          48.09132
+        ]
+      },
+      "properties": {
+        "num": "03509916P0001",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2016-05-30",
+        "adresse": "BROUAISE",
+        "an_depot": 2016,
+        "score_geo": 0.779
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.546095,
+          48.042702
+        ]
+      },
+      "properties": {
+        "num": "03509916P0002",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2016-06-14",
+        "adresse": "PROPRUNE",
+        "an_depot": 2016,
+        "score_geo": 0.536
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.532572,
+          48.050619
+        ]
+      },
+      "properties": {
+        "num": "03509916P0004",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2016-06-23",
+        "adresse": "POPRUNE",
+        "an_depot": 2016,
+        "score_geo": 0.776
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.560532,
+          48.08078
+        ]
+      },
+      "properties": {
+        "num": "0350992500001",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-08-26",
+        "adresse": "14 ROUTE DU NUGUE",
+        "an_depot": 2025,
+        "score_geo": 0.814
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.526052,
+          48.042535
+        ]
+      },
+      "properties": {
+        "num": "0350992500002",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-12-03",
+        "adresse": "12 ROUTE DE VERN SUR SEICHE LE GRAND SENIL",
+        "an_depot": 2025,
+        "score_geo": 0.612
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.537824,
+          48.055606
+        ]
+      },
+      "properties": {
+        "num": "0350992600001",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2026-01-30",
+        "adresse": "19 ROUTE DE RENNES LE HAUT VAL",
+        "an_depot": 2026,
+        "score_geo": 0.609
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.546505,
+          48.038316
+        ]
+      },
+      "properties": {
+        "num": "03520414M0001",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2015-01-15",
+        "adresse": "LIEUD LA PORTE",
+        "an_depot": 2014,
+        "score_geo": 0.636
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.546505,
+          48.038316
+        ]
+      },
+      "properties": {
+        "num": "03520416M0001",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2016-02-26",
+        "adresse": "LIEUD LA PORTE",
+        "an_depot": 2016,
+        "score_geo": 0.636
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.543229,
+          48.039786
+        ]
+      },
+      "properties": {
+        "num": "03520417M0001",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2017-09-16",
+        "adresse": "15 RUE DU TEILLAC",
+        "an_depot": 2017,
+        "score_geo": 0.816
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.548768,
+          48.041795
+        ]
+      },
+      "properties": {
+        "num": "03520420M0001",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2020-06-10",
+        "adresse": "1-3 RUE DE VERN",
+        "an_depot": 2020,
+        "score_geo": 0.759
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.53161,
+          48.008847
+        ]
+      },
+      "properties": {
+        "num": "03520422M0001",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-11-28",
+        "adresse": "3 LA VILLE EN PEU",
+        "an_depot": 2022,
+        "score_geo": 0.814
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.542991,
+          48.040821
+        ]
+      },
+      "properties": {
+        "num": "03520423M0001",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-03-08",
+        "adresse": "8 RUE DE CHATEAUGIRON",
+        "an_depot": 2023,
+        "score_geo": 0.821
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.546155,
+          48.042779
+        ]
+      },
+      "properties": {
+        "num": "03520423M0002",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-03-08",
+        "adresse": "13 RUE DE DOMLOUP",
+        "an_depot": 2023,
+        "score_geo": 0.813
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.536369,
+          48.040862
+        ]
+      },
+      "properties": {
+        "num": "03520424M0003",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-01-07",
+        "adresse": "5 RUE DE L'ECOTAY",
+        "an_depot": 2024,
+        "score_geo": 0.812
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.524292,
+          48.11413
+        ]
+      },
+      "properties": {
+        "num": "03520712U0002",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2013-01-09",
+        "adresse": "14 PL DE LA MAIRIE",
+        "an_depot": 2012,
+        "score_geo": 0.775
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.523301,
+          48.11171
+        ]
+      },
+      "properties": {
+        "num": "03520713U0001",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2013-02-25",
+        "adresse": "2 BD MAURICE AUDRAIN",
+        "an_depot": 2013,
+        "score_geo": 0.711
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.526805,
+          48.113534
+        ]
+      },
+      "properties": {
+        "num": "03520716P0001",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2016-05-30",
+        "adresse": "8 RUE JULIEN NEVEU",
+        "an_depot": 2016,
+        "score_geo": 0.83
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.522303,
+          48.114291
+        ]
+      },
+      "properties": {
+        "num": "03520718P0001",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2018-06-08",
+        "adresse": "17 RUE ALEXIS GEFFRAULT",
+        "an_depot": 2018,
+        "score_geo": 0.782
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.521785,
+          48.112958
+        ]
+      },
+      "properties": {
+        "num": "03520718P0002",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2018-06-18",
+        "adresse": "27 RUE PIERRE MARCHAND",
+        "an_depot": 2018,
+        "score_geo": 0.836
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.488344,
+          48.093757
+        ]
+      },
+      "properties": {
+        "num": "03520718P0003",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2018-05-31",
+        "adresse": "15 LA BRULEE",
+        "an_depot": 2018,
+        "score_geo": 0.811
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.532302,
+          48.115894
+        ]
+      },
+      "properties": {
+        "num": "03520718P0004",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2018-07-05",
+        "adresse": "16 RUE FRANCIS MONNOYEUR",
+        "an_depot": 2018,
+        "score_geo": 0.836
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.549851,
+          48.104484
+        ]
+      },
+      "properties": {
+        "num": "03520718P0005",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2018-11-09",
+        "adresse": "1 LA LANDE",
+        "an_depot": 2018,
+        "score_geo": 0.672
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.523555,
+          48.109693
+        ]
+      },
+      "properties": {
+        "num": "03520719P0001",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-01-24",
+        "adresse": "33 AVENUE DU GENERAL DE GAU",
+        "an_depot": 2019,
+        "score_geo": 0.797
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.521607,
+          48.112664
+        ]
+      },
+      "properties": {
+        "num": "03520721P0001",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2021-04-13",
+        "adresse": "24-26 RUE PIERRE MARCHAND",
+        "an_depot": 2021,
+        "score_geo": 0.788
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.534789,
+          48.1178
+        ]
+      },
+      "properties": {
+        "num": "03520721P0002",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2021-06-03",
+        "adresse": "L' ETANG",
+        "an_depot": 2021,
+        "score_geo": 0.708
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.527901,
+          48.118036
+        ]
+      },
+      "properties": {
+        "num": "03520722P0001",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-01-26",
+        "adresse": "41 BD BARBOT",
+        "an_depot": 2022,
+        "score_geo": 0.604
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.532586,
+          48.111349
+        ]
+      },
+      "properties": {
+        "num": "03520722P0002",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-01-02",
+        "adresse": "53 RUE FRANCIS MONNOYEUR",
+        "an_depot": 2022,
+        "score_geo": 0.836
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.462438,
+          48.100138
+        ]
+      },
+      "properties": {
+        "num": "03532716P0001",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2016-03-17",
+        "adresse": "10 ZA OLIVET",
+        "an_depot": 2016,
+        "score_geo": 0.748
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.461246,
+          48.121306
+        ]
+      },
+      "properties": {
+        "num": "03532716P0002",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2016-06-27",
+        "adresse": "RUE GEORGES CLEMENCEAU",
+        "an_depot": 2016,
+        "score_geo": 0.826
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.459187,
+          48.104299
+        ]
+      },
+      "properties": {
+        "num": "03532716P0003",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2016-10-05",
+        "adresse": "LE COQ ROUGE",
+        "an_depot": 2016,
+        "score_geo": 0.823
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.43526,
+          48.112565
+        ]
+      },
+      "properties": {
+        "num": "03532717P0001",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2017-03-13",
+        "adresse": "52 LA BASSE HAMONAIS",
+        "an_depot": 2017,
+        "score_geo": 0.82
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.457674,
+          48.120427
+        ]
+      },
+      "properties": {
+        "num": "03532717P0002",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2017-07-12",
+        "adresse": "RUE SAINT MARTIN",
+        "an_depot": 2017,
+        "score_geo": 0.825
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.457674,
+          48.120427
+        ]
+      },
+      "properties": {
+        "num": "03532717P0003",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2017-07-12",
+        "adresse": "RUE SAINT MARTIN",
+        "an_depot": 2017,
+        "score_geo": 0.825
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.461773,
+          48.120069
+        ]
+      },
+      "properties": {
+        "num": "03532718P0002",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2018-03-08",
+        "adresse": "11 BI RUE CHARLES BRISOU",
+        "an_depot": 2018,
+        "score_geo": 0.782
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.457674,
+          48.120427
+        ]
+      },
+      "properties": {
+        "num": "03532718P0003",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2018-09-10",
+        "adresse": "RUE SAINT MARTIN",
+        "an_depot": 2018,
+        "score_geo": 0.825
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.461873,
+          48.101793
+        ]
+      },
+      "properties": {
+        "num": "03532719P0001",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-03-01",
+        "adresse": "PARC D ACTIVITES OLIVET N LA NEUDE",
+        "an_depot": 2019,
+        "score_geo": 0.559
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.459486,
+          48.121282
+        ]
+      },
+      "properties": {
+        "num": "03532719P0002",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-06-13",
+        "adresse": "11 RUE THEODORE GAUDICHE",
+        "an_depot": 2019,
+        "score_geo": 0.829
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.452079,
+          48.119166
+        ]
+      },
+      "properties": {
+        "num": "03532719P0003",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2019-08-20",
+        "adresse": "27 LA HAUTE CROIX",
+        "an_depot": 2019,
+        "score_geo": 0.819
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.458585,
+          48.113972
+        ]
+      },
+      "properties": {
+        "num": "03532722P0001",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2022-06-29",
+        "adresse": "24 RUE DE LA GORONNIERE",
+        "an_depot": 2022,
+        "score_geo": 0.834
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.460439,
+          48.121885
+        ]
+      },
+      "properties": {
+        "num": "03532723P0001",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-08-04",
+        "adresse": "9 RUE MARECHAL LECLERC",
+        "an_depot": 2023,
+        "score_geo": 0.785
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.460904,
+          48.109684
+        ]
+      },
+      "properties": {
+        "num": "03532723P0003",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2023-11-08",
+        "adresse": "35 LA PAMPILLE",
+        "an_depot": 2023,
+        "score_geo": 0.821
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.46122,
+          48.109899
+        ]
+      },
+      "properties": {
+        "num": "0353272500001",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "date_aut": "2025-05-12",
+        "adresse": "LA PAMPILLE",
+        "an_depot": 2025,
+        "score_geo": 0.817
+      }
+    }
+  ]
+}

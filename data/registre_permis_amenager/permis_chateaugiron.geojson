@@ -1,0 +1,1416 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.476854,
+          48.108791
+        ]
+      },
+      "properties": {
+        "num_pa": "03503920M0002",
+        "commune": "BrecÃ©",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2021-04-22",
+        "date_doc": "2021-06-22",
+        "adresse": "A LA MAINGUERE",
+        "localite": "BRECE",
+        "surface_m2": 1649,
+        "demandeur": "COMMUNE DE BRECE",
+        "score_geo": 0.731
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.502355,
+          48.033188
+        ]
+      },
+      "properties": {
+        "num_pa": "03506912U0001",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 5,
+        "etat_label": "PÃ©rimÃ©",
+        "date_aut": "2013-01-25",
+        "date_doc": "2013-07-15",
+        "adresse": "5 RUE SAINT-MEDARD",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 0,
+        "demandeur": null,
+        "score_geo": 0.825
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.51441,
+          48.046071
+        ]
+      },
+      "properties": {
+        "num_pa": "03506913U0001",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2013-10-02",
+        "date_doc": "2014-11-03",
+        "adresse": "LES GRANDS CHENES",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 0,
+        "demandeur": "MONTGAZON",
+        "score_geo": 0.71
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.505414,
+          48.05141
+        ]
+      },
+      "properties": {
+        "num_pa": "03506913U0002",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 5,
+        "etat_label": "PÃ©rimÃ©",
+        "date_aut": "2013-11-07",
+        "date_doc": "2014-03-24",
+        "adresse": "RUE FOUCYBOURDE",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 0,
+        "demandeur": null,
+        "score_geo": 0.761
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.517012,
+          48.056425
+        ]
+      },
+      "properties": {
+        "num_pa": "03506913U0003",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 5,
+        "etat_label": "PÃ©rimÃ©",
+        "date_aut": "2014-03-23",
+        "date_doc": "2015-10-09",
+        "adresse": "LE HAUT ROCOMPS",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 0,
+        "demandeur": "ACANTHE BRETAGNE",
+        "score_geo": 0.494
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.449855,
+          48.05306
+        ]
+      },
+      "properties": {
+        "num_pa": "03506916P0001",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2016-07-05",
+        "date_doc": "2016-11-05",
+        "adresse": "LOTISSEMENT LANN BRAZ 4",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 101335,
+        "demandeur": "VIABILIS AMENAGEMENT",
+        "score_geo": 0.332
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.506519,
+          48.046039
+        ]
+      },
+      "properties": {
+        "num_pa": "03506916P0002",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2017-01-25",
+        "date_doc": "2017-03-25",
+        "adresse": "RUE DES VIOLETTES",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 3092,
+        "demandeur": null,
+        "score_geo": 0.823
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.506002,
+          48.050387
+        ]
+      },
+      "properties": {
+        "num_pa": "03506919P0002",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2019-12-07",
+        "date_doc": null,
+        "adresse": "26 RUE LEPRESTRE DE LEZONNET",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 7240,
+        "demandeur": null,
+        "score_geo": 0.73
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.45956,
+          48.041508
+        ]
+      },
+      "properties": {
+        "num_pa": "0350692000001",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2021-04-12",
+        "date_doc": null,
+        "adresse": "BOIS DE LASSY BOIS DE LASSY - SAINT AUBIN DU PAVAIL",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 166140,
+        "demandeur": "SADIV",
+        "score_geo": 0.669
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.451158,
+          48.038894
+        ]
+      },
+      "properties": {
+        "num_pa": "03506920P0001",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2020-05-15",
+        "date_doc": "2021-01-11",
+        "adresse": "RUE DE LA GILARDIERE SAINT AUBIN DU PAVAIL",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 166140,
+        "demandeur": "SADIV",
+        "score_geo": 0.74
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.513613,
+          48.054218
+        ]
+      },
+      "properties": {
+        "num_pa": "03506920P0002",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2020-03-19",
+        "date_doc": "2020-09-10",
+        "adresse": "17 RUE DE RENNES",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 1855,
+        "demandeur": null,
+        "score_geo": 0.825
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.511653,
+          48.040628
+        ]
+      },
+      "properties": {
+        "num_pa": "03506920P0003",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 5,
+        "etat_label": "PÃ©rimÃ©",
+        "date_aut": "2020-08-07",
+        "date_doc": "2024-02-07",
+        "adresse": "LE PETIT LAUNAY",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 40067,
+        "demandeur": "UNIVER",
+        "score_geo": 0.653
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.506002,
+          48.050387
+        ]
+      },
+      "properties": {
+        "num_pa": "03506920P0004",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2020-04-27",
+        "date_doc": null,
+        "adresse": "26 RUE LEPRESTRE DE LEZONNET",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 8798,
+        "demandeur": "LEGENDRE IMMOBILIER",
+        "score_geo": 0.73
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.450469,
+          48.057171
+        ]
+      },
+      "properties": {
+        "num_pa": "03506920P0006",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2021-01-21",
+        "date_doc": null,
+        "adresse": "RUE DU STADE OSSE",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 3815,
+        "demandeur": "COMMUNE DE CHATEAUGIRON",
+        "score_geo": 0.824
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.462827,
+          48.045038
+        ]
+      },
+      "properties": {
+        "num_pa": "03506921P0001",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2021-04-26",
+        "date_doc": null,
+        "adresse": "LA COUR VERTE SAINT AUBIN DU PAVAIL",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 4653,
+        "demandeur": null,
+        "score_geo": 0.746
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.503081,
+          48.044896
+        ]
+      },
+      "properties": {
+        "num_pa": "03506921P0004",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 5,
+        "etat_label": "PÃ©rimÃ©",
+        "date_aut": "2021-09-15",
+        "date_doc": "2024-03-10",
+        "adresse": "AVENUE PIERRE LE TREUT",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 2938,
+        "demandeur": "COMMUNE DE CHATEAUGIRON",
+        "score_geo": 0.83
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.504466,
+          48.04621
+        ]
+      },
+      "properties": {
+        "num_pa": "03506921P0005",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2021-10-25",
+        "date_doc": null,
+        "adresse": "12 ALLEE DES BRUYERES",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 1727,
+        "demandeur": null,
+        "score_geo": 0.824
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.507367,
+          48.054878
+        ]
+      },
+      "properties": {
+        "num_pa": "03506922P0001",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2022-10-04",
+        "date_doc": "2023-04-17",
+        "adresse": "LE BAS NOYAL",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 7603,
+        "demandeur": "LEGENDRE IMMOBILIER",
+        "score_geo": 0.51
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.461907,
+          48.040825
+        ]
+      },
+      "properties": {
+        "num_pa": "03506922P0002",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2022-10-05",
+        "date_doc": null,
+        "adresse": "RUE DE LA  PETITE FONTAINE SAINT AUBIN DU PAVAIL",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 7148,
+        "demandeur": "COMMUNE DE CHATEAUGIRON",
+        "score_geo": 0.847
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.462933,
+          48.044027
+        ]
+      },
+      "properties": {
+        "num_pa": "03506923P0001",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2023-06-13",
+        "date_doc": "2025-01-20",
+        "adresse": "PL DES COURTILLONS SAINT AUBIN DU PAVAIL",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 2451,
+        "demandeur": "SECIB PROMOTION",
+        "score_geo": 0.773
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.462207,
+          48.042478
+        ]
+      },
+      "properties": {
+        "num_pa": "03506923P0002",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2023-07-31",
+        "date_doc": null,
+        "adresse": "1 ROUTE DE TAYEE ST AUBIN DU PAVAIL",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 4421,
+        "demandeur": null,
+        "score_geo": 0.691
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.511042,
+          48.045393
+        ]
+      },
+      "properties": {
+        "num_pa": "03506923P0003",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2023-11-17",
+        "date_doc": "2024-06-05",
+        "adresse": "RTE DE NOUVOITOU",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 7915,
+        "demandeur": "VIABILIS AMENAGEMENT",
+        "score_geo": 0.734
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.462827,
+          48.045038
+        ]
+      },
+      "properties": {
+        "num_pa": "03506923P0005",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2023-12-21",
+        "date_doc": "2024-09-19",
+        "adresse": "LA COUR VERTE SAINT AUBIN DU PAVAIL",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 4653,
+        "demandeur": null,
+        "score_geo": 0.746
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.457402,
+          48.054891
+        ]
+      },
+      "properties": {
+        "num_pa": "03506924P0001",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2025-01-20",
+        "date_doc": "2025-10-01",
+        "adresse": "LES TOUCHES OSSE",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 72884,
+        "demandeur": "LAMOTTE AMENAGEUR LOTISSEUR",
+        "score_geo": 0.819
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.503374,
+          48.043768
+        ]
+      },
+      "properties": {
+        "num_pa": "0350692500001",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2025-04-29",
+        "date_doc": null,
+        "adresse": "RUE DES PRIMEVERES",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 12787,
+        "demandeur": "NEOTOA",
+        "score_geo": 0.824
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.501433,
+          48.052367
+        ]
+      },
+      "properties": {
+        "num_pa": "0350692500002",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2025-12-12",
+        "date_doc": null,
+        "adresse": "RUE AU PREVOT",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 6985,
+        "demandeur": "SNC CLOS PRESSOIR",
+        "score_geo": 0.822
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.458681,
+          48.053818
+        ]
+      },
+      "properties": {
+        "num_pa": "0350692500003",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2025-10-21",
+        "date_doc": null,
+        "adresse": "LES TOUCHES OSSE LES TOUCHES",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 13836,
+        "demandeur": "TERRAEDIFI",
+        "score_geo": 0.622
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.498218,
+          48.031763
+        ]
+      },
+      "properties": {
+        "num_pa": "0350692500005",
+        "commune": "ChÃ¢teaugiron",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2025-11-28",
+        "date_doc": null,
+        "adresse": "8 RUE DE MONTALEMBERT",
+        "localite": "CHATEAUGIRON",
+        "surface_m2": 16074,
+        "demandeur": null,
+        "score_geo": 0.823
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.517724,
+          48.055015
+        ]
+      },
+      "properties": {
+        "num_pa": "03509913U0001",
+        "commune": "Domloup",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2013-05-30",
+        "date_doc": "2013-10-21",
+        "adresse": "RUE DE HEDE LE PONT RIMON",
+        "localite": "DOMLOUP",
+        "surface_m2": 0,
+        "demandeur": "HELIO AMENAGEMENT",
+        "score_geo": 0.623
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.526475,
+          48.064657
+        ]
+      },
+      "properties": {
+        "num_pa": "03509918P0001",
+        "commune": "Domloup",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2018-07-11",
+        "date_doc": null,
+        "adresse": "28 RUE DU CALVAIRE",
+        "localite": "DOMLOUP",
+        "surface_m2": 4654,
+        "demandeur": null,
+        "score_geo": 0.816
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.518423,
+          48.055444
+        ]
+      },
+      "properties": {
+        "num_pa": "03509919P0001",
+        "commune": "Domloup",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2019-06-07",
+        "date_doc": "2019-08-05",
+        "adresse": "LOTISSEMENT COMMUNAL DE H IMPASSE LOUIS MONNIER",
+        "localite": "DOMLOUP",
+        "surface_m2": 6535,
+        "demandeur": "COMMUNE DE DOMLOUP",
+        "score_geo": 0.483
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.525365,
+          48.065004
+        ]
+      },
+      "properties": {
+        "num_pa": "03509922P0001",
+        "commune": "Domloup",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2022-08-09",
+        "date_doc": "2023-09-25",
+        "adresse": "LE PETIT BEAUCHENE",
+        "localite": "DOMLOUP",
+        "surface_m2": 10936,
+        "demandeur": "ACANTHE",
+        "score_geo": 0.479
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.525365,
+          48.065004
+        ]
+      },
+      "properties": {
+        "num_pa": "03509923P0001",
+        "commune": "Domloup",
+        "etat": 5,
+        "etat_label": "PÃ©rimÃ©",
+        "date_aut": "2023-06-23",
+        "date_doc": "2025-06-11",
+        "adresse": "LE PETIT  BEAUCHENE",
+        "localite": "DOMLOUP",
+        "surface_m2": 11345,
+        "demandeur": null,
+        "score_geo": 0.479
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.550165,
+          48.040981
+        ]
+      },
+      "properties": {
+        "num_pa": "03520416M0001",
+        "commune": "Nouvoitou",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2016-09-14",
+        "date_doc": "2016-12-14",
+        "adresse": "AVENU LANGLOIS",
+        "localite": "NOUVOITOU",
+        "surface_m2": 2357,
+        "demandeur": "COMMUNE DE NOUVOITOU",
+        "score_geo": 0.644
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.549697,
+          48.041204
+        ]
+      },
+      "properties": {
+        "num_pa": "03520419M0002",
+        "commune": "Nouvoitou",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2019-11-28",
+        "date_doc": "2020-04-28",
+        "adresse": "RUE DE LA SIACREE",
+        "localite": "NOUVOITOU",
+        "surface_m2": 1364,
+        "demandeur": null,
+        "score_geo": 0.811
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.54964,
+          48.015883
+        ]
+      },
+      "properties": {
+        "num_pa": "03520420M0001",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2020-10-26",
+        "date_doc": null,
+        "adresse": "LIEUD MALMOUSSE",
+        "localite": "NOUVOITOU",
+        "surface_m2": 77992,
+        "demandeur": "SCHMITT TP",
+        "score_geo": 0.649
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.573483,
+          48.024
+        ]
+      },
+      "properties": {
+        "num_pa": "03520420M0002",
+        "commune": "Nouvoitou",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2020-12-23",
+        "date_doc": "2021-04-23",
+        "adresse": "LE GRAND JARDIN",
+        "localite": "NOUVOITOU",
+        "surface_m2": 2414,
+        "demandeur": null,
+        "score_geo": 0.801
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.547828,
+          48.043356
+        ]
+      },
+      "properties": {
+        "num_pa": "03520420M0003",
+        "commune": "Nouvoitou",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2021-07-01",
+        "date_doc": "2022-05-09",
+        "adresse": "RUE DES LOGES",
+        "localite": "NOUVOITOU",
+        "surface_m2": 9676,
+        "demandeur": "SECIB",
+        "score_geo": 0.803
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.541354,
+          48.117105
+        ]
+      },
+      "properties": {
+        "num_pa": "03520716P0001",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2016-10-04",
+        "date_doc": null,
+        "adresse": "LE CHAMP MICHEL",
+        "localite": "NOYAL-SUR-VILAINE",
+        "surface_m2": 2570,
+        "demandeur": "HUCHET IMMOBILIER",
+        "score_geo": 0.824
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.527929,
+          48.116361
+        ]
+      },
+      "properties": {
+        "num_pa": "03520717P0001",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2018-02-12",
+        "date_doc": "2018-03-08",
+        "adresse": "BD BARBOT / AV. DU PRIEURE",
+        "localite": "NOYAL-SUR-VILAINE",
+        "surface_m2": 4228,
+        "demandeur": "OMNIUM CONSTRUCTIONS DEVELOP LOCATIONS",
+        "score_geo": 0.608
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.532239,
+          48.123187
+        ]
+      },
+      "properties": {
+        "num_pa": "0352071900002",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2023-07-03",
+        "date_doc": null,
+        "adresse": "RUE SAINT ROCH",
+        "localite": "NOYAL-SUR-VILAINE",
+        "surface_m2": 0,
+        "demandeur": null,
+        "score_geo": 0.823
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.522205,
+          48.109482
+        ]
+      },
+      "properties": {
+        "num_pa": "03520719P0001",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 5,
+        "etat_label": "PÃ©rimÃ©",
+        "date_aut": "2019-06-15",
+        "date_doc": "2020-02-24",
+        "adresse": "AVENUE DU GENERAL DE GAU",
+        "localite": "NOYAL-SUR-VILAINE",
+        "surface_m2": 9576,
+        "demandeur": "LAMOTTE AMENAGEUR LOTISSEUR",
+        "score_geo": 0.792
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.535933,
+          48.117072
+        ]
+      },
+      "properties": {
+        "num_pa": "03520721P0001",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2021-09-20",
+        "date_doc": null,
+        "adresse": "RUE DU CHAMP MICHEL L' ETANG",
+        "localite": "NOYAL-SUR-VILAINE",
+        "surface_m2": 5710,
+        "demandeur": "C2R HABITAT",
+        "score_geo": 0.707
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.521866,
+          48.11406
+        ]
+      },
+      "properties": {
+        "num_pa": "03520721P0002",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2021-10-27",
+        "date_doc": null,
+        "adresse": "14-16 RUE ALEXIS GEFFRAULT",
+        "localite": "NOYAL-SUR-VILAINE",
+        "surface_m2": 389,
+        "demandeur": "LPS",
+        "score_geo": 0.787
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.52499,
+          48.122953
+        ]
+      },
+      "properties": {
+        "num_pa": "03520724P0001",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2025-04-04",
+        "date_doc": null,
+        "adresse": "LA FROMIERE - LA HAUTE-ROCHE",
+        "localite": "NOYAL-SUR-VILAINE",
+        "surface_m2": 17278,
+        "demandeur": "COMMUNE DE NOYAL SUR VILAINE",
+        "score_geo": 0.591
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.521586,
+          48.113475
+        ]
+      },
+      "properties": {
+        "num_pa": "03520724P0002",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 5,
+        "etat_label": "PÃ©rimÃ©",
+        "date_aut": "2025-01-20",
+        "date_doc": "2025-05-26",
+        "adresse": "29 RUE ALEXIS GEFFRAULT",
+        "localite": "NOYAL-SUR-VILAINE",
+        "surface_m2": 1148,
+        "demandeur": "HUCHET IMMOBILIER",
+        "score_geo": 0.834
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.512211,
+          48.101093
+        ]
+      },
+      "properties": {
+        "num_pa": "0352072500001",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2025-10-16",
+        "date_doc": null,
+        "adresse": "RUE PAUL RICARD",
+        "localite": "NOYAL-SUR-VILAINE",
+        "surface_m2": 54937,
+        "demandeur": "CC PAYS DE CHATEAUGIRON COMMUNAUTE",
+        "score_geo": 0.82
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.461857,
+          48.114235
+        ]
+      },
+      "properties": {
+        "num_pa": "03532713U0001",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2014-03-09",
+        "date_doc": null,
+        "adresse": "LA GORONNIERE - LE GRD COURTIL",
+        "localite": "SERVON-SUR-VILAINE",
+        "surface_m2": 0,
+        "demandeur": "HELIO AMENAGEMENT",
+        "score_geo": 0.609
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.459469,
+          48.11935
+        ]
+      },
+      "properties": {
+        "num_pa": "03532716P0001",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2016-05-24",
+        "date_doc": null,
+        "adresse": "RUE DE LA VIGNOURIE",
+        "localite": "SERVON-SUR-VILAINE",
+        "surface_m2": 2550,
+        "demandeur": "COMMUNE DE SERVON SUR VILAINE",
+        "score_geo": 0.824
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.459318,
+          48.130022
+        ]
+      },
+      "properties": {
+        "num_pa": "03532716P0002",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2016-05-25",
+        "date_doc": null,
+        "adresse": "LE HOUX",
+        "localite": "SERVON SUR VILAINE",
+        "surface_m2": 0,
+        "demandeur": null,
+        "score_geo": 0.811
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.459758,
+          48.128639
+        ]
+      },
+      "properties": {
+        "num_pa": "03532716P0003",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2016-12-16",
+        "date_doc": null,
+        "adresse": "LA GUINONNIERE",
+        "localite": "SERVON SUR VILAINE",
+        "surface_m2": 3088,
+        "demandeur": null,
+        "score_geo": 0.825
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.463899,
+          48.121051
+        ]
+      },
+      "properties": {
+        "num_pa": "0353271700003",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2021-01-15",
+        "date_doc": null,
+        "adresse": "RUE JOACHIM DU BELLAY BELLE CHAMPAGNE",
+        "localite": "SERVON-SUR-VILAINE",
+        "surface_m2": 0,
+        "demandeur": "ACANTHE",
+        "score_geo": 0.629
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.459758,
+          48.128639
+        ]
+      },
+      "properties": {
+        "num_pa": "03532717P0001",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2017-02-13",
+        "date_doc": null,
+        "adresse": "LA GUINONNIERE",
+        "localite": "SERVON SUR VILAINE",
+        "surface_m2": 560,
+        "demandeur": null,
+        "score_geo": 0.825
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.463899,
+          48.121051
+        ]
+      },
+      "properties": {
+        "num_pa": "03532717P0003",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2017-12-13",
+        "date_doc": "2018-03-13",
+        "adresse": "RUE JOACHIM DU BELLAY BELLE CHAMPAGNE",
+        "localite": "SERVON-SUR-VILAINE",
+        "surface_m2": 27975,
+        "demandeur": "ACANTHE",
+        "score_geo": 0.629
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.469808,
+          48.117625
+        ]
+      },
+      "properties": {
+        "num_pa": "0353271800001",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2021-06-09",
+        "date_doc": null,
+        "adresse": "LE DOMAINE DU GUE",
+        "localite": "SERVON-SUR-VILAINE",
+        "surface_m2": 0,
+        "demandeur": "VIABILIS AMENAGEUR DU TERRITOIRE",
+        "score_geo": 0.601
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.469808,
+          48.117625
+        ]
+      },
+      "properties": {
+        "num_pa": "03532718P0001",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2019-01-14",
+        "date_doc": "2019-06-14",
+        "adresse": "LE DOMAINE DU GUE",
+        "localite": "SERVON-SUR-VILAINE",
+        "surface_m2": 117760,
+        "demandeur": "VIABILIS AMENAGEUR DU TERRITOIRE",
+        "score_geo": 0.601
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.456389,
+          48.122321
+        ]
+      },
+      "properties": {
+        "num_pa": "03532720P0001",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 6,
+        "etat_label": "RetirÃ©",
+        "date_aut": "2021-02-18",
+        "date_doc": "2021-05-18",
+        "adresse": "RUE PASTEUR - RUE SAINT MA",
+        "localite": "SERVON-SUR-VILAINE",
+        "surface_m2": 0,
+        "demandeur": "ATA INVESTISSEMENTS",
+        "score_geo": 0.618
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.464102,
+          48.123655
+        ]
+      },
+      "properties": {
+        "num_pa": "03532722P0001",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2023-03-28",
+        "date_doc": null,
+        "adresse": "28 RUE LAENNEC",
+        "localite": "SERVON-SUR-VILAINE",
+        "surface_m2": 1589,
+        "demandeur": null,
+        "score_geo": 0.826
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.457277,
+          48.1236
+        ]
+      },
+      "properties": {
+        "num_pa": "0353272500001",
+        "commune": "Servon-sur-Vilaine",
+        "etat": 2,
+        "etat_label": "AutorisÃ©",
+        "date_aut": "2025-11-27",
+        "date_doc": null,
+        "adresse": "ALLEE DU PAS AUX ANES",
+        "localite": "SERVON-SUR-VILAINE",
+        "surface_m2": 6212,
+        "demandeur": "LODENN PROMOTION",
+        "score_geo": 0.823
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.543229,
+          48.039786
+        ]
+      },
+      "properties": {
+        "num_pa": "03520418M0001",
+        "commune": "Nouvoitou",
+        "etat": 2,
+        "etat_label": "Autorisé",
+        "adresse": "15 RUE DU TEILLAC",
+        "score_geo": 0.816
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.52127,
+          48.119137
+        ]
+      },
+      "properties": {
+        "num_pa": "03520718P0001",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 6,
+        "etat_label": "Retiré",
+        "adresse": "3 RUE DES BRUYERES",
+        "score_geo": 0.826
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.524544,
+          48.109036
+        ]
+      },
+      "properties": {
+        "num_pa": "0352071900001",
+        "commune": "Noyal-sur-Vilaine",
+        "etat": 6,
+        "etat_label": "Retiré",
+        "adresse": "LES JARDINS DES TISSERAND",
+        "score_geo": 0.633
+      }
+    }
+  ]
+}

@@ -1,0 +1,2037 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.474777,
+            48.1056043
+          ],
+          [
+            -1.4740858,
+            48.105667
+          ],
+          [
+            -1.4739597,
+            48.1059822
+          ],
+          [
+            -1.4739436,
+            48.1063111
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 753747456,
+        "name": "Rue de la Cadetière",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2026-01-23",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.4740688,
+            48.1050518
+          ],
+          [
+            -1.4736539,
+            48.105264
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1078970095,
+        "name": "Rue de la Fontaine",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2026-01-23",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.4749912,
+            48.105792
+          ],
+          [
+            -1.4739597,
+            48.1059822
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1078970111,
+        "name": "Rue de la Chapellerie",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2026-01-23",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5343568,
+            48.0401122
+          ],
+          [
+            -1.5342899,
+            48.0396923
+          ],
+          [
+            -1.5342853,
+            48.0396704
+          ],
+          [
+            -1.5342853,
+            48.0392561
+          ],
+          [
+            -1.5341994,
+            48.0389441
+          ],
+          [
+            -1.5332196,
+            48.039017
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1153699291,
+        "name": "Rue Rosa Bonheur",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-08-25",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5363868,
+            48.0396666
+          ],
+          [
+            -1.5362567,
+            48.0396775
+          ],
+          [
+            -1.5348297,
+            48.0397834
+          ],
+          [
+            -1.5342899,
+            48.0396923
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1153699292,
+        "name": "Rue Louis Braille",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-09-13",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5462559,
+            48.043578
+          ],
+          [
+            -1.5463549,
+            48.0431635
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1153699293,
+        "name": "Allée René Laënnec",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2026-01-23",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5467334,
+            48.04356
+          ],
+          [
+            -1.5468063,
+            48.0431912
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1153699294,
+        "name": "Allée Suzanne Noël",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2026-01-23",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5475032,
+            48.0435959
+          ],
+          [
+            -1.5475786,
+            48.0432673
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1153699295,
+        "name": "Allée Anna Coleman",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2026-01-23",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5247336,
+            48.0644119
+          ],
+          [
+            -1.52454,
+            48.064381
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1155864745,
+        "name": "Impasse de la Grange",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-10-09",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5282237,
+            48.0675068
+          ],
+          [
+            -1.5289535,
+            48.0675193
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320200,
+        "name": null,
+        "type_futur": "footway",
+        "type_label": "Trottoir",
+        "timestamp": "2024-07-18",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5268824,
+            48.0674314
+          ],
+          [
+            -1.526657,
+            48.0674386
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320201,
+        "name": null,
+        "type_futur": "footway",
+        "type_label": "Trottoir",
+        "timestamp": "2024-07-18",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.526877,
+            48.0670855
+          ],
+          [
+            -1.5265626,
+            48.0670818
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320202,
+        "name": null,
+        "type_futur": "footway",
+        "type_label": "Trottoir",
+        "timestamp": "2024-07-18",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5268662,
+            48.0677525
+          ],
+          [
+            -1.5268824,
+            48.0674314
+          ],
+          [
+            -1.5268716,
+            48.0673077
+          ],
+          [
+            -1.5268502,
+            48.0672163
+          ],
+          [
+            -1.5268555,
+            48.0671321
+          ],
+          [
+            -1.526877,
+            48.0670855
+          ],
+          [
+            -1.5269065,
+            48.0668775
+          ],
+          [
+            -1.5269145,
+            48.0667198
+          ],
+          [
+            -1.5268984,
+            48.0666266
+          ],
+          [
+            -1.5268877,
+            48.0665639
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320203,
+        "name": null,
+        "type_futur": "footway",
+        "type_label": "Trottoir",
+        "timestamp": "2024-07-18",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5256364,
+            48.0678288
+          ],
+          [
+            -1.5256244,
+            48.0677504
+          ],
+          [
+            -1.5262684,
+            48.0677505
+          ],
+          [
+            -1.5268662,
+            48.0677525
+          ],
+          [
+            -1.5272956,
+            48.067754
+          ],
+          [
+            -1.5282128,
+            48.067761
+          ],
+          [
+            -1.5291737,
+            48.067774
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320204,
+        "name": null,
+        "type_futur": "footway",
+        "type_label": "Trottoir",
+        "timestamp": "2024-07-18",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5273035,
+            48.0681595
+          ],
+          [
+            -1.5272953,
+            48.0678225
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320205,
+        "name": null,
+        "type_futur": "footway",
+        "type_label": "Trottoir",
+        "timestamp": "2024-07-18",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5275502,
+            48.0683867
+          ],
+          [
+            -1.5273893,
+            48.0681598
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320206,
+        "name": null,
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2024-07-18",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5271854,
+            48.0681591
+          ],
+          [
+            -1.5273035,
+            48.0681595
+          ],
+          [
+            -1.5273893,
+            48.0681598
+          ],
+          [
+            -1.528202,
+            48.0681627
+          ],
+          [
+            -1.5282099,
+            48.0678298
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320207,
+        "name": "Impasse de l'Ille",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-10-08",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5282228,
+            48.0675281
+          ],
+          [
+            -1.5272965,
+            48.0675174
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320208,
+        "name": null,
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2024-07-18",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5272953,
+            48.0678225
+          ],
+          [
+            -1.5272956,
+            48.067754
+          ],
+          [
+            -1.5272965,
+            48.0675174
+          ],
+          [
+            -1.5272954,
+            48.0670998
+          ],
+          [
+            -1.5272981,
+            48.0670765
+          ],
+          [
+            -1.5273061,
+            48.0666087
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320209,
+        "name": "Rue du Don",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-10-08",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5281748,
+            48.067107
+          ],
+          [
+            -1.5272954,
+            48.0670998
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320210,
+        "name": "Rue du Don",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-10-08",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5282099,
+            48.0678298
+          ],
+          [
+            -1.5282128,
+            48.067761
+          ],
+          [
+            -1.5282228,
+            48.0675281
+          ],
+          [
+            -1.5282237,
+            48.0675068
+          ],
+          [
+            -1.5282342,
+            48.0672611
+          ],
+          [
+            -1.5281725,
+            48.0672235
+          ],
+          [
+            -1.5281748,
+            48.067107
+          ],
+          [
+            -1.5281805,
+            48.0668094
+          ],
+          [
+            -1.5281162,
+            48.0667288
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320211,
+        "name": "Rue du Don",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-10-08",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5257102,
+            48.0682523
+          ],
+          [
+            -1.5257066,
+            48.06781
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320212,
+        "name": "Impasse du Chevré",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-10-08",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5265635,
+            48.0670407
+          ],
+          [
+            -1.5258846,
+            48.0670442
+          ],
+          [
+            -1.5258793,
+            48.0674311
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320213,
+        "name": "Rue de la Chère",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-10-08",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5265552,
+            48.0674371
+          ],
+          [
+            -1.5265563,
+            48.0673865
+          ],
+          [
+            -1.526557,
+            48.0673503
+          ],
+          [
+            -1.5265626,
+            48.0670818
+          ],
+          [
+            -1.5265635,
+            48.0670407
+          ],
+          [
+            -1.5265685,
+            48.0668005
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320214,
+        "name": "Rue de la Chère",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-10-08",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5262708,
+            48.0674332
+          ],
+          [
+            -1.5265552,
+            48.0674371
+          ],
+          [
+            -1.526657,
+            48.0674386
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320215,
+        "name": "Rue de la Chère",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-10-08",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5255815,
+            48.0674296
+          ],
+          [
+            -1.5258793,
+            48.0674311
+          ],
+          [
+            -1.5262708,
+            48.0674332
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320216,
+        "name": "Rue de la Chère",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-10-08",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5262679,
+            48.0678144
+          ],
+          [
+            -1.5262684,
+            48.0677505
+          ],
+          [
+            -1.5262708,
+            48.0674332
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320217,
+        "name": "Rue de la Chère",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-10-08",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5253374,
+            48.0657985
+          ],
+          [
+            -1.5251361,
+            48.0660372
+          ],
+          [
+            -1.5249217,
+            48.0662878
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320218,
+        "name": "Impasse Pré du Croissant",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2024-07-18",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5256512,
+            48.066053
+          ],
+          [
+            -1.5255332,
+            48.0661946
+          ],
+          [
+            -1.5251361,
+            48.0660372
+          ],
+          [
+            -1.5246088,
+            48.0658281
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1302320219,
+        "name": "Impasse Pré du Croissant",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2024-07-18",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5053067,
+            48.0506249
+          ],
+          [
+            -1.5057921,
+            48.0508347
+          ],
+          [
+            -1.5060228,
+            48.051161
+          ],
+          [
+            -1.5059102,
+            48.0512202
+          ],
+          [
+            -1.5055507,
+            48.0511843
+          ],
+          [
+            -1.5052503,
+            48.0510821
+          ],
+          [
+            -1.5050453,
+            48.0510395
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1318152587,
+        "name": "Impasse de l'Adret",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2024-09-25",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.509703,
+            48.047587
+          ],
+          [
+            -1.5094614,
+            48.0472235
+          ],
+          [
+            -1.5093085,
+            48.0471536
+          ],
+          [
+            -1.5092817,
+            48.0470818
+          ],
+          [
+            -1.5093507,
+            48.0467279
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1322646774,
+        "name": "Impasse de la Boutisse",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2024-10-09",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.509566,
+            48.0479031
+          ],
+          [
+            -1.509703,
+            48.047587
+          ],
+          [
+            -1.5098396,
+            48.0472719
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1322646775,
+        "name": "Impasse de la Boutisse",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2024-10-09",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5113749,
+            48.0411374
+          ],
+          [
+            -1.5118325,
+            48.0414404
+          ],
+          [
+            -1.5128383,
+            48.0420519
+          ],
+          [
+            -1.5130636,
+            48.0419981
+          ],
+          [
+            -1.5132594,
+            48.04193
+          ],
+          [
+            -1.5135196,
+            48.0420483
+          ],
+          [
+            -1.5140584,
+            48.042411
+          ],
+          [
+            -1.5143001,
+            48.0426096
+          ],
+          [
+            -1.5145791,
+            48.0429037
+          ],
+          [
+            -1.5148473,
+            48.0431386
+          ],
+          [
+            -1.5151826,
+            48.0433269
+          ],
+          [
+            -1.5153623,
+            48.0433484
+          ],
+          [
+            -1.5164137,
+            48.0430023
+          ],
+          [
+            -1.5165162,
+            48.0428289
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1322646778,
+        "name": "Rue de la Passerelle",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2024-10-09",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5251818,
+            48.0666965
+          ],
+          [
+            -1.5248546,
+            48.0666481
+          ],
+          [
+            -1.5247875,
+            48.0667664
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1392735758,
+        "name": "Impasse des Roseaux",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-09-27",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5252435,
+            48.0670711
+          ],
+          [
+            -1.5247473,
+            48.0670299
+          ],
+          [
+            -1.5247875,
+            48.0667664
+          ],
+          [
+            -1.5242538,
+            48.0666212
+          ],
+          [
+            -1.5238164,
+            48.0665094
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1392735759,
+        "name": "Impasse des Roseaux",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-09-27",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5385446,
+            48.0382034
+          ],
+          [
+            -1.5380001,
+            48.0382159
+          ],
+          [
+            -1.5379304,
+            48.0382626
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1429462307,
+        "name": "Place Pierre Rabhi",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-09-13",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5388075,
+            48.0391324
+          ],
+          [
+            -1.538205,
+            48.0391413
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1429462308,
+        "name": "Impasse Anita Conti",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-09-13",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5386948,
+            48.0386194
+          ],
+          [
+            -1.5381449,
+            48.0386374
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1429462309,
+        "name": "Impasse Hubert Reeves",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-09-13",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5374529,
+            48.0386679
+          ],
+          [
+            -1.5381449,
+            48.0386374
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1429462310,
+        "name": "Impasse Haroun Tazieff",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-09-13",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5380055,
+            48.0398246
+          ],
+          [
+            -1.5380111,
+            48.0400531
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1429462311,
+        "name": "Impasse Maurice Herzog",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-09-13",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5375549,
+            48.0395879
+          ],
+          [
+            -1.5382563,
+            48.0395718
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1429462312,
+        "name": "Impasse Rachel Carson",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-09-13",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5379304,
+            48.0382626
+          ],
+          [
+            -1.5381449,
+            48.0386374
+          ],
+          [
+            -1.538205,
+            48.0391413
+          ],
+          [
+            -1.5382563,
+            48.0395718
+          ],
+          [
+            -1.5383138,
+            48.0400541
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1429462313,
+        "name": "Avenue Dian Fossey",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-09-13",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5351543,
+            48.0383433
+          ],
+          [
+            -1.5356076,
+            48.0382913
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1429462314,
+        "name": "Impasse Françoise d'Eaubonne",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-09-13",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5366482,
+            48.0384856
+          ],
+          [
+            -1.536203,
+            48.0385405
+          ],
+          [
+            -1.5361252,
+            48.0384024
+          ],
+          [
+            -1.5365794,
+            48.0383341
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1429462315,
+        "name": "Place Jean-Marie Pelt",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-09-13",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5366644,
+            48.0387324
+          ],
+          [
+            -1.5367073,
+            48.0386715
+          ],
+          [
+            -1.5366482,
+            48.0384856
+          ],
+          [
+            -1.5366349,
+            48.0384437
+          ],
+          [
+            -1.5365794,
+            48.0383341
+          ],
+          [
+            -1.5364596,
+            48.0380976
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1429462316,
+        "name": "Place Jean-Marie Pelt",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-09-13",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5373403,
+            48.0394301
+          ],
+          [
+            -1.5363196,
+            48.0393754
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1429462317,
+        "name": "Impasse Jacques-Yves Cousteau",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-09-13",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5369487,
+            48.0379864
+          ],
+          [
+            -1.5364596,
+            48.0380976
+          ],
+          [
+            -1.5356076,
+            48.0382913
+          ],
+          [
+            -1.5357256,
+            48.0388723
+          ],
+          [
+            -1.5366644,
+            48.0387324
+          ],
+          [
+            -1.5367529,
+            48.0390714
+          ],
+          [
+            -1.5362647,
+            48.0391377
+          ],
+          [
+            -1.5363196,
+            48.0393754
+          ],
+          [
+            -1.5363868,
+            48.0396666
+          ],
+          [
+            -1.5364848,
+            48.0400909
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1429462318,
+        "name": "Avenue Paul-Emile Victor",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-09-13",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5051273,
+            48.0340668
+          ],
+          [
+            -1.5050411,
+            48.0335116
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487284,
+        "name": "Impasse du Grillon Champêtre",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5058617,
+            48.0340249
+          ],
+          [
+            -1.5057975,
+            48.0334685
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487285,
+        "name": "Impasse du Vulcain",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5066245,
+            48.0339815
+          ],
+          [
+            -1.5065432,
+            48.0334076
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487286,
+        "name": "Impasse de la Coccinelle",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5043759,
+            48.0336443
+          ],
+          [
+            -1.5050814,
+            48.0340694
+          ],
+          [
+            -1.5051273,
+            48.0340668
+          ],
+          [
+            -1.5058617,
+            48.0340249
+          ],
+          [
+            -1.5066245,
+            48.0339815
+          ],
+          [
+            -1.5070666,
+            48.0339563
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487287,
+        "name": "Rue des Odonates",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5040458,
+            48.0355905
+          ],
+          [
+            -1.5039626,
+            48.0357602
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487288,
+        "name": "Impasse du Lucane",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.503869,
+            48.0354827
+          ],
+          [
+            -1.5040458,
+            48.0355905
+          ],
+          [
+            -1.504266,
+            48.0357248
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487289,
+        "name": "Impasse du Lucane",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5039626,
+            48.0357602
+          ],
+          [
+            -1.5037936,
+            48.0365006
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487290,
+        "name": "Rue de la Gaudinais",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5051471,
+            48.0357412
+          ],
+          [
+            -1.5049258,
+            48.0354773
+          ],
+          [
+            -1.5044457,
+            48.0350989
+          ],
+          [
+            -1.5039897,
+            48.0349159
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487291,
+        "name": "Impasse du Grand Capricorne",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5058109,
+            48.0361786
+          ],
+          [
+            -1.5055612,
+            48.035652
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487292,
+        "name": "Impasse du Pique-Prune",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2026-01-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.505017,
+            48.0362449
+          ],
+          [
+            -1.5047914,
+            48.0358292
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487293,
+        "name": "Impasse de la Cétoine Dorée",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.509279,
+            48.0357248
+          ],
+          [
+            -1.5071896,
+            48.03568
+          ],
+          [
+            -1.5065271,
+            48.0356154
+          ],
+          [
+            -1.5055612,
+            48.035652
+          ],
+          [
+            -1.5054381,
+            48.0356567
+          ],
+          [
+            -1.5051471,
+            48.0357412
+          ],
+          [
+            -1.5048453,
+            48.0358288
+          ],
+          [
+            -1.5047914,
+            48.0358292
+          ],
+          [
+            -1.5043625,
+            48.0358324
+          ],
+          [
+            -1.5039626,
+            48.0357602
+          ],
+          [
+            -1.5038261,
+            48.0357356
+          ],
+          [
+            -1.5032424,
+            48.0356457
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487294,
+        "name": "Avenue du Grand Launay",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.507017,
+            48.0332006
+          ],
+          [
+            -1.5070666,
+            48.0339563
+          ],
+          [
+            -1.5070716,
+            48.0340317
+          ],
+          [
+            -1.5071145,
+            48.0348263
+          ],
+          [
+            -1.5071467,
+            48.035106
+          ],
+          [
+            -1.5071896,
+            48.03568
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487295,
+        "name": "Avenue de la Roselière",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5081847,
+            48.0334147
+          ],
+          [
+            -1.5081444,
+            48.0334847
+          ],
+          [
+            -1.5070716,
+            48.0340317
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487296,
+        "name": "Impasse du Bruant Jaune",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.509112,
+            48.0338424
+          ],
+          [
+            -1.5081552,
+            48.0342954
+          ],
+          [
+            -1.5071145,
+            48.0348263
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487297,
+        "name": "Rue du Traquet Motteux",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5080878,
+            48.0351373
+          ],
+          [
+            -1.5081552,
+            48.0342954
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487298,
+        "name": "Rue du Pinson des Arbres",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.509338,
+            48.0351814
+          ],
+          [
+            -1.508984,
+            48.035167
+          ],
+          [
+            -1.5080878,
+            48.0351373
+          ],
+          [
+            -1.5071467,
+            48.035106
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487299,
+        "name": "Rue du Verdier d'Europe",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5091715,
+            48.0332265
+          ],
+          [
+            -1.509112,
+            48.0338424
+          ],
+          [
+            -1.508984,
+            48.035167
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487300,
+        "name": "Rue de la Linotte Mélodieuse",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-11-28",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.4643225,
+            48.0453945
+          ],
+          [
+            -1.4646538,
+            48.045416
+          ],
+          [
+            -1.4648151,
+            48.045368
+          ],
+          [
+            -1.4648496,
+            48.0453577
+          ],
+          [
+            -1.4652561,
+            48.0453866
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 1454487301,
+        "name": "Impasse des Côteaux",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "timestamp": "2025-12-10",
+        "surface": null
+      }
+    }
+  ]
+}

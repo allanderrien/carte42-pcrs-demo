@@ -1,20 +1,13 @@
 """
-03_change_detection.py — Détection par comparaison post-classification (PCC)
+03_change_detection.py — Polygonisation du masque de changement Sentinel-2
 Projet Carte42 / PCRS Ille-et-Vilaine — SDE35
 
 Pipeline :
-  1. Pour chaque tuile de transition (uint8, valeur = classe_T1 × 4 + classe_T2) :
-     - Masque binaire des transitions d'intérêt (voirie, construction, démolition)
-     - Nettoyage morphologique, polygonisation
-  2. Fusion → filtres géométriques (surface, compacité)
-  3. Filtre spatial emprise voies → export GeoJSON WGS84
-
-Transitions détectées (classes 0=ombre 1=vég 2=sol_nu 3=imperm) :
-   6 = 1→2 : végétation → sol nu      (terrassement, débroussaillement)
-   7 = 1→3 : végétation → imperméable (construction directe)
-  11 = 2→3 : sol nu → imperméable     (mise en œuvre enrobé/béton)
-  13 = 3→1 : imperméable → végétation (réhabilitation, rare)
-  14 = 3→2 : imperméable → sol nu     (démolition, décaissement)
+  1. Charge le masque ΔNDVI (float32) produit par 02_ndvi_timeseries.py
+  2. Seuillage : pixels < 0 → changement détecté
+  3. Nettoyage morphologique
+  4. Polygonisation → filtres géométriques (surface, compacité)
+  5. Export GeoJSON WGS84
 
 Usage :
   python processing/03_change_detection.py
@@ -27,8 +20,8 @@ from pathlib import Path
 
 import numpy as np
 import rasterio
-from rasterio.features import shapes as rasterio_shapes, geometry_mask
-from shapely.geometry import shape, mapping
+from rasterio.features import shapes as rasterio_shapes
+from shapely.geometry import shape
 from shapely.ops import transform as shp_transform
 from skimage.morphology import binary_opening, binary_closing, disk
 import geopandas as gpd
@@ -37,41 +30,8 @@ from pyproj import Transformer
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 import config
-import os
 
 _WGS84_TO_L93 = Transformer.from_crs("EPSG:4326", "EPSG:2154", always_xy=True)
-_L93_TO_WGS84 = Transformer.from_crs("EPSG:2154", "EPSG:4326", always_xy=True)
-
-# Libellés lisibles par code de transition
-LABELS_TRANSITION = {
-    6:  ("veg→sol_nu",          "chantier"),
-    7:  ("veg→imperméable",     "construction"),
-    11: ("sol_nu→imperméable",  "construction"),
-    13: ("imperméable→veg",     "demolition"),
-    14: ("imperméable→sol_nu",  "demolition"),
-}
-
-
-def get_test_bbox():
-    """Retourne le bbox de test en WGS84 (converti depuis L93), ou None."""
-    try:
-        xmin = float(os.environ['TEST_XMIN'])
-        ymin = float(os.environ['TEST_YMIN'])
-        xmax = float(os.environ['TEST_XMAX'])
-        ymax = float(os.environ['TEST_YMAX'])
-        lon_min, lat_min = _L93_TO_WGS84.transform(xmin, ymin)
-        lon_max, lat_max = _L93_TO_WGS84.transform(xmax, ymax)
-        return {'xmin': lon_min, 'ymin': lat_min, 'xmax': lon_max, 'ymax': lat_max}
-    except KeyError:
-        return None
-
-
-def tuile_dans_bbox(chemin: Path, bbox: dict) -> bool:
-    with rasterio.open(chemin) as src:
-        b = src.bounds
-    return not (b.right < bbox['xmin'] or b.left > bbox['xmax'] or
-                b.top  < bbox['ymin'] or b.bottom > bbox['ymax'])
-
 
 logging.basicConfig(
     level=logging.INFO,
@@ -82,28 +42,37 @@ log = logging.getLogger("03_detection")
 
 
 # =============================================================================
-# FONCTIONS
+# PIPELINE PRINCIPAL
 # =============================================================================
 
-def traiter_tuile(chemin_chg: Path, element) -> tuple[list, str]:
-    """
-    Charge une tuile de transition, extrait les pixels d'intérêt,
-    nettoie morphologiquement et polygonise.
-    Retourne (liste de features, crs_string).
-    """
-    with rasterio.open(chemin_chg) as src:
-        chg       = src.read(1)
-        transform = src.transform
-        crs       = src.crs.to_string()
+def pipeline():
+    if not config.S2_CHANGE.exists():
+        log.error(f"Masque de changement introuvable : {config.S2_CHANGE}")
+        log.error("Lancez d'abord l'étape 2 (02_ndvi_timeseries.py)")
+        return False
 
-    # Masque binaire des transitions d'intérêt
-    masque = np.isin(chg, config.TRANSITIONS_VOIRIE).astype(bool)
+    log.info(f"Chargement masque : {config.S2_CHANGE}")
 
-    # Nettoyage morphologique : supprime le bruit isolé et rebouche les trous
-    masque = binary_closing(
+    with rasterio.open(config.S2_CHANGE) as src:
+        change_mask = src.read(1).astype(np.float32)
+        transform   = src.transform
+        crs         = src.crs.to_string()
+
+    log.info(f"Grille : {change_mask.shape[1]}×{change_mask.shape[0]} px "
+             f"(résolution ~{abs(transform.a):.0f}m)")
+
+    # Seuillage : toute valeur positive = changement détecté
+    masque = (change_mask > 0).astype(bool)
+    n_avant = int(masque.sum())
+    log.info(f"Pixels changement bruts : {n_avant}")
+
+    # Nettoyage morphologique (rayon adapté à 10m/px)
+    element = disk(config.MORPH_KERNEL_RADIUS)
+    masque  = binary_closing(
         binary_opening(masque, element), element
     ).astype(np.uint8)
 
+    # Polygonisation
     features = []
     for geom_dict, val in rasterio_shapes(masque, transform=transform):
         if val != 1:
@@ -111,126 +80,65 @@ def traiter_tuile(chemin_chg: Path, element) -> tuple[list, str]:
 
         geom     = shape(geom_dict)
         geom_l93 = shp_transform(_WGS84_TO_L93.transform, geom)
-        surface  = geom_l93.area          # m² en Lambert 93
-        if surface < config.SURFACE_MIN_M2:
+        surface  = geom_l93.area
+        if surface < config.S2_SURFACE_MIN_M2:
             continue
 
         perimetre = geom_l93.length
         compacite = (4 * math.pi * surface / perimetre ** 2) if perimetre > 0 else 0
-        if compacite < config.COMPACITE_MIN:
+        if compacite < config.S2_COMPACITE_MIN:
             continue
 
-        # Transition dominante dans le polygone
+        # ΔNDVI moyen dans le polygone (approximation via bbox)
+        from rasterio.features import geometry_mask
+        from shapely.geometry import mapping
         msk       = geometry_mask([mapping(geom)], transform=transform,
-                                  invert=True, out_shape=chg.shape)
-        pix       = chg[msk]
-        pix_int   = pix[np.isin(pix, config.TRANSITIONS_VOIRIE)]
-        if len(pix_int) == 0:
-            continue
-
-        codes, counts  = np.unique(pix_int, return_counts=True)
-        code_dom       = int(codes[np.argmax(counts)])
-        transition, classe = LABELS_TRANSITION.get(code_dom, ("inconnu", "chantier"))
+                                  invert=True, out_shape=change_mask.shape)
+        delta_moy = float(np.mean(change_mask[msk]))
 
         features.append({
-            "geometry":   geom,           # WGS84
-            "surface_m2": round(surface, 1),
-            "transition": transition,
-            "classe":     classe,
+            "geometry":   geom,
+            "surface_m2": round(surface, 0),
+            "delta_ndvi": round(delta_moy, 3),
+            "classe":     "construction",
         })
 
-    return features, crs
+    log.info(f"Polygones après filtres : {len(features)} "
+             f"(surface > {config.S2_SURFACE_MIN_M2}m², compacité > {config.S2_COMPACITE_MIN})")
 
-
-# =============================================================================
-# PIPELINE PRINCIPAL
-# =============================================================================
-
-def pipeline() -> bool:
-    tuiles_chg = sorted(config.TILES_CHG_DIR.glob("chg_*.tif"))
-    if not tuiles_chg:
-        log.error(f"Aucune tuile de transition dans {config.TILES_CHG_DIR} "
-                  f"→ lancez d'abord l'étape 2")
-        return False
-
-    test_bbox = get_test_bbox()
-    if test_bbox:
-        tuiles_chg = [t for t in tuiles_chg if tuile_dans_bbox(t, test_bbox)]
-        log.info(f"Zone de test active : {len(tuiles_chg)} tuile(s) sélectionnée(s)")
+    if features:
+        gdf = gpd.GeoDataFrame(features, crs=crs)
     else:
-        log.info(f"{len(tuiles_chg)} tuiles de transition à analyser")
-
-    element      = disk(config.MORPH_KERNEL_RADIUS)
-    all_features = []
-    crs_ref      = None
-    erreurs      = 0
-
-    for tuile in tqdm(tuiles_chg, desc="Détection PCC", unit="tuile"):
-        try:
-            feats, crs = traiter_tuile(tuile, element)
-            if feats:
-                all_features.extend(feats)
-                if crs_ref is None:
-                    crs_ref = crs
-        except Exception as e:
-            log.warning(f"Tuile {tuile.name} ignorée : {e}")
-            erreurs += 1
-
-    log.info(f"Polygones bruts : {len(all_features)} ({erreurs} tuile(s) en erreur)")
-
-    if all_features:
-        gdf = gpd.GeoDataFrame(all_features, crs=crs_ref or "EPSG:4326")
-    else:
-        log.warning("Aucun changement détecté.")
+        log.warning("Aucun changement détecté après filtrage.")
         gdf = gpd.GeoDataFrame(
-            columns=["geometry", "surface_m2", "transition", "classe"],
+            columns=["geometry", "surface_m2", "delta_ndvi", "classe"],
             crs="EPSG:4326",
         )
 
-    # --- Filtre spatial : emprise voies ---
-    if config.EMPRISE_VOIES.exists():
-        log.info("Filtre spatial : emprise voies…")
-        emprise = gpd.read_file(config.EMPRISE_VOIES)
-        if emprise.crs is None:
-            emprise = emprise.set_crs("EPSG:2154")
-        emprise_union = emprise.buffer(config.BUFFER_EMPRISE_VOIES).union_all()
-        gdf_l93   = gdf.to_crs("EPSG:2154")
-        dans_voie = gdf_l93.geometry.intersects(emprise_union)
-        n_avant   = len(gdf)
-        gdf       = gdf[dans_voie.values].copy()
-        log.info(f"Polygones après filtre voirie : {len(gdf)} / {n_avant}")
-    else:
-        log.warning(f"Emprise voies introuvable ({config.EMPRISE_VOIES}) — filtre ignoré")
-
-    # --- Export GeoJSON (WGS84 — géométries déjà en EPSG:4326) ---
+    # Export GeoJSON
     config.VECTORS_OUT.mkdir(parents=True, exist_ok=True)
     gdf.to_file(config.GEOJSON_CHANGEMENTS, driver="GeoJSON")
 
-    # --- Rapport ---
-    n_const = int((gdf["classe"] == "construction").sum()) if len(gdf) else 0
-    n_demol = int((gdf["classe"] == "demolition").sum())   if len(gdf) else 0
-    n_chant = int((gdf["classe"] == "chantier").sum())     if len(gdf) else 0
-    surf_ha = gdf["surface_m2"].sum() / 1e4                if len(gdf) else 0
+    # Rapport
+    surf_ha   = gdf["surface_m2"].sum() / 1e4 if len(gdf) else 0
+    delta_moy = gdf["delta_ndvi"].mean()       if len(gdf) else 0
 
     log.info("=" * 60)
-    log.info("RAPPORT DE DÉTECTION (PCC)")
+    log.info("RAPPORT DE DÉTECTION (Sentinel-2 ΔNDVI série temporelle)")
     log.info("=" * 60)
-    log.info(f"Millésimes comparés : {config.MILLESIME_ANCIEN} → {config.MILLESIME_RECENT}")
-    log.info(f"Polygones détectés  : {len(gdf)}")
-    log.info(f"  construction      : {n_const}")
-    log.info(f"  démolition        : {n_demol}")
-    log.info(f"  chantier          : {n_chant}")
-    log.info(f"Surface totale      : {surf_ha:.2f} ha")
-    log.info(f"GeoJSON exporté     : {config.GEOJSON_CHANGEMENTS}")
+    log.info(f"Baseline         : {config.S2_BASELINE_ANNEE}")
+    log.info(f"Détection        : {config.S2_DETECT_ANNEE}")
+    log.info(f"Fenêtre saison   : mois {config.S2_SAISON_DEBUT} → {config.S2_SAISON_FIN}")
+    log.info(f"Seuil ΔNDVI      : {config.S2_SEUIL_DELTA}")
+    log.info(f"Polygones        : {len(gdf)}")
+    log.info(f"Surface totale   : {surf_ha:.2f} ha")
+    log.info(f"ΔNDVI moyen      : {delta_moy:.3f}")
+    log.info(f"GeoJSON exporté  : {config.GEOJSON_CHANGEMENTS}")
     log.info("=" * 60)
 
     return True
 
 
-# =============================================================================
-# POINT D'ENTRÉE
-# =============================================================================
-
 if __name__ == "__main__":
-    log.info("Script 03 — Détection PCC (Post-Classification Comparison)")
+    log.info("Script 03 — Polygonisation masque changement Sentinel-2")
     sys.exit(0 if pipeline() else 1)
