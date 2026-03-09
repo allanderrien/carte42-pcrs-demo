@@ -389,7 +389,7 @@ function onEachLotissement(feature, layer) {
   layer.on('mouseout',  () => layer.setStyle(STYLE_LOTISSEMENT))
 }
 
-export default function MapView({ layers, permisPA, pcLogements, permisDemloir, locauxNonResid, osmVoies, osmPieton, osmExistantes, osmConstruction, lotissements, empriseZone, empriseVoies, testZone, onTestZoneBbox, s2Years }) {
+export default function MapView({ layers, permisPA, pcLogements, permisDemloir, locauxNonResid, osmVoies, osmPieton, osmExistantes, osmConstruction, osmChantiersTermines, lotissements, empriseZone, empriseVoies, testZone, onTestZoneBbox, s2Years }) {
   return (
     <MapContainer
       center={CENTER_WGS84}
@@ -461,6 +461,37 @@ export default function MapView({ layers, permisPA, pcLogements, permisDemloir, 
           data={lotissements}
           style={() => STYLE_LOTISSEMENT}
           onEachFeature={onEachLotissement}
+        />
+      )}
+
+      {/* Chantiers OSM terminés depuis 2021 */}
+      {layers.osm_chantiers_termines?.visible !== false && osmChantiersTermines && (
+        <GeoJSON
+          key="osm_chantiers_termines"
+          data={osmChantiersTermines}
+          style={() => ({ color: '#00b894', weight: 4, opacity: 0.9 })}
+          onEachFeature={(feature, layer) => {
+            const p = feature.properties ?? {}
+            layer.bindPopup(`
+              <div style="font-family:sans-serif;font-size:13px;min-width:200px">
+                <div style="font-weight:700;margin-bottom:6px;border-bottom:2px solid #00b894;padding-bottom:4px;color:#00b894">
+                  Chantier terminé ✓
+                </div>
+                <table style="width:100%;border-collapse:collapse">
+                  ${p.name ? `<tr><td style="color:#555;padding:2px 6px 2px 0">Nom</td><td style="font-weight:600">${p.name}</td></tr>` : ''}
+                  <tr><td style="color:#555;padding:2px 6px 2px 0">Type</td>
+                      <td>${p.type_label ?? '—'}</td></tr>
+                  <tr><td style="color:#555;padding:2px 6px 2px 0">Début chantier</td>
+                      <td>${p.date_chantier ?? '—'}</td></tr>
+                  <tr><td style="color:#555;padding:2px 6px 2px 0">Complétion OSM</td>
+                      <td style="font-weight:700;color:#00b894">${p.date_completion ?? '—'}</td></tr>
+                  <tr><td style="color:#555;padding:2px 6px 2px 0">OSM ID</td>
+                      <td style="font-size:11px;color:#888">${p.osm_id ?? '—'}</td></tr>
+                </table>
+              </div>`)
+            layer.on('mouseover', () => layer.setStyle({ weight: 6, opacity: 1 }))
+            layer.on('mouseout',  () => layer.setStyle({ color: '#00b894', weight: 4, opacity: 0.9 }))
+          }}
         />
       )}
 

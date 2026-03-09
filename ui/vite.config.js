@@ -380,6 +380,19 @@ export default defineConfig({
           }
         })
 
+        // ── GET /api/osm-chantiers-termines — Chantiers terminés depuis 2021 ─────
+        server.middlewares.use('/api/osm-chantiers-termines', (req, res) => {
+          const filePath = path.resolve(__dirname, '../data/osm/chantiers_termines_osm.geojson')
+          res.setHeader('Content-Type', 'application/json')
+          res.setHeader('Cache-Control', 'no-cache')
+          if (fs.existsSync(filePath)) {
+            res.end(fs.readFileSync(filePath))
+          } else {
+            res.statusCode = 404
+            res.end(JSON.stringify({ error: 'Lancez fetch_osm_construction_history.py' }))
+          }
+        })
+
         // ── GET /api/osm-construction — Voies OSM en construction ───────────────
         server.middlewares.use('/api/osm-construction', (req, res) => {
           const filePath = path.resolve(__dirname, '../data/osm/voies_construction_osm.geojson')

@@ -30,6 +30,12 @@ export default function LayerControls({
       hasOpacity: true,
     },
     {
+      id: 'osm_chantiers_termines',
+      label: 'Chantiers terminés OSM (2021+)',
+      sub: 'Anciennement highway=construction · complétés',
+      color: '#00b894',
+    },
+    {
       id: 'osm_construction',
       label: 'Voies en construction OSM',
       sub: 'highway=construction · chantier en cours',

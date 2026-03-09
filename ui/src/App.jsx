@@ -7,7 +7,8 @@ import LogPanel from './components/LogPanel.jsx'
 
 const INITIAL_LAYERS = {
   google_sat:       { visible: false, opacity: 1 },
-  osm_construction:    { visible: true },
+  osm_chantiers_termines: { visible: true },
+  osm_construction:       { visible: true },
   osm_nouvelles_voies: { visible: true },
   osm_pieton:          { visible: false },
   lotissements:        { visible: true },
@@ -52,7 +53,8 @@ export default function App() {
   const [osmVoies,        setOsmVoies]        = useState(null)
   const [osmPieton,       setOsmPieton]       = useState(null)
   const [osmExistantes,   setOsmExistantes]   = useState(null)
-  const [osmConstruction, setOsmConstruction] = useState(null)
+  const [osmConstruction,    setOsmConstruction]    = useState(null)
+  const [osmChantiersTermines, setOsmChantiersTermines] = useState(null)
   const [lotissements,    setLotissements]    = useState(null)
   const [empriseZone,     setEmpriseZone]     = useState(null)
   const [empriseZoneErr,  setEmpriseZoneErr]  = useState(null)
@@ -81,6 +83,7 @@ export default function App() {
     fetch('/api/osm-pieton').then(r => r.json()).then(setOsmPieton).catch(() => {})
     fetch('/api/osm-existantes').then(r => r.json()).then(setOsmExistantes).catch(() => {})
     fetch('/api/osm-construction').then(r => r.json()).then(setOsmConstruction).catch(() => {})
+    fetch('/api/osm-chantiers-termines').then(r => r.json()).then(setOsmChantiersTermines).catch(() => {})
     fetch('/api/lotissements').then(r => r.json()).then(setLotissements).catch(() => {})
     fetch('/api/pc-logements').then(r => r.json()).then(setPcLogements).catch(() => {})
     fetch('/api/permis-demolir').then(r => r.json()).then(setPermisDemloir).catch(() => {})
@@ -297,6 +300,7 @@ export default function App() {
           osmPieton={osmPieton}
           osmExistantes={osmExistantes}
           osmConstruction={osmConstruction}
+          osmChantiersTermines={osmChantiersTermines}
           lotissements={lotissements}
           testZone={testZone}
           onTestZoneBbox={useCallback(bbox => setTestZone(z => ({ ...z, bbox, drawing: false })), [])}

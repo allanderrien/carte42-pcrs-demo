@@ -1,0 +1,285 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.4488086,
+            48.0581101
+          ],
+          [
+            -1.4488729,
+            48.0587881
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 551697644,
+        "action": "delete",
+        "name": null,
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "date_chantier": "2018-01-08",
+        "date_completion": "2022-07-14",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.4466526,
+            48.059007
+          ],
+          [
+            -1.447551,
+            48.0589353
+          ],
+          [
+            -1.4478104,
+            48.0589142
+          ],
+          [
+            -1.4482055,
+            48.0588547
+          ],
+          [
+            -1.4488729,
+            48.0587881
+          ],
+          [
+            -1.4499224,
+            48.0586833
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 551697645,
+        "action": "delete",
+        "name": null,
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "date_chantier": "2020-06-27",
+        "date_completion": "2025-08-04",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.4473846,
+            48.056658
+          ],
+          [
+            -1.4474241,
+            48.0570894
+          ],
+          [
+            -1.4475749,
+            48.0579667
+          ],
+          [
+            -1.447551,
+            48.0589353
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 551697646,
+        "action": "delete",
+        "name": null,
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "date_chantier": "2020-06-27",
+        "date_completion": "2025-08-04",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.4760714,
+            48.1056169
+          ],
+          [
+            -1.4768232,
+            48.1055875
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 679041930,
+        "action": "delete",
+        "name": "Allée du Champ de l'Aire",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "date_chantier": "2019-12-08",
+        "date_completion": "2026-01-23",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.4740688,
+            48.1050518
+          ],
+          [
+            -1.474777,
+            48.1056043
+          ],
+          [
+            -1.4751869,
+            48.1059208
+          ],
+          [
+            -1.476107,
+            48.105918
+          ],
+          [
+            -1.4775926,
+            48.1058978
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 679041931,
+        "action": "delete",
+        "name": "Rue du Domaine",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "date_chantier": "2020-05-26",
+        "date_completion": "2026-01-23",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.4760714,
+            48.1056169
+          ],
+          [
+            -1.474777,
+            48.1056043
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 753747456,
+        "action": "modify",
+        "name": "Rue de la Cadetière",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "date_chantier": "2020-12-04",
+        "date_completion": "2026-01-23",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.4760179,
+            48.1050238
+          ],
+          [
+            -1.4766018,
+            48.1050022
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 753747462,
+        "action": "delete",
+        "name": "Allée du Grand Pré",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "date_chantier": "2019-12-08",
+        "date_completion": "2026-01-23",
+        "surface": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.476107,
+            48.105918
+          ],
+          [
+            -1.4760714,
+            48.1056169
+          ],
+          [
+            -1.4760179,
+            48.1050238
+          ],
+          [
+            -1.4757644,
+            48.1050365
+          ],
+          [
+            -1.4754485,
+            48.1050416
+          ],
+          [
+            -1.4752104,
+            48.1050386
+          ],
+          [
+            -1.4749689,
+            48.1050164
+          ],
+          [
+            -1.4746588,
+            48.1049804
+          ],
+          [
+            -1.4743337,
+            48.1049254
+          ],
+          [
+            -1.4741966,
+            48.1049859
+          ],
+          [
+            -1.4740688,
+            48.1050518
+          ]
+        ]
+      },
+      "properties": {
+        "osm_id": 753747463,
+        "action": "delete",
+        "name": "Rue de la Fontaine",
+        "type_futur": "residential",
+        "type_label": "Voie résidentielle",
+        "date_chantier": "2020-12-14",
+        "date_completion": "2026-01-23",
+        "surface": null
+      }
+    }
+  ]
+}
