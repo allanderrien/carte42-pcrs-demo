@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "emprise_zone",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 0, "width": 10988.0, "height": 12211.0, "area": 134174467.999992, "perimeter": 46398.0 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -1.571526212667152, 48.01945835652824 ], [ -1.58102326594089, 48.1291567057973 ], [ -1.433563428690955, 48.134797498800509 ], [ -1.424370775177992, 48.025087871827964 ], [ -1.571526212667152, 48.01945835652824 ] ] ] } }
+]
+}

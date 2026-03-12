@@ -1,0 +1,1004 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #1a1a2e;
+  color: #e0e0e0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 17px;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* ── Sidebar ──────────────────────────────────────────────────── */
+.sidebar {
+  width: 320px;
+  flex-shrink: 0;
+  background: #16213e;
+  padding: 16px;
+  overflow-y: auto;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar::-webkit-scrollbar-track {
+  background: #0f1730;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: #2a3a6a;
+  border-radius: 3px;
+}
+
+/* ── Header ───────────────────────────────────────────────────── */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.header img {
+  height: 36px;
+  width: 36px;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.header h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #7eb3ff;
+  line-height: 1.2;
+}
+
+.header h1 span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #8899bb;
+  margin-top: 2px;
+}
+
+/* ── Compteur ─────────────────────────────────────────────────── */
+.counter {
+  font-size: 14px;
+  color: #8899bb;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.counter strong {
+  color: #7eb3ff;
+}
+
+/* ── Star Slider ──────────────────────────────────────────────── */
+.star-slider {
+  background: #0f1e3d;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.star-slider label {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #aabbdd;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.star-display {
+  font-size: 29px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 10px;
+  min-height: 32px;
+}
+
+.star-slider input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #2a3a6a;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.star-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #7eb3ff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.star-slider input[type="range"]::-webkit-slider-thumb:hover {
+  background: #aaccff;
+}
+
+.star-legend {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.star-legend li {
+  font-size: 16px;
+  color: #aabbdd;
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  line-height: 1.4;
+}
+
+.star-legend li .star-key {
+  font-size: 17px;
+  min-width: 68px;
+  flex-shrink: 0;
+}
+
+/* ── Invite ───────────────────────────────────────────────────── */
+.invite {
+  font-size: 14px;
+  color: #556080;
+  text-align: center;
+  padding: 12px 8px;
+  border: 1px dashed #2a3a5a;
+  border-radius: 6px;
+}
+
+/* ── Feature Detail ───────────────────────────────────────────── */
+.feature-detail {
+  background: #0f3460;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.feature-detail-banner {
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature-detail-banner .stars {
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+.feature-detail-close {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.7);
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 2px;
+}
+
+.feature-detail-close:hover {
+  color: white;
+}
+
+.feature-detail-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feature-detail-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #e0e8ff;
+  line-height: 1.3;
+}
+
+.feature-detail-justif {
+  font-size: 13px;
+  color: #9aabb8;
+  line-height: 1.5;
+}
+
+.feature-detail-scores {
+  font-size: 13px;
+  color: #7eb3ff;
+  background: rgba(126, 179, 255, 0.08);
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+/* ── Badge ────────────────────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.badge-cat {
+  background: rgba(255,255,255,0.1);
+  color: #c0d0e8;
+}
+
+.badge-haute {
+  background: rgba(39, 174, 96, 0.25);
+  color: #6bcf94;
+}
+
+.badge-moyenne {
+  background: rgba(230, 126, 34, 0.25);
+  color: #f0a060;
+}
+
+.badge-hors_pcrs,
+.badge-inconnue {
+  background: rgba(127, 140, 141, 0.25);
+  color: #a0aaab;
+}
+
+/* ── Basemap switcher (map overlay, bottom center) ────────────── */
+.basemap-switcher {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 500;
+  display: flex;
+  gap: 10px;
+  background: rgba(10, 18, 42, 0.82);
+  border: 1px solid #2a4a7a;
+  border-radius: 14px;
+  padding: 8px 14px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  pointer-events: all;
+}
+
+.basemap-switch-btn {
+  background: transparent;
+  color: #8899bb;
+  border: 1px solid transparent;
+  padding: 8px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.basemap-switch-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.basemap-switch-btn:hover {
+  background: rgba(126, 179, 255, 0.12);
+  color: #c0d8ff;
+  border-color: #4a6a9a;
+}
+
+.basemap-switch-btn.active {
+  background: rgba(30, 80, 160, 0.55);
+  color: #ffffff;
+  border-color: #7eb3ff;
+  box-shadow: 0 0 10px rgba(126, 179, 255, 0.3);
+}
+
+/* keep section-label for geom section */
+.section-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #8899bb;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Export row ───────────────────────────────────────────────── */
+.export-row {
+  display: flex;
+  gap: 6px;
+}
+
+.export-btn {
+  flex: 1;
+  background: #0f2a1a;
+  color: #6bcf94;
+  border: 1px solid #1a5a30;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.export-btn:hover {
+  background: #163d24;
+}
+
+.reset-btn {
+  background: #2a1a0f;
+  color: #f0a060;
+  border: 1px solid #5a3010;
+  width: 36px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 19px;
+  transition: background 0.15s;
+}
+
+.reset-btn:hover {
+  background: #3d2410;
+}
+
+/* ── Bouton rapport ───────────────────────────────────────────── */
+.rapport-btn {
+  flex: 1;
+  background: #2a2000;
+  color: #f5d020;
+  border: 1px solid #7a6000;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+.rapport-btn:hover { background: #3a2c00; }
+
+/* ── Modal rapport ────────────────────────────────────────────── */
+.rapport-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rapport-modal {
+  background: #1a2332;
+  border: 1px solid #2a4060;
+  border-radius: 12px;
+  width: 360px;
+  max-width: 92vw;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.rapport-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: #0f1e2a;
+  font-size: 15px;
+  font-weight: 700;
+  color: #c8dff5;
+  border-bottom: 1px solid #2a4060;
+}
+.rapport-close {
+  background: none;
+  border: none;
+  color: #7ab8f5;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 2px;
+}
+.rapport-close:hover { color: #fff; }
+.rapport-modal-body {
+  padding: 16px 18px;
+}
+.rapport-hint {
+  font-size: 12px;
+  color: #7a9ab5;
+  margin: 0 0 14px 0;
+  line-height: 1.5;
+}
+.rapport-commune-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.rapport-commune-btn {
+  background: #0f2233;
+  color: #a8c8e8;
+  border: 1px solid #2a4060;
+  border-radius: 7px;
+  padding: 9px 14px;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+}
+.rapport-commune-btn:hover { background: #162d42; border-color: #4080b0; }
+.rapport-commune-btn.active {
+  background: #163d60;
+  border-color: #4a90d0;
+  color: #fff;
+  font-weight: 600;
+}
+.rapport-modal-footer {
+  padding: 12px 18px 16px;
+  border-top: 1px solid #2a4060;
+}
+.rapport-dl-btn {
+  width: 100%;
+  background: #1a5090;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.rapport-dl-btn:hover:not(:disabled) { background: #226ab8; }
+.rapport-dl-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ── Edit inputs ──────────────────────────────────────────────── */
+.edit-input {
+  width: 100%;
+  background: #0a1828;
+  color: #e0e8ff;
+  border: 1px solid #3a5a8a;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+}
+
+.edit-input:focus {
+  border-color: #7eb3ff;
+}
+
+.edit-textarea {
+  width: 100%;
+  background: #0a1828;
+  color: #9aabb8;
+  border: 1px solid #3a5a8a;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 13px;
+  line-height: 1.5;
+  resize: vertical;
+  outline: none;
+  font-family: inherit;
+}
+
+.edit-textarea:focus {
+  border-color: #7eb3ff;
+}
+
+/* ── Star edit buttons ────────────────────────────────────────── */
+.stars-edit {
+  display: flex;
+  gap: 2px;
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 0 1px;
+  line-height: 1;
+  transition: transform 0.1s;
+}
+
+.star-btn:hover {
+  transform: scale(1.2);
+}
+
+/* ── Feature edit/save button ─────────────────────────────────── */
+.feature-detail-edit {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.7);
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 3px;
+}
+
+.feature-detail-edit:hover {
+  color: white;
+}
+
+/* ── Feature meta ─────────────────────────────────────────────── */
+.feature-detail-meta {
+  font-size: 14px;
+  color: #8899bb;
+}
+
+.feature-detail-meta strong {
+  color: #aabbdd;
+}
+
+/* ── Geometry edit section ────────────────────────────────────── */
+.geom-edit-section {
+  border-top: 1px solid #2a3a5a;
+  padding-top: 10px;
+  margin-top: 2px;
+}
+
+.geom-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.geom-btn {
+  width: 100%;
+  background: #0f2040;
+  color: #7eb3ff;
+  border: 1px solid #2a5a8a;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.geom-btn:hover {
+  background: #1a3a60;
+  border-color: #4a8abf;
+}
+
+.geom-btn-line {
+  color: #74d7a8;
+  border-color: #1a6a40;
+  background: #0a2018;
+}
+
+.geom-btn-line:hover {
+  background: #0f3020;
+  border-color: #2a9a60;
+}
+
+.geom-drawing-hint {
+  background: #0f2040;
+  border: 1px solid #4a8abf;
+  border-radius: 5px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  color: #7eb3ff;
+}
+
+.geom-hint-sub {
+  font-size: 12px;
+  color: #5588aa;
+}
+
+.geom-cancel-btn {
+  margin-top: 4px;
+  background: #2a1010;
+  color: #f08080;
+  border: 1px solid #6a2020;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.geom-cancel-btn:hover {
+  background: #3a1515;
+}
+
+/* ── Geom edit banner (map overlay) ──────────────────────────── */
+.geom-edit-banner {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(10, 32, 64, 0.92);
+  color: #7eb3ff;
+  border: 1px solid #4a8abf;
+  border-radius: 8px;
+  padding: 8px 16px;
+  z-index: 500;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  backdrop-filter: blur(4px);
+  pointer-events: all;
+}
+
+.geom-edit-banner button {
+  background: #2a1010;
+  color: #f08080;
+  border: 1px solid #6a2020;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.geom-edit-banner button:hover {
+  background: #3a1515;
+}
+
+/* ── À propos ─────────────────────────────────────────────────── */
+.about-section details {
+  background: #0f1e3d;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.about-section details summary {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8899bb;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  user-select: none;
+}
+
+.about-section details summary:hover {
+  color: #aabbdd;
+}
+
+.about-content {
+  padding: 8px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.about-content p {
+  font-size: 13px;
+  color: #8899bb;
+  line-height: 1.5;
+}
+
+
+/* ── Map container ────────────────────────────────────────────── */
+.map-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Feature panel (floating over map, top-right) ─────────────── */
+.map-feature-panel {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 300px;
+  z-index: 500;
+  pointer-events: all;
+  animation: panel-in 0.18s ease-out;
+}
+
+@keyframes panel-in {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── OSM faded basemap ────────────────────────────────────────── */
+.osm-faded img {
+  filter: saturate(0.25) brightness(1.08) opacity(0.8);
+}
+
+/* ── Leaflet overrides ────────────────────────────────────────── */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  background: #0a0a1a;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #16213e;
+  color: #e0e0e0;
+  border: 1px solid #2a3a6a;
+  border-radius: 8px;
+}
+
+.leaflet-popup-tip {
+  background: #16213e;
+}
+
+.leaflet-popup-content {
+  margin: 10px 14px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.leaflet-popup-close-button {
+  color: #8899bb !important;
+}
+
+/* ── Loading ──────────────────────────────────────────────────── */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #556080;
+  font-size: 16px;
+}
+
+hr.divider {
+  border: none;
+  border-top: 1px solid #2a2a4a;
+  margin: 0;
+}
+
+/* ── Onboarding ───────────────────────────────────────────────── */
+.ob-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  pointer-events: none;
+}
+
+/* ── Welcome card (floating, centered on map area) ── */
+.ob-welcome-card {
+  position: absolute;
+  top: 50%;
+  /* center in the map area = sidebar(320px) + half of remaining space */
+  left: calc(320px + (100vw - 320px) / 2);
+  transform: translate(-50%, -50%);
+  width: 440px;
+  background: rgba(10, 20, 50, 0.95);
+  border: 1px solid #3a6aaa;
+  border-radius: 16px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 40px rgba(126, 179, 255, 0.2), 0 16px 48px rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 32px 32px 28px;
+  pointer-events: all;
+  animation: ob-float-center 3.5s ease-in-out infinite;
+}
+
+.ob-welcome-logos {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 0;
+}
+
+.ob-logo-sde35 {
+  height: 135px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 14px rgba(255,255,255,0.12));
+}
+
+.ob-welcome-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #c0d8ff;
+  letter-spacing: 0.02em;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.ob-welcome-subtitle {
+  font-size: 13px;
+  color: #556a8a;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: -6px;
+}
+
+.ob-welcome-text {
+  font-size: 16px;
+  color: #8899bb;
+  line-height: 1.65;
+  text-align: center;
+}
+
+.ob-start {
+  margin-top: 8px;
+  background: rgba(30, 80, 160, 0.7);
+  color: #c0d8ff;
+  border: 1px solid #4a7abf;
+  border-radius: 10px;
+  padding: 12px 36px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+  box-shadow: 0 0 18px rgba(126, 179, 255, 0.15);
+}
+
+.ob-start:hover {
+  background: rgba(40, 100, 210, 0.85);
+  border-color: #7eb3ff;
+  color: #fff;
+  box-shadow: 0 0 26px rgba(126, 179, 255, 0.35);
+}
+
+/* ── Step cards ── */
+@keyframes ob-float-center {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0px); }
+  50%       { transform: translate(-50%, -50%) translateY(-7px); }
+}
+
+@keyframes ob-float-left {
+  0%, 100% { transform: translateY(-50%) translateX(0); }
+  50%       { transform: translateY(-50%) translateX(-5px); }
+}
+
+.ob-card {
+  position: absolute;
+  width: 280px;
+  background: rgba(10, 20, 50, 0.93);
+  border: 1px solid #3a6aaa;
+  border-radius: 12px;
+  overflow: visible;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 28px rgba(126, 179, 255, 0.22), 0 8px 32px rgba(0,0,0,0.6);
+  pointer-events: all;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Step 1 — bottom center of map area, just above basemap switcher */
+.ob-card--bottom {
+  bottom: 98px;
+  left: calc(320px + (100vw - 320px) / 2);
+  transform: translateX(-50%);
+  animation: ob-float-bottom 3s ease-in-out infinite;
+}
+
+@keyframes ob-float-bottom {
+  0%, 100% { transform: translateX(-50%) translateY(0px); }
+  50%       { transform: translateX(-50%) translateY(-7px); }
+}
+
+/* Step 2 — aligned with top of sidebar star-slider (~160px from top) */
+.ob-card--left {
+  top: 230px;
+  left: 336px;
+  animation: ob-float-left 3s ease-in-out infinite;
+}
+
+/* Step 3 — aligned with download/rapport buttons */
+.ob-card--left-low {
+  top: 430px;
+  left: 336px;
+  animation: ob-float-left 3s ease-in-out infinite;
+}
+
+.ob-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  pointer-events: none;
+  box-shadow: inset 0 0 18px rgba(126, 179, 255, 0.12);
+}
+
+.ob-body {
+  padding: 16px 16px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ob-emoji {
+  font-size: 31px;
+  line-height: 1;
+}
+
+.ob-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #c0d8ff;
+  line-height: 1.3;
+}
+
+.ob-text {
+  font-size: 14px;
+  color: #8899bb;
+  line-height: 1.55;
+}
+
+.ob-ok {
+  margin: 0 16px 14px;
+  background: rgba(30, 80, 160, 0.6);
+  color: #c0d8ff;
+  border: 1px solid #4a7abf;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background 0.15s, border-color 0.15s;
+  text-align: center;
+}
+
+.ob-ok:hover {
+  background: rgba(40, 100, 200, 0.75);
+  border-color: #7eb3ff;
+  color: #fff;
+}
+
+/* Arrow below step 1 card → points at basemap buttons */
+.ob-arrow--down {
+  text-align: center;
+  font-size: 24px;
+  color: #7eb3ff;
+  padding: 2px 0 10px;
+  animation: ob-pulse 1.4s ease-in-out infinite;
+}
+
+/* Arrow left of step 2 card → points at sidebar slider */
+.ob-arrow--left-ext {
+  position: absolute;
+  left: -26px;
+  top: 32px;
+  font-size: 24px;
+  color: #7eb3ff;
+  animation: ob-pulse 1.4s ease-in-out infinite;
+}
+
+/* Arrow left at bottom of step 3 card → points at export buttons */
+.ob-arrow--left-ext-bottom {
+  position: absolute;
+  left: -26px;
+  bottom: 18px;
+  font-size: 24px;
+  color: #7eb3ff;
+  animation: ob-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes ob-pulse {
+  0%, 100% { opacity: 0.45; }
+  50%       { opacity: 1; }
+}

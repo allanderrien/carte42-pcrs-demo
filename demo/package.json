@@ -1,0 +1,23 @@
+{
+  "name": "carte42-sde35-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@geoman-io/leaflet-geoman-free": "^2.19.2",
+    "@turf/buffer": "^7.3.4",
+    "@turf/helpers": "^7.3.4",
+    "leaflet": "^1.9.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}

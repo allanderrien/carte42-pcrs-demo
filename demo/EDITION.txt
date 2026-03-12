@@ -1,0 +1,35 @@
+ACTIVER / DÉSACTIVER LES FONCTIONS D'ÉDITION
+=============================================
+
+Les fonctions d'édition (modification des étoiles, du label, de la justification,
+redessinage de géométrie, export GeoJSON, reset) sont désactivées par défaut
+pour la démo client. Le code est intact — il suffit de changer une constante.
+
+FICHIER À MODIFIER
+------------------
+  demo/src/config.js  — première ligne :
+
+    export const EDIT_MODE = false   ← désactivé (mode démo)
+    export const EDIT_MODE = true    ← activé (mode édition)
+
+PUIS REBUILDER
+--------------
+  cd demo
+  npm run build
+
+  Le dossier dist/ est mis à jour. Redéployer sur GitHub Pages si besoin
+  (push sur master déclenche le workflow GitHub Actions automatiquement).
+
+CE QUI EST MASQUÉ EN MODE DÉSACTIVÉ
+-------------------------------------
+  - Bouton ✏ (modifier label, justification, étoiles)
+  - Section "Modifier la géométrie" (nouveau polygone / axe + buffer 15 m)
+  - Bouton ⬇ Exporter GeoJSON
+  - Bouton ↺ Reset overrides
+
+CE QUI RESTE TOUJOURS VISIBLE
+------------------------------
+  - Toute la consultation (popup au clic, étoiles, justification, badges)
+  - Slider de priorité
+  - Fond de plan (OSM / Image 2020 / Image 2025)
+  - Onboarding
