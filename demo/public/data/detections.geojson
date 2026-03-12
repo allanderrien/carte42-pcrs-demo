@@ -428,7 +428,7 @@
         "ia_categorie": "lotissement_residentiel",
         "ia_label": "Demolitions et Nouveaux locaux — Nouvoitou",
         "ia_justification": "Voie OSM en construction + cluster de 10 PC logements (28 lgts). Double signal voirie + permis — constructions en cours. Mise à jour PCRS faible à investiguer.",
-        "ia_etoiles": 5,
+        "ia_etoiles": 1,
         "nom": "Les Hauts de la Lande",
         "commune": "Nouvoitou"
       }
