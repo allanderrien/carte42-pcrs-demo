@@ -1,11 +1,11 @@
 import React from 'react'
 
 const LEGEND = [
-  { stars: 5, label: 'MAJ très probable — giratoires, voiries nouvelles, lotissements', color: '#e74c3c' },
-  { stars: 4, label: 'MAJ probable — mêmes typologies, moindre ampleur', color: '#e67e22' },
-  { stars: 3, label: 'MAJ potentielle — petites opérations', color: '#f1c40f' },
-  { stars: 2, label: 'MAJ à investiguer — travaux sur parcelles multiples en bord de voirie', color: '#3498db' },
-  { stars: 1, label: 'MAJ minime à investiguer — travaux sur parcelles privées en bord de voirie', color: '#9b59b6' },
+  { stars: 5, label: 'MAJ (Mise à jour) très probable — giratoires, réfections voirie, grands lotissements', color: '#e74c3c' },
+  { stars: 4, label: 'MAJ probable — extensions de lotissements, programmes résidentiels', color: '#e67e22' },
+  { stars: 3, label: 'MAJ potentielle — petites opérations, chantiers voirie', color: '#f1c40f' },
+  { stars: 2, label: 'MAJ à investiguer — voiries nouvelles de petite longueur', color: '#3498db' },
+  { stars: 1, label: 'MAJ minime à investiguer — constructions isolées en bord de voirie', color: '#9b59b6' },
   { stars: 0, label: 'Probablement hors périmètre PCRS', color: '#95a5a6' },
 ]
 
