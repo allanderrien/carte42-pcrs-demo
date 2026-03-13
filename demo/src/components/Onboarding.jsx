@@ -1,19 +1,33 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import sde35Logo from '../assets/sde35.jpg'
 
 export default function Onboarding() {
   const [step, setStep] = useState('welcome')  // 'welcome' | 1 | 2 | 3 | 'done'
-  const [exportTop, setExportTop] = useState(430)
+  const [cardTop2, setCardTop2] = useState(230)
+  const [cardTop3, setCardTop3] = useState(430)
 
   useEffect(() => {
-    if (step === 3) {
-      const el = document.querySelector('[data-ob-anchor="export"]')
-      if (el) {
-        const rect = el.getBoundingClientRect()
-        // Flèche ◀ en bas de la carte alignée avec le centre du bouton
-        setExportTop(Math.round(rect.top + rect.height / 2 - 85))
+    function computePositions() {
+      if (step === 2) {
+        const el = document.querySelector('[data-ob-anchor="slider"]')
+        if (el) {
+          const rect = el.getBoundingClientRect()
+          const ideal = Math.round(rect.top + rect.height / 2)
+          setCardTop2(Math.max(80, Math.min(ideal, window.innerHeight - 230)))
+        }
+      }
+      if (step === 3) {
+        const el = document.querySelector('[data-ob-anchor="export"]')
+        if (el) {
+          const rect = el.getBoundingClientRect()
+          const ideal = Math.round(rect.top + rect.height / 2 - 85)
+          setCardTop3(Math.max(80, Math.min(ideal, window.innerHeight - 260)))
+        }
       }
     }
+    computePositions()
+    window.addEventListener('resize', computePositions)
+    return () => window.removeEventListener('resize', computePositions)
   }, [step])
 
   function next() {
@@ -65,7 +79,7 @@ export default function Onboarding() {
 
       {/* ── Étape 2 : slider ── */}
       {step === 2 && (
-        <div className="ob-card ob-card--left">
+        <div className="ob-card ob-card--left" style={{ top: cardTop2 }}>
           <div className="ob-glow" />
           <div className="ob-arrow--left-ext">◀</div>
           <div className="ob-body">
@@ -83,7 +97,7 @@ export default function Onboarding() {
 
       {/* ── Étape 3 : export ── */}
       {step === 3 && (
-        <div className="ob-card ob-card--left-low" style={{ top: exportTop }}>
+        <div className="ob-card ob-card--left-low" style={{ top: cardTop3 }}>
           <div className="ob-glow" />
           <div className="ob-body">
             <div className="ob-emoji">📥</div>

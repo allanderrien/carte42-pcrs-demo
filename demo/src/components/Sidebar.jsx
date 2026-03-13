@@ -23,7 +23,9 @@ export default function Sidebar({
       </div>
 
       {/* Star slider */}
-      <StarSlider value={minEtoiles} onChange={onMinEtoilesChange} />
+      <div data-ob-anchor="slider">
+        <StarSlider value={minEtoiles} onChange={onMinEtoilesChange} />
+      </div>
 
       {/* Compteur */}
       <div className="counter">
