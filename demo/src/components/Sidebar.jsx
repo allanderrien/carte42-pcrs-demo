@@ -67,8 +67,8 @@ export default function Sidebar({
         <details>
           <summary>À propos</summary>
           <div className="about-content">
-            <p>Zone échantillon : Châteaugiron et communes environnantes (Ille-et-Vilaine)</p>
-            <p>Analyse : orthophotographies IGN 2020 vs 2025</p>
+            <p>Périmètre : Ille-et-Vilaine hors Rennes Métropole — 17 EPCI, ~290 communes</p>
+            <p>Analyse : orthophotographies IGN 2020 vs 2023</p>
             <p>Données : OSM, BD TOPO IGN, Sitadel</p>
           </div>
         </details>

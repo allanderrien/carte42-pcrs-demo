@@ -435,6 +435,43 @@ body {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  max-height: 46vh;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.rapport-search {
+  width: 100%;
+  box-sizing: border-box;
+  background: #0f2233;
+  color: #cfe6ff;
+  border: 1px solid #2a4060;
+  border-radius: 7px;
+  padding: 9px 12px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.rapport-search::placeholder { color: #5e7c96; }
+.rapport-search:focus { outline: none; border-color: #4a90d0; }
+.rapport-epci-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6f93b2;
+  font-weight: 700;
+  margin: 10px 2px 2px;
+}
+.rapport-epci-label:first-child { margin-top: 0; }
+.rapport-empty {
+  font-size: 13px;
+  color: #7a9ab5;
+  text-align: center;
+  padding: 16px 0;
+}
+.rapport-warn {
+  font-size: 12px;
+  color: #e0b070;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
 }
 .rapport-commune-btn {
   background: #0f2233;

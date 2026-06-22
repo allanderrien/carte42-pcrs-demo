@@ -151,7 +151,7 @@ export default function FeatureDetail({ feature, onClose, onEdit, onEditGeom, ed
               <div className="feature-detail-scores">
                 Score visuel 2020 : {p.score_t1 != null ? Number(p.score_t1).toFixed(1) : '—'}
                 {' | '}
-                Score visuel 2025 : {p.score_t2 != null ? Number(p.score_t2).toFixed(1) : '—'}
+                Score visuel 2023 : {p.score_t2 != null ? Number(p.score_t2).toFixed(1) : '—'}
               </div>
             )}
 

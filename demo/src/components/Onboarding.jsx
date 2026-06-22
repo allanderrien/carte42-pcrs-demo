@@ -50,7 +50,7 @@ export default function Onboarding() {
             <img src={sde35Logo} alt="SDE35" className="ob-logo-sde35" />
           </div>
           <div className="ob-welcome-title">Bienvenue sur votre interface de détection des changements du PCRS</div>
-          <div className="ob-welcome-subtitle">Zone échantillon · Châteaugiron et environs · Ille-et-Vilaine</div>
+          <div className="ob-welcome-subtitle">Ille-et-Vilaine · hors Rennes Métropole · 17 EPCI</div>
           <div className="ob-welcome-text">
             Cette interface présente les résultats de l'analyse automatique
             de voirie et de bâti réalisée par Carte42 —

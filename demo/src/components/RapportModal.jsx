@@ -1,25 +1,44 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
+import { RAPPORTS_BASE_URL } from '../config.js'
 
-const COMMUNES = [
-  { label: 'Brecé',              file: 'Rapport_PCRS_Brece.pdf' },
-  { label: 'Châteaugiron',       file: 'Rapport_PCRS_Chateaugiron.pdf' },
-  { label: 'Domloup',            file: 'Rapport_PCRS_Domloup.pdf' },
-  { label: 'Nouvoitou',          file: 'Rapport_PCRS_Nouvoitou.pdf' },
-  { label: 'Noyal-sur-Vilaine',  file: 'Rapport_PCRS_Noyal-sur-Vilaine.pdf' },
-  { label: 'Servon-sur-Vilaine', file: 'Rapport_PCRS_Servon-sur-Vilaine.pdf' },
-]
+// Normalisation pour la recherche : sans accents, minuscules
+const fold = s =>
+  (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
 
 export default function RapportModal({ onClose }) {
-  const [selected, setSelected] = useState('')
+  const [manifest, setManifest] = useState(null)
+  const [query, setQuery]       = useState('')
+  const [selected, setSelected] = useState(null)  // { label, file }
+
+  useEffect(() => {
+    fetch('./data/rapports_manifest.json')
+      .then(r => r.json())
+      .then(setManifest)
+      .catch(() => setManifest({ epci: [] }))
+  }, [])
+
+  // Groupes EPCI filtrés par la recherche
+  const groups = useMemo(() => {
+    if (!manifest) return []
+    const q = fold(query.trim())
+    return manifest.epci
+      .map(e => ({
+        ...e,
+        communes: q
+          ? e.communes.filter(c => fold(c.label).includes(q))
+          : e.communes,
+      }))
+      .filter(e => e.communes.length > 0)
+  }, [manifest, query])
 
   function handleGenerate() {
-    if (!selected) return
-    const commune = COMMUNES.find(c => c.label === selected)
-    if (!commune) return
+    if (!selected || !RAPPORTS_BASE_URL) return
+    const base = RAPPORTS_BASE_URL.replace(/\/$/, '')
     const a = Object.assign(document.createElement('a'), {
-      href: `./rapports/${commune.file}`,
-      download: commune.file,
+      href: `${base}/${selected.file}`,
+      download: selected.file.split('/').pop(),
       target: '_blank',
+      rel: 'noopener',
     })
     a.click()
   }
@@ -31,29 +50,58 @@ export default function RapportModal({ onClose }) {
           <span>Rapport PCRS par commune</span>
           <button className="rapport-close" onClick={onClose}>✕</button>
         </div>
+
         <div className="rapport-modal-body">
           <p className="rapport-hint">
-            Sélectionnez une commune pour télécharger son rapport de détection des changements PCRS.
+            Recherchez une commune pour télécharger son rapport de détection des
+            changements PCRS.
           </p>
+
+          {!RAPPORTS_BASE_URL && (
+            <p className="rapport-warn">
+              ⚠ Hébergement des rapports non configuré (RAPPORTS_BASE_URL).
+              La sélection fonctionne mais le téléchargement est désactivé.
+            </p>
+          )}
+
+          <input
+            className="rapport-search"
+            type="text"
+            placeholder="Rechercher une commune…"
+            value={query}
+            onChange={e => setQuery(e.target.value)}
+            autoFocus
+          />
+
           <div className="rapport-commune-list">
-            {COMMUNES.map(c => (
-              <button
-                key={c.label}
-                className={`rapport-commune-btn${selected === c.label ? ' active' : ''}`}
-                onClick={() => setSelected(c.label)}
-              >
-                {c.label}
-              </button>
+            {!manifest && <div className="rapport-empty">Chargement…</div>}
+            {manifest && groups.length === 0 && (
+              <div className="rapport-empty">Aucune commune trouvée.</div>
+            )}
+            {groups.map(e => (
+              <React.Fragment key={e.slug}>
+                <div className="rapport-epci-label">{e.label}</div>
+                {e.communes.map(c => (
+                  <button
+                    key={c.file}
+                    className={`rapport-commune-btn${selected?.file === c.file ? ' active' : ''}`}
+                    onClick={() => setSelected(c)}
+                  >
+                    {c.label}
+                  </button>
+                ))}
+              </React.Fragment>
             ))}
           </div>
         </div>
+
         <div className="rapport-modal-footer">
           <button
             className="rapport-dl-btn"
             onClick={handleGenerate}
-            disabled={!selected}
+            disabled={!selected || !RAPPORTS_BASE_URL}
           >
-            ⬇ Télécharger le rapport — {selected || '…'}
+            ⬇ Télécharger le rapport — {selected?.label || '…'}
           </button>
         </div>
       </div>

@@ -16,7 +16,7 @@ import '@geoman-io/leaflet-geoman-free'
 import buffer from '@turf/buffer'
 import { lineString } from '@turf/helpers'
 import FeatureDetail from './FeatureDetail.jsx'
-import { IGN_WMS_URL, IGN_LAYER_T1, GOOGLE_SAT_URL, MAP_CENTER, MAP_ZOOM } from '../config.js'
+import { IGN_WMS_URL, IGN_LAYER_T1, IGN_LAYER_T2, MAP_CENTER, MAP_ZOOM } from '../config.js'
 
 // Fix default icon paths broken by Vite bundling
 delete L.Icon.Default.prototype._getIconUrl
@@ -154,8 +154,8 @@ export default function MapView({
 
   const BASEMAPS = [
     { id: 'osm',        label: 'Plan OSM',   icon: '🗺' },
-    { id: 'ortho2020',  label: 'Image 2020', icon: '📷' },
-    { id: 'google2025', label: 'Image 2025', icon: '🛰' },
+    { id: 'ortho2020',  label: 'Image 2020', icon: '✈' },
+    { id: 'ortho2023',  label: 'Image 2023', icon: '✈' },
   ]
 
   return (
@@ -185,7 +185,7 @@ export default function MapView({
         center={MAP_CENTER}
         zoom={MAP_ZOOM}
         style={{ width: '100%', height: '100%' }}
-        preferCanvas={false}
+        preferCanvas={true}
       >
         {basemap === 'osm' && (
           <TileLayer key="osm" url={OSM_URL} maxZoom={19}
@@ -196,9 +196,10 @@ export default function MapView({
             version="1.3.0" crs={L.CRS.EPSG4326} format="image/png"
             transparent={false} maxZoom={20} attribution="IGN BD ORTHO 2020" />
         )}
-        {basemap === 'google2025' && (
-          <TileLayer key="google" url={GOOGLE_SAT_URL} maxZoom={20}
-            attribution="Google Satellite" />
+        {basemap === 'ortho2023' && (
+          <WMSTileLayer key="wms2023" url={IGN_WMS_URL} layers={IGN_LAYER_T2}
+            version="1.3.0" crs={L.CRS.EPSG4326} format="image/png"
+            transparent={false} maxZoom={20} attribution="IGN Ortho-express 2023" />
         )}
 
         {emprise && (

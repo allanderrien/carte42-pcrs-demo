@@ -1,0 +1,1231 @@
+{
+  "base_path_hint": "<epci_slug>/<fichier.pdf>",
+  "epci": [
+    {
+      "slug": "01_bretagne-porte-de-loire",
+      "label": "Bretagne Porte de Loire",
+      "communes": [
+        {
+          "label": "Bain-de-Bretagne",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Bain-de-Bretagne.pdf"
+        },
+        {
+          "label": "Chanteloup",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Chanteloup.pdf"
+        },
+        {
+          "label": "Crevin",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Crevin.pdf"
+        },
+        {
+          "label": "Ercé-en-Lamée",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Erce-en-Lamee.pdf"
+        },
+        {
+          "label": "Grand-Fougeray",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Grand-Fougeray.pdf"
+        },
+        {
+          "label": "La Bosse-de-Bretagne",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_La_Bosse-de-Bretagne.pdf"
+        },
+        {
+          "label": "La Couyère",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_La_Couyere.pdf"
+        },
+        {
+          "label": "La Dominelais",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_La_Dominelais.pdf"
+        },
+        {
+          "label": "La Noë-Blanche",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_La_Noe-Blanche.pdf"
+        },
+        {
+          "label": "Lalleu",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Lalleu.pdf"
+        },
+        {
+          "label": "Le Petit-Fougeray",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Le_Petit-Fougeray.pdf"
+        },
+        {
+          "label": "Le Sel-de-Bretagne",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Le_Sel-de-Bretagne.pdf"
+        },
+        {
+          "label": "Pancé",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Pance.pdf"
+        },
+        {
+          "label": "Pléchâtel",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Plechatel.pdf"
+        },
+        {
+          "label": "Poligné",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Poligne.pdf"
+        },
+        {
+          "label": "Saint-Sulpice-des-Landes",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Saint-Sulpice-des-Landes.pdf"
+        },
+        {
+          "label": "Sainte-Anne-sur-Vilaine",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Sainte-Anne-sur-Vilaine.pdf"
+        },
+        {
+          "label": "Saulnières",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Saulnieres.pdf"
+        },
+        {
+          "label": "Teillay",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Teillay.pdf"
+        },
+        {
+          "label": "Tresbœuf",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Tresbœuf.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "02_bretagne-romantique",
+      "label": "Bretagne romantique",
+      "communes": [
+        {
+          "label": "Bonnemain",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Bonnemain.pdf"
+        },
+        {
+          "label": "Cardroc",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Cardroc.pdf"
+        },
+        {
+          "label": "Combourg",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Combourg.pdf"
+        },
+        {
+          "label": "Cuguen",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Cuguen.pdf"
+        },
+        {
+          "label": "Dingé",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Dinge.pdf"
+        },
+        {
+          "label": "Hédé-Bazouges",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Hede-Bazouges.pdf"
+        },
+        {
+          "label": "La Baussaine",
+          "file": "02_bretagne-romantique/Rapport_PCRS_La_Baussaine.pdf"
+        },
+        {
+          "label": "La Chapelle-aux-Filtzméens",
+          "file": "02_bretagne-romantique/Rapport_PCRS_La_Chapelle-aux-Filtzmeens.pdf"
+        },
+        {
+          "label": "Lanrigan",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Lanrigan.pdf"
+        },
+        {
+          "label": "Longaulnay",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Longaulnay.pdf"
+        },
+        {
+          "label": "Lourmais",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Lourmais.pdf"
+        },
+        {
+          "label": "Meillac",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Meillac.pdf"
+        },
+        {
+          "label": "Mesnil-Roc'h",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Mesnil-Roch.pdf"
+        },
+        {
+          "label": "Plesder",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Plesder.pdf"
+        },
+        {
+          "label": "Pleugueneuc",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Pleugueneuc.pdf"
+        },
+        {
+          "label": "Québriac",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Quebriac.pdf"
+        },
+        {
+          "label": "Saint-Brieuc-des-Iffs",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Saint-Brieuc-des-Iffs.pdf"
+        },
+        {
+          "label": "Saint-Domineuc",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Saint-Domineuc.pdf"
+        },
+        {
+          "label": "Saint-Léger-des-Prés",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Saint-Leger-des-Pres.pdf"
+        },
+        {
+          "label": "Saint-Thual",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Saint-Thual.pdf"
+        },
+        {
+          "label": "Tinténiac",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Tinteniac.pdf"
+        },
+        {
+          "label": "Trimer",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Trimer.pdf"
+        },
+        {
+          "label": "Trémeheuc",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Tremeheuc.pdf"
+        },
+        {
+          "label": "Trévérien",
+          "file": "02_bretagne-romantique/Rapport_PCRS_Treverien.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "03_cote-d-emeraude",
+      "label": "Côte d'Émeraude",
+      "communes": [
+        {
+          "label": "Dinard",
+          "file": "03_cote-d-emeraude/Rapport_PCRS_Dinard.pdf"
+        },
+        {
+          "label": "La Richardais",
+          "file": "03_cote-d-emeraude/Rapport_PCRS_La_Richardais.pdf"
+        },
+        {
+          "label": "Le Minihic-sur-Rance",
+          "file": "03_cote-d-emeraude/Rapport_PCRS_Le_Minihic-sur-Rance.pdf"
+        },
+        {
+          "label": "Pleurtuit",
+          "file": "03_cote-d-emeraude/Rapport_PCRS_Pleurtuit.pdf"
+        },
+        {
+          "label": "Saint-Briac-sur-Mer",
+          "file": "03_cote-d-emeraude/Rapport_PCRS_Saint-Briac-sur-Mer.pdf"
+        },
+        {
+          "label": "Saint-Lunaire",
+          "file": "03_cote-d-emeraude/Rapport_PCRS_Saint-Lunaire.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "04_couesnon-marches-de-bretagne",
+      "label": "Couesnon Marches de Bretagne",
+      "communes": [
+        {
+          "label": "Bazouges-la-Pérouse",
+          "file": "04_couesnon-marches-de-bretagne/Rapport_PCRS_Bazouges-la-Perouse.pdf"
+        },
+        {
+          "label": "Chauvigné",
+          "file": "04_couesnon-marches-de-bretagne/Rapport_PCRS_Chauvigne.pdf"
+        },
+        {
+          "label": "Le Châtellier",
+          "file": "04_couesnon-marches-de-bretagne/Rapport_PCRS_Le_Chatellier.pdf"
+        },
+        {
+          "label": "Les Portes du Coglais",
+          "file": "04_couesnon-marches-de-bretagne/Rapport_PCRS_Les_Portes_du_Coglais.pdf"
+        },
+        {
+          "label": "Maen Roch",
+          "file": "04_couesnon-marches-de-bretagne/Rapport_PCRS_Maen_Roch.pdf"
+        },
+        {
+          "label": "Marcillé-Raoul",
+          "file": "04_couesnon-marches-de-bretagne/Rapport_PCRS_Marcille-Raoul.pdf"
+        },
+        {
+          "label": "Rimou",
+          "file": "04_couesnon-marches-de-bretagne/Rapport_PCRS_Rimou.pdf"
+        },
+        {
+          "label": "Romazy",
+          "file": "04_couesnon-marches-de-bretagne/Rapport_PCRS_Romazy.pdf"
+        },
+        {
+          "label": "Saint-Germain-en-Coglès",
+          "file": "04_couesnon-marches-de-bretagne/Rapport_PCRS_Saint-Germain-en-Cogles.pdf"
+        },
+        {
+          "label": "Saint-Hilaire-des-Landes",
+          "file": "04_couesnon-marches-de-bretagne/Rapport_PCRS_Saint-Hilaire-des-Landes.pdf"
+        },
+        {
+          "label": "Saint-Marc-le-Blanc",
+          "file": "04_couesnon-marches-de-bretagne/Rapport_PCRS_Saint-Marc-le-Blanc.pdf"
+        },
+        {
+          "label": "Saint-Rémy-du-Plain",
+          "file": "04_couesnon-marches-de-bretagne/Rapport_PCRS_Saint-Remy-du-Plain.pdf"
+        },
+        {
+          "label": "Val-Couesnon",
+          "file": "04_couesnon-marches-de-bretagne/Rapport_PCRS_Val-Couesnon.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "05_fougeres-agglomeration",
+      "label": "Fougères Agglomération",
+      "communes": [
+        {
+          "label": "Beaucé",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Beauce.pdf"
+        },
+        {
+          "label": "Billé",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Bille.pdf"
+        },
+        {
+          "label": "Combourtillé",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Combourtille.pdf"
+        },
+        {
+          "label": "Fougères",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Fougeres.pdf"
+        },
+        {
+          "label": "Javené",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Javene.pdf"
+        },
+        {
+          "label": "La Bazouge-du-Désert",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_La_Bazouge-du-Desert.pdf"
+        },
+        {
+          "label": "La Chapelle-Fleurigné",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_La_Chapelle-Fleurigne.pdf"
+        },
+        {
+          "label": "La Chapelle-Saint-Aubert",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_La_Chapelle-Saint-Aubert.pdf"
+        },
+        {
+          "label": "La Selle-en-Luitré",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_La_Selle-en-Luitre.pdf"
+        },
+        {
+          "label": "Laignelet",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Laignelet.pdf"
+        },
+        {
+          "label": "Landéan",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Landean.pdf"
+        },
+        {
+          "label": "Le Ferré",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Le_Ferre.pdf"
+        },
+        {
+          "label": "Le Loroux",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Le_Loroux.pdf"
+        },
+        {
+          "label": "Louvigné-du-Désert",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Louvigne-du-Desert.pdf"
+        },
+        {
+          "label": "Luitré-Dompierre",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Luitre-Dompierre.pdf"
+        },
+        {
+          "label": "Lécousse",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Lecousse.pdf"
+        },
+        {
+          "label": "Mellé",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Melle.pdf"
+        },
+        {
+          "label": "Monthault",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Monthault.pdf"
+        },
+        {
+          "label": "Parcé",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Parce.pdf"
+        },
+        {
+          "label": "Parigné",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Parigne.pdf"
+        },
+        {
+          "label": "Poilley",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Poilley.pdf"
+        },
+        {
+          "label": "Rives-du-Couesnon",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Rives-du-Couesnon.pdf"
+        },
+        {
+          "label": "Romagné",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Romagne.pdf"
+        },
+        {
+          "label": "Saint-Georges-de-Reintembault",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Saint-Georges-de-Reintembault.pdf"
+        },
+        {
+          "label": "Saint-Ouen-des-Alleux",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Saint-Ouen-des-Alleux.pdf"
+        },
+        {
+          "label": "Saint-Sauveur-des-Landes",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Saint-Sauveur-des-Landes.pdf"
+        },
+        {
+          "label": "Villamée",
+          "file": "05_fougeres-agglomeration/Rapport_PCRS_Villamee.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "06_liffre-cormier",
+      "label": "Liffré-Cormier Communauté",
+      "communes": [
+        {
+          "label": "Chasné-sur-Illet",
+          "file": "06_liffre-cormier/Rapport_PCRS_Chasne-sur-Illet.pdf"
+        },
+        {
+          "label": "Dourdain",
+          "file": "06_liffre-cormier/Rapport_PCRS_Dourdain.pdf"
+        },
+        {
+          "label": "Ercé-près-Liffré",
+          "file": "06_liffre-cormier/Rapport_PCRS_Erce-pres-Liffre.pdf"
+        },
+        {
+          "label": "Gosné",
+          "file": "06_liffre-cormier/Rapport_PCRS_Gosne.pdf"
+        },
+        {
+          "label": "La Bouëxière",
+          "file": "06_liffre-cormier/Rapport_PCRS_La_Bouexiere.pdf"
+        },
+        {
+          "label": "Liffré",
+          "file": "06_liffre-cormier/Rapport_PCRS_Liffre.pdf"
+        },
+        {
+          "label": "Livré-sur-Changeon",
+          "file": "06_liffre-cormier/Rapport_PCRS_Livre-sur-Changeon.pdf"
+        },
+        {
+          "label": "Mézières-sur-Couesnon",
+          "file": "06_liffre-cormier/Rapport_PCRS_Mezieres-sur-Couesnon.pdf"
+        },
+        {
+          "label": "Saint-Aubin-du-Cormier",
+          "file": "06_liffre-cormier/Rapport_PCRS_Saint-Aubin-du-Cormier.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "07_montfort-communaute",
+      "label": "Montfort Communauté",
+      "communes": [
+        {
+          "label": "Breteil",
+          "file": "07_montfort-communaute/Rapport_PCRS_Breteil.pdf"
+        },
+        {
+          "label": "Bédée",
+          "file": "07_montfort-communaute/Rapport_PCRS_Bedee.pdf"
+        },
+        {
+          "label": "Iffendic",
+          "file": "07_montfort-communaute/Rapport_PCRS_Iffendic.pdf"
+        },
+        {
+          "label": "La Nouaye",
+          "file": "07_montfort-communaute/Rapport_PCRS_La_Nouaye.pdf"
+        },
+        {
+          "label": "Montfort-sur-Meu",
+          "file": "07_montfort-communaute/Rapport_PCRS_Montfort-sur-Meu.pdf"
+        },
+        {
+          "label": "Pleumeleuc",
+          "file": "07_montfort-communaute/Rapport_PCRS_Pleumeleuc.pdf"
+        },
+        {
+          "label": "Saint-Gonlay",
+          "file": "07_montfort-communaute/Rapport_PCRS_Saint-Gonlay.pdf"
+        },
+        {
+          "label": "Talensac",
+          "file": "07_montfort-communaute/Rapport_PCRS_Talensac.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "08_pays-de-broceliande",
+      "label": "Pays de Brocéliande",
+      "communes": [
+        {
+          "label": "Bréal-sous-Montfort",
+          "file": "08_pays-de-broceliande/Rapport_PCRS_Breal-sous-Montfort.pdf"
+        },
+        {
+          "label": "Maxent",
+          "file": "08_pays-de-broceliande/Rapport_PCRS_Maxent.pdf"
+        },
+        {
+          "label": "Monterfil",
+          "file": "08_pays-de-broceliande/Rapport_PCRS_Monterfil.pdf"
+        },
+        {
+          "label": "Paimpont",
+          "file": "08_pays-de-broceliande/Rapport_PCRS_Paimpont.pdf"
+        },
+        {
+          "label": "Plélan-le-Grand",
+          "file": "08_pays-de-broceliande/Rapport_PCRS_Plelan-le-Grand.pdf"
+        },
+        {
+          "label": "Saint-Péran",
+          "file": "08_pays-de-broceliande/Rapport_PCRS_Saint-Peran.pdf"
+        },
+        {
+          "label": "Saint-Thurial",
+          "file": "08_pays-de-broceliande/Rapport_PCRS_Saint-Thurial.pdf"
+        },
+        {
+          "label": "Treffendel",
+          "file": "08_pays-de-broceliande/Rapport_PCRS_Treffendel.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "09_pays-de-chateaugiron",
+      "label": "Pays de Châteaugiron",
+      "communes": [
+        {
+          "label": "Châteaugiron",
+          "file": "09_pays-de-chateaugiron/Rapport_PCRS_Chateaugiron.pdf"
+        },
+        {
+          "label": "Domloup",
+          "file": "09_pays-de-chateaugiron/Rapport_PCRS_Domloup.pdf"
+        },
+        {
+          "label": "Noyal-sur-Vilaine",
+          "file": "09_pays-de-chateaugiron/Rapport_PCRS_Noyal-sur-Vilaine.pdf"
+        },
+        {
+          "label": "Piré-Chancé",
+          "file": "09_pays-de-chateaugiron/Rapport_PCRS_Pire-Chance.pdf"
+        },
+        {
+          "label": "Servon-sur-Vilaine",
+          "file": "09_pays-de-chateaugiron/Rapport_PCRS_Servon-sur-Vilaine.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "10_pays-de-dol",
+      "label": "Pays de Dol",
+      "communes": [
+        {
+          "label": "Baguer-Morvan",
+          "file": "10_pays-de-dol/Rapport_PCRS_Baguer-Morvan.pdf"
+        },
+        {
+          "label": "Baguer-Pican",
+          "file": "10_pays-de-dol/Rapport_PCRS_Baguer-Pican.pdf"
+        },
+        {
+          "label": "Broualan",
+          "file": "10_pays-de-dol/Rapport_PCRS_Broualan.pdf"
+        },
+        {
+          "label": "Cherrueix",
+          "file": "10_pays-de-dol/Rapport_PCRS_Cherrueix.pdf"
+        },
+        {
+          "label": "Dol-de-Bretagne",
+          "file": "10_pays-de-dol/Rapport_PCRS_Dol-de-Bretagne.pdf"
+        },
+        {
+          "label": "Epiniac",
+          "file": "10_pays-de-dol/Rapport_PCRS_Epiniac.pdf"
+        },
+        {
+          "label": "La Boussac",
+          "file": "10_pays-de-dol/Rapport_PCRS_La_Boussac.pdf"
+        },
+        {
+          "label": "Le Vivier-sur-Mer",
+          "file": "10_pays-de-dol/Rapport_PCRS_Le_Vivier-sur-Mer.pdf"
+        },
+        {
+          "label": "Mont-Dol",
+          "file": "10_pays-de-dol/Rapport_PCRS_Mont-Dol.pdf"
+        },
+        {
+          "label": "Pleine-Fougères",
+          "file": "10_pays-de-dol/Rapport_PCRS_Pleine-Fougeres.pdf"
+        },
+        {
+          "label": "Roz-Landrieux",
+          "file": "10_pays-de-dol/Rapport_PCRS_Roz-Landrieux.pdf"
+        },
+        {
+          "label": "Roz-sur-Couesnon",
+          "file": "10_pays-de-dol/Rapport_PCRS_Roz-sur-Couesnon.pdf"
+        },
+        {
+          "label": "Sains",
+          "file": "10_pays-de-dol/Rapport_PCRS_Sains.pdf"
+        },
+        {
+          "label": "Saint-Broladre",
+          "file": "10_pays-de-dol/Rapport_PCRS_Saint-Broladre.pdf"
+        },
+        {
+          "label": "Saint-Georges-de-Gréhaigne",
+          "file": "10_pays-de-dol/Rapport_PCRS_Saint-Georges-de-Grehaigne.pdf"
+        },
+        {
+          "label": "Saint-Marcan",
+          "file": "10_pays-de-dol/Rapport_PCRS_Saint-Marcan.pdf"
+        },
+        {
+          "label": "Sougeal",
+          "file": "10_pays-de-dol/Rapport_PCRS_Sougeal.pdf"
+        },
+        {
+          "label": "Trans-la-Forêt",
+          "file": "10_pays-de-dol/Rapport_PCRS_Trans-la-Foret.pdf"
+        },
+        {
+          "label": "Vieux-Viel",
+          "file": "10_pays-de-dol/Rapport_PCRS_Vieux-Viel.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "11_pays-de-redon",
+      "label": "Pays de Redon",
+      "communes": [
+        {
+          "label": "Bains-sur-Oust",
+          "file": "11_pays-de-redon/Rapport_PCRS_Bains-sur-Oust.pdf"
+        },
+        {
+          "label": "Bruc-sur-Aff",
+          "file": "11_pays-de-redon/Rapport_PCRS_Bruc-sur-Aff.pdf"
+        },
+        {
+          "label": "La Chapelle-de-Brain",
+          "file": "11_pays-de-redon/Rapport_PCRS_La_Chapelle-de-Brain.pdf"
+        },
+        {
+          "label": "Langon",
+          "file": "11_pays-de-redon/Rapport_PCRS_Langon.pdf"
+        },
+        {
+          "label": "Lieuron",
+          "file": "11_pays-de-redon/Rapport_PCRS_Lieuron.pdf"
+        },
+        {
+          "label": "Pipriac",
+          "file": "11_pays-de-redon/Rapport_PCRS_Pipriac.pdf"
+        },
+        {
+          "label": "Redon",
+          "file": "11_pays-de-redon/Rapport_PCRS_Redon.pdf"
+        },
+        {
+          "label": "Renac",
+          "file": "11_pays-de-redon/Rapport_PCRS_Renac.pdf"
+        },
+        {
+          "label": "Saint-Ganton",
+          "file": "11_pays-de-redon/Rapport_PCRS_Saint-Ganton.pdf"
+        },
+        {
+          "label": "Saint-Just",
+          "file": "11_pays-de-redon/Rapport_PCRS_Saint-Just.pdf"
+        },
+        {
+          "label": "Sainte-Marie",
+          "file": "11_pays-de-redon/Rapport_PCRS_Sainte-Marie.pdf"
+        },
+        {
+          "label": "Sixt-sur-Aff",
+          "file": "11_pays-de-redon/Rapport_PCRS_Sixt-sur-Aff.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "12_roche-aux-fees",
+      "label": "Roche aux Fées",
+      "communes": [
+        {
+          "label": "Amanlis",
+          "file": "12_roche-aux-fees/Rapport_PCRS_Amanlis.pdf"
+        },
+        {
+          "label": "Arbrissel",
+          "file": "12_roche-aux-fees/Rapport_PCRS_Arbrissel.pdf"
+        },
+        {
+          "label": "Boistrudan",
+          "file": "12_roche-aux-fees/Rapport_PCRS_Boistrudan.pdf"
+        },
+        {
+          "label": "Coësmes",
+          "file": "12_roche-aux-fees/Rapport_PCRS_Coesmes.pdf"
+        },
+        {
+          "label": "Eancé",
+          "file": "12_roche-aux-fees/Rapport_PCRS_Eance.pdf"
+        },
+        {
+          "label": "Essé",
+          "file": "12_roche-aux-fees/Rapport_PCRS_Esse.pdf"
+        },
+        {
+          "label": "Janzé",
+          "file": "12_roche-aux-fees/Rapport_PCRS_Janze.pdf"
+        },
+        {
+          "label": "Le Theil-de-Bretagne",
+          "file": "12_roche-aux-fees/Rapport_PCRS_Le_Theil-de-Bretagne.pdf"
+        },
+        {
+          "label": "Marcillé-Robert",
+          "file": "12_roche-aux-fees/Rapport_PCRS_Marcille-Robert.pdf"
+        },
+        {
+          "label": "Martigné-Ferchaud",
+          "file": "12_roche-aux-fees/Rapport_PCRS_Martigne-Ferchaud.pdf"
+        },
+        {
+          "label": "Retiers",
+          "file": "12_roche-aux-fees/Rapport_PCRS_Retiers.pdf"
+        },
+        {
+          "label": "Sainte-Colombe",
+          "file": "12_roche-aux-fees/Rapport_PCRS_Sainte-Colombe.pdf"
+        },
+        {
+          "label": "Thourie",
+          "file": "12_roche-aux-fees/Rapport_PCRS_Thourie.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "13_saint-malo-agglomeration",
+      "label": "Saint-Malo Agglomération",
+      "communes": [
+        {
+          "label": "Cancale",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_Cancale.pdf"
+        },
+        {
+          "label": "Châteauneuf-d'Ille-et-Vilaine",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_Chateauneuf-dIlle-et-Vilaine.pdf"
+        },
+        {
+          "label": "Hirel",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_Hirel.pdf"
+        },
+        {
+          "label": "La Fresnais",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_La_Fresnais.pdf"
+        },
+        {
+          "label": "La Gouesnière",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_La_Gouesniere.pdf"
+        },
+        {
+          "label": "La Ville-ès-Nonais",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_La_Ville-es-Nonais.pdf"
+        },
+        {
+          "label": "Le Tronchet",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_Le_Tronchet.pdf"
+        },
+        {
+          "label": "Lillemer",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_Lillemer.pdf"
+        },
+        {
+          "label": "Miniac-Morvan",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_Miniac-Morvan.pdf"
+        },
+        {
+          "label": "Plerguer",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_Plerguer.pdf"
+        },
+        {
+          "label": "Saint-Benoît-des-Ondes",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_Saint-Benoit-des-Ondes.pdf"
+        },
+        {
+          "label": "Saint-Coulomb",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_Saint-Coulomb.pdf"
+        },
+        {
+          "label": "Saint-Guinoux",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_Saint-Guinoux.pdf"
+        },
+        {
+          "label": "Saint-Jouan-des-Guérets",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_Saint-Jouan-des-Guerets.pdf"
+        },
+        {
+          "label": "Saint-Malo",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_Saint-Malo.pdf"
+        },
+        {
+          "label": "Saint-Méloir-des-Ondes",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_Saint-Meloir-des-Ondes.pdf"
+        },
+        {
+          "label": "Saint-Père-Marc-en-Poulet",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_Saint-Pere-Marc-en-Poulet.pdf"
+        },
+        {
+          "label": "Saint-Suliac",
+          "file": "13_saint-malo-agglomeration/Rapport_PCRS_Saint-Suliac.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "14_saint-meen-montauban",
+      "label": "Saint-Méen Montauban",
+      "communes": [
+        {
+          "label": "Boisgervilly",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_Boisgervilly.pdf"
+        },
+        {
+          "label": "Gaël",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_Gael.pdf"
+        },
+        {
+          "label": "Irodouër",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_Irodouer.pdf"
+        },
+        {
+          "label": "La Chapelle du Lou du Lac",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_La_Chapelle_du_Lou_du_Lac.pdf"
+        },
+        {
+          "label": "Landujan",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_Landujan.pdf"
+        },
+        {
+          "label": "Le Crouais",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_Le_Crouais.pdf"
+        },
+        {
+          "label": "Montauban-de-Bretagne",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_Montauban-de-Bretagne.pdf"
+        },
+        {
+          "label": "Muel",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_Muel.pdf"
+        },
+        {
+          "label": "Médréac",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_Medreac.pdf"
+        },
+        {
+          "label": "Quédillac",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_Quedillac.pdf"
+        },
+        {
+          "label": "Saint-Malon-sur-Mel",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_Saint-Malon-sur-Mel.pdf"
+        },
+        {
+          "label": "Saint-Maugan",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_Saint-Maugan.pdf"
+        },
+        {
+          "label": "Saint-Méen-le-Grand",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_Saint-Meen-le-Grand.pdf"
+        },
+        {
+          "label": "Saint-Onen-la-Chapelle",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_Saint-Onen-la-Chapelle.pdf"
+        },
+        {
+          "label": "Saint-Pern",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_Saint-Pern.pdf"
+        },
+        {
+          "label": "Saint-Uniac",
+          "file": "14_saint-meen-montauban/Rapport_PCRS_Saint-Uniac.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "15_val-d-ille-aubigne",
+      "label": "Val d'Ille-Aubigné",
+      "communes": [
+        {
+          "label": "Andouillé-Neuville",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Andouille-Neuville.pdf"
+        },
+        {
+          "label": "Aubigné",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Aubigne.pdf"
+        },
+        {
+          "label": "Feins",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Feins.pdf"
+        },
+        {
+          "label": "Gahard",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Gahard.pdf"
+        },
+        {
+          "label": "Guipel",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Guipel.pdf"
+        },
+        {
+          "label": "La Mézière",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_La_Meziere.pdf"
+        },
+        {
+          "label": "Langouet",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Langouet.pdf"
+        },
+        {
+          "label": "Melesse",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Melesse.pdf"
+        },
+        {
+          "label": "Montreuil-le-Gast",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Montreuil-le-Gast.pdf"
+        },
+        {
+          "label": "Montreuil-sur-Ille",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Montreuil-sur-Ille.pdf"
+        },
+        {
+          "label": "Saint-Aubin-d'Aubigné",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Saint-Aubin-dAubigne.pdf"
+        },
+        {
+          "label": "Saint-Germain-sur-Ille",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Saint-Germain-sur-Ille.pdf"
+        },
+        {
+          "label": "Saint-Gondran",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Saint-Gondran.pdf"
+        },
+        {
+          "label": "Saint-Médard-sur-Ille",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Saint-Medard-sur-Ille.pdf"
+        },
+        {
+          "label": "Saint-Symphorien",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Saint-Symphorien.pdf"
+        },
+        {
+          "label": "Sens-de-Bretagne",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Sens-de-Bretagne.pdf"
+        },
+        {
+          "label": "Vieux-Vy-sur-Couesnon",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Vieux-Vy-sur-Couesnon.pdf"
+        },
+        {
+          "label": "Vignoc",
+          "file": "15_val-d-ille-aubigne/Rapport_PCRS_Vignoc.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "16_vallons-de-haute-bretagne",
+      "label": "Vallons de Haute Bretagne",
+      "communes": [
+        {
+          "label": "Baulon",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Baulon.pdf"
+        },
+        {
+          "label": "Bourg-des-Comptes",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Bourg-des-Comptes.pdf"
+        },
+        {
+          "label": "Bovel",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Bovel.pdf"
+        },
+        {
+          "label": "Comblessac",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Comblessac.pdf"
+        },
+        {
+          "label": "Goven",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Goven.pdf"
+        },
+        {
+          "label": "Guichen",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Guichen.pdf"
+        },
+        {
+          "label": "Guignen",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Guignen.pdf"
+        },
+        {
+          "label": "Guipry-Messac",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Guipry-Messac.pdf"
+        },
+        {
+          "label": "La Chapelle-Bouëxic",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_La_Chapelle-Bouexic.pdf"
+        },
+        {
+          "label": "Lassy",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Lassy.pdf"
+        },
+        {
+          "label": "Les Brulais",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Les_Brulais.pdf"
+        },
+        {
+          "label": "Lieuron",
+          "file": "11_pays-de-redon/Rapport_PCRS_Lieuron.pdf"
+        },
+        {
+          "label": "Lohéac",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Loheac.pdf"
+        },
+        {
+          "label": "Loutehel",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Loutehel.pdf"
+        },
+        {
+          "label": "Mernel",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Mernel.pdf"
+        },
+        {
+          "label": "Pléchâtel",
+          "file": "01_bretagne-porte-de-loire/Rapport_PCRS_Plechatel.pdf"
+        },
+        {
+          "label": "Saint-Malo-de-Phily",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Saint-Malo-de-Phily.pdf"
+        },
+        {
+          "label": "Saint-Senoux",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Saint-Senoux.pdf"
+        },
+        {
+          "label": "Saint-Séglin",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Saint-Seglin.pdf"
+        },
+        {
+          "label": "Val d'Anast",
+          "file": "16_vallons-de-haute-bretagne/Rapport_PCRS_Val_dAnast.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "17_vitre-communaute",
+      "label": "Vitré Communauté",
+      "communes": [
+        {
+          "label": "Argentré-du-Plessis",
+          "file": "17_vitre-communaute/Rapport_PCRS_Argentre-du-Plessis.pdf"
+        },
+        {
+          "label": "Availles-sur-Seiche",
+          "file": "17_vitre-communaute/Rapport_PCRS_Availles-sur-Seiche.pdf"
+        },
+        {
+          "label": "Bais",
+          "file": "17_vitre-communaute/Rapport_PCRS_Bais.pdf"
+        },
+        {
+          "label": "Balazé",
+          "file": "17_vitre-communaute/Rapport_PCRS_Balaze.pdf"
+        },
+        {
+          "label": "Brielles",
+          "file": "17_vitre-communaute/Rapport_PCRS_Brielles.pdf"
+        },
+        {
+          "label": "Bréal-sous-Vitré",
+          "file": "17_vitre-communaute/Rapport_PCRS_Breal-sous-Vitre.pdf"
+        },
+        {
+          "label": "Champeaux",
+          "file": "17_vitre-communaute/Rapport_PCRS_Champeaux.pdf"
+        },
+        {
+          "label": "Châteaubourg",
+          "file": "17_vitre-communaute/Rapport_PCRS_Chateaubourg.pdf"
+        },
+        {
+          "label": "Châtillon-en-Vendelais",
+          "file": "17_vitre-communaute/Rapport_PCRS_Chatillon-en-Vendelais.pdf"
+        },
+        {
+          "label": "Cornillé",
+          "file": "17_vitre-communaute/Rapport_PCRS_Cornille.pdf"
+        },
+        {
+          "label": "Domagné",
+          "file": "17_vitre-communaute/Rapport_PCRS_Domagne.pdf"
+        },
+        {
+          "label": "Domalain",
+          "file": "17_vitre-communaute/Rapport_PCRS_Domalain.pdf"
+        },
+        {
+          "label": "Drouges",
+          "file": "17_vitre-communaute/Rapport_PCRS_Drouges.pdf"
+        },
+        {
+          "label": "Erbrée",
+          "file": "17_vitre-communaute/Rapport_PCRS_Erbree.pdf"
+        },
+        {
+          "label": "Gennes-sur-Seiche",
+          "file": "17_vitre-communaute/Rapport_PCRS_Gennes-sur-Seiche.pdf"
+        },
+        {
+          "label": "La Chapelle-Erbrée",
+          "file": "17_vitre-communaute/Rapport_PCRS_La_Chapelle-Erbree.pdf"
+        },
+        {
+          "label": "La Guerche-de-Bretagne",
+          "file": "17_vitre-communaute/Rapport_PCRS_La_Guerche-de-Bretagne.pdf"
+        },
+        {
+          "label": "La Selle-Guerchaise",
+          "file": "17_vitre-communaute/Rapport_PCRS_La_Selle-Guerchaise.pdf"
+        },
+        {
+          "label": "Landavran",
+          "file": "17_vitre-communaute/Rapport_PCRS_Landavran.pdf"
+        },
+        {
+          "label": "Le Pertre",
+          "file": "17_vitre-communaute/Rapport_PCRS_Le_Pertre.pdf"
+        },
+        {
+          "label": "Louvigné-de-Bais",
+          "file": "17_vitre-communaute/Rapport_PCRS_Louvigne-de-Bais.pdf"
+        },
+        {
+          "label": "Marpiré",
+          "file": "17_vitre-communaute/Rapport_PCRS_Marpire.pdf"
+        },
+        {
+          "label": "Mecé",
+          "file": "17_vitre-communaute/Rapport_PCRS_Mece.pdf"
+        },
+        {
+          "label": "Mondevert",
+          "file": "17_vitre-communaute/Rapport_PCRS_Mondevert.pdf"
+        },
+        {
+          "label": "Montautour",
+          "file": "17_vitre-communaute/Rapport_PCRS_Montautour.pdf"
+        },
+        {
+          "label": "Montreuil-des-Landes",
+          "file": "17_vitre-communaute/Rapport_PCRS_Montreuil-des-Landes.pdf"
+        },
+        {
+          "label": "Montreuil-sous-Pérouse",
+          "file": "17_vitre-communaute/Rapport_PCRS_Montreuil-sous-Perouse.pdf"
+        },
+        {
+          "label": "Moulins",
+          "file": "17_vitre-communaute/Rapport_PCRS_Moulins.pdf"
+        },
+        {
+          "label": "Moussé",
+          "file": "17_vitre-communaute/Rapport_PCRS_Mousse.pdf"
+        },
+        {
+          "label": "Moutiers",
+          "file": "17_vitre-communaute/Rapport_PCRS_Moutiers.pdf"
+        },
+        {
+          "label": "Pocé-les-Bois",
+          "file": "17_vitre-communaute/Rapport_PCRS_Poce-les-Bois.pdf"
+        },
+        {
+          "label": "Rannée",
+          "file": "17_vitre-communaute/Rapport_PCRS_Rannee.pdf"
+        },
+        {
+          "label": "Saint-Aubin-des-Landes",
+          "file": "17_vitre-communaute/Rapport_PCRS_Saint-Aubin-des-Landes.pdf"
+        },
+        {
+          "label": "Saint-Christophe-des-Bois",
+          "file": "17_vitre-communaute/Rapport_PCRS_Saint-Christophe-des-Bois.pdf"
+        },
+        {
+          "label": "Saint-Didier",
+          "file": "17_vitre-communaute/Rapport_PCRS_Saint-Didier.pdf"
+        },
+        {
+          "label": "Saint-Germain-du-Pinel",
+          "file": "17_vitre-communaute/Rapport_PCRS_Saint-Germain-du-Pinel.pdf"
+        },
+        {
+          "label": "Saint-Jean-sur-Vilaine",
+          "file": "17_vitre-communaute/Rapport_PCRS_Saint-Jean-sur-Vilaine.pdf"
+        },
+        {
+          "label": "Saint-M'Hervé",
+          "file": "17_vitre-communaute/Rapport_PCRS_Saint-MHerve.pdf"
+        },
+        {
+          "label": "Taillis",
+          "file": "17_vitre-communaute/Rapport_PCRS_Taillis.pdf"
+        },
+        {
+          "label": "Torcé",
+          "file": "17_vitre-communaute/Rapport_PCRS_Torce.pdf"
+        },
+        {
+          "label": "Val-d'Izé",
+          "file": "17_vitre-communaute/Rapport_PCRS_Val-dIze.pdf"
+        },
+        {
+          "label": "Vergéal",
+          "file": "17_vitre-communaute/Rapport_PCRS_Vergeal.pdf"
+        },
+        {
+          "label": "Visseiche",
+          "file": "17_vitre-communaute/Rapport_PCRS_Visseiche.pdf"
+        },
+        {
+          "label": "Vitré",
+          "file": "17_vitre-communaute/Rapport_PCRS_Vitre.pdf"
+        },
+        {
+          "label": "Étrelles",
+          "file": "17_vitre-communaute/Rapport_PCRS_Etrelles.pdf"
+        }
+      ]
+    }
+  ]
+}
