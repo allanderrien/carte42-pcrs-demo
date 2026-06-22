@@ -80,7 +80,7 @@ export default function App() {
     const blob = new Blob([JSON.stringify(exported, null, 2)], { type: 'application/json' })
     const url  = URL.createObjectURL(blob)
     const a    = Object.assign(document.createElement('a'), {
-      href: url, download: 'Changements_PCRS_2020-2025_Demo.geojson',
+      href: url, download: 'Changements_PCRS_2020-2025.geojson',
     })
     a.click()
     URL.revokeObjectURL(url)
