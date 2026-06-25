@@ -425,6 +425,30 @@ body {
 .rapport-modal-body {
   padding: 16px 18px;
 }
+.rapport-all {
+  margin: 0 0 14px 0;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #2a4060;
+}
+.rapport-dl-all-btn {
+  width: 100%;
+  background: #1f7a4d;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.rapport-dl-all-btn:hover { background: #279a61; }
+.rapport-all-hint {
+  font-size: 11px;
+  color: #7a9ab5;
+  margin-top: 6px;
+  text-align: center;
+}
 .rapport-hint {
   font-size: 12px;
   color: #7a9ab5;

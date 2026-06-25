@@ -15,3 +15,11 @@ export const MAP_ZOOM = 9
 // serveur statique…) puis renseigner l'URL ci-dessous (sans / final).
 // Tant qu'elle est vide, le bouton de téléchargement reste désactivé.
 export const RAPPORTS_BASE_URL = 'https://rapports.carte42.fr'
+
+// ── Archive ZIP de TOUS les rapports (générée sur l'hébergement, ~1,3 Go) ───
+// Servie à `${RAPPORTS_BASE_URL}/${RAPPORTS_ZIP_FILE}`. Active le bouton
+// « Tout télécharger » du RapportModal. Régénération côté serveur :
+//   ssh root@<hôte> 'cd /var/www/rapports && zip -1 -r -q /tmp/r.zip . -x "*.zip" \
+//     && mv -f /tmp/r.zip ./Rapports_PCRS_SDE35_complet.zip && chmod 644 ./Rapports_PCRS_SDE35_complet.zip'
+// Vide = bouton masqué.
+export const RAPPORTS_ZIP_FILE = 'Rapports_PCRS_SDE35_complet.zip'

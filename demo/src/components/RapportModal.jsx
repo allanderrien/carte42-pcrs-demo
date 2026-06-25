@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react'
-import { RAPPORTS_BASE_URL } from '../config.js'
+import { RAPPORTS_BASE_URL, RAPPORTS_ZIP_FILE } from '../config.js'
 
 // Normalisation pour la recherche : sans accents, minuscules
 const fold = s =>
@@ -43,6 +43,20 @@ export default function RapportModal({ onClose }) {
     a.click()
   }
 
+  const canZip = RAPPORTS_BASE_URL && RAPPORTS_ZIP_FILE
+
+  function handleDownloadAll() {
+    if (!canZip) return
+    const base = RAPPORTS_BASE_URL.replace(/\/$/, '')
+    const a = Object.assign(document.createElement('a'), {
+      href: `${base}/${RAPPORTS_ZIP_FILE}`,
+      download: RAPPORTS_ZIP_FILE,
+      target: '_blank',
+      rel: 'noopener',
+    })
+    a.click()
+  }
+
   return (
     <div className="rapport-overlay" onClick={onClose}>
       <div className="rapport-modal" onClick={e => e.stopPropagation()}>
@@ -52,9 +66,20 @@ export default function RapportModal({ onClose }) {
         </div>
 
         <div className="rapport-modal-body">
+          {canZip && (
+            <div className="rapport-all">
+              <button className="rapport-dl-all-btn" onClick={handleDownloadAll}>
+                ⬇ Télécharger tous les rapports (ZIP)
+              </button>
+              <div className="rapport-all-hint">
+                Une seule archive — 283 rapports communaux, ~1,3 Go.
+              </div>
+            </div>
+          )}
+
           <p className="rapport-hint">
-            Recherchez une commune pour télécharger son rapport de détection des
-            changements PCRS.
+            …ou recherchez une commune pour télécharger son rapport de détection
+            des changements PCRS individuellement.
           </p>
 
           {!RAPPORTS_BASE_URL && (

@@ -10,6 +10,17 @@ export const COLORS = {
   0: { bg: '#717d7e', fg: '#fff' },
 }
 
+function formatDate(d) {
+  // "2026-06-01" -> "1 juin 2026"
+  if (!d || typeof d !== 'string') return ''
+  const m = d.match(/^(\d{4})-(\d{2})-(\d{2})/)
+  if (!m) return d
+  const mois = ['janvier','février','mars','avril','mai','juin','juillet',
+    'août','septembre','octobre','novembre','décembre']
+  const [, y, mo, day] = m
+  return `${parseInt(day, 10)} ${mois[parseInt(mo, 10) - 1]} ${y}`
+}
+
 function formatCategorie(cat) {
   if (!cat) return ''
   const map = {
@@ -163,6 +174,11 @@ export default function FeatureDetail({ feature, onClose, onEdit, onEditGeom, ed
             {p.commune && (
               <div className="feature-detail-meta">
                 <strong>Commune :</strong> {p.commune}
+              </div>
+            )}
+            {p.date_detection && (
+              <div className="feature-detail-meta">
+                <strong>Date de détection :</strong> {formatDate(p.date_detection)}
               </div>
             )}
           </>
