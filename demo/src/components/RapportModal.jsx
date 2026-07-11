@@ -87,7 +87,10 @@ export default function RapportModal({ onClose }) {
     try {
       const files = []
       for (let i = 0; i < items.length; i++) {
-        const res = await fetch(`${base}/${items[i].file}`)
+        // cache:'no-store' → évite de réutiliser une réponse en cache SANS
+        // en-tête CORS (mise en cache avant l'ajout d'Access-Control-Allow-Origin),
+        // qui ferait échouer la requête cross-origin.
+        const res = await fetch(`${base}/${items[i].file}`, { cache: 'no-store', mode: 'cors' })
         if (!res.ok) throw new Error(`${items[i].label} : HTTP ${res.status}`)
         files.push({
           name: items[i].file.split('/').pop(),
