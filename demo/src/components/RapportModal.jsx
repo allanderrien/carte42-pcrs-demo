@@ -1,18 +1,23 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import { RAPPORTS_BASE_URL, RAPPORTS_ZIP_FILE } from '../config.js'
+import { buildZip } from '../lib/zip.js'
 
 // Normalisation pour la recherche : sans accents, minuscules
 const fold = s =>
   (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
 
-const sleep = ms => new Promise(r => setTimeout(r, ms))
+// Nom de fichier ZIP sûr : sans accents, alphanum + tirets
+const slugify = s =>
+  (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^A-Za-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
 
 export default function RapportModal({ onClose }) {
   const [manifest, setManifest] = useState(null)
   const [query, setQuery]       = useState('')
   // Sélection multiple : ensemble des `file` cochés
   const [selected, setSelected] = useState(() => new Set())
-  const [progress, setProgress] = useState(null) // { done, total } pendant un téléchargement
+  const [progress, setProgress] = useState(null) // { phase:'fetch'|'zip', done, total }
+  const [error, setError]       = useState(null)
 
   useEffect(() => {
     fetch('./data/rapports_manifest.json')
@@ -20,14 +25,6 @@ export default function RapportModal({ onClose }) {
       .then(setManifest)
       .catch(() => setManifest({ epci: [] }))
   }, [])
-
-  // Index file -> commune (toutes communes, indépendant du filtre de recherche)
-  const byFile = useMemo(() => {
-    const m = new Map()
-    if (manifest) for (const e of manifest.epci)
-      for (const c of e.communes) m.set(c.file, c)
-    return m
-  }, [manifest])
 
   // Groupes EPCI filtrés par la recherche
   const groups = useMemo(() => {
@@ -44,7 +41,7 @@ export default function RapportModal({ onClose }) {
   }, [manifest, query])
 
   const canDownload = !!RAPPORTS_BASE_URL
-  const downloading = progress !== null
+  const busy = progress !== null
 
   function toggleCommune(file) {
     setSelected(prev => {
@@ -67,51 +64,85 @@ export default function RapportModal({ onClose }) {
     setSelected(new Set())
   }
 
-  // ── Téléchargement séquentiel d'une liste de rapports ─────────────────────
-  // Les PDF sont servis par l'hébergement externe avec Content-Disposition:
-  // attachment → chaque lien se télécharge (au lieu de s'ouvrir dans un onglet).
-  async function downloadFiles(files) {
-    if (!canDownload || downloading || !files.length) return
+  // ── Téléchargement direct d'un lien (PDF unique ou ZIP départemental) ─────
+  // Le serveur renvoie Content-Disposition: attachment → le lien se télécharge.
+  function triggerLink(url, name) {
+    const a = Object.assign(document.createElement('a'), { href: url, download: name })
+    document.body.appendChild(a)
+    a.click()
+    a.remove()
+  }
+
+  function triggerBlob(blob, name) {
+    const url = URL.createObjectURL(blob)
+    triggerLink(url, name)
+    setTimeout(() => URL.revokeObjectURL(url), 10000)
+  }
+
+  // ── Récupère les PDF puis les regroupe dans UNE archive ZIP ───────────────
+  async function fetchAndZip(items, zipName) {
     const base = RAPPORTS_BASE_URL.replace(/\/$/, '')
-    setProgress({ done: 0, total: files.length })
-    for (let i = 0; i < files.length; i++) {
-      const a = Object.assign(document.createElement('a'), {
-        href: `${base}/${files[i]}`,
-        download: files[i].split('/').pop(),
-        target: '_blank',
-        rel: 'noopener',
-      })
-      document.body.appendChild(a)
-      a.click()
-      a.remove()
-      setProgress({ done: i + 1, total: files.length })
-      // Petit délai : évite que le navigateur ignore des téléchargements rapprochés
-      if (i < files.length - 1) await sleep(500)
+    setError(null)
+    setProgress({ phase: 'fetch', done: 0, total: items.length })
+    try {
+      const files = []
+      for (let i = 0; i < items.length; i++) {
+        const res = await fetch(`${base}/${items[i].file}`)
+        if (!res.ok) throw new Error(`${items[i].label} : HTTP ${res.status}`)
+        files.push({
+          name: items[i].file.split('/').pop(),
+          data: new Uint8Array(await res.arrayBuffer()),
+        })
+        setProgress({ phase: 'fetch', done: i + 1, total: items.length })
+      }
+      setProgress({ phase: 'zip', done: items.length, total: items.length })
+      // Laisse le navigateur peindre l'état « compression » avant le travail bloquant
+      await new Promise(r => setTimeout(r, 30))
+      triggerBlob(buildZip(files), zipName)
+    } catch (e) {
+      setError(e?.message || 'Échec du téléchargement. Réessayez.')
+    } finally {
+      setProgress(null)
     }
-    await sleep(400)
-    setProgress(null)
+  }
+
+  // Dispatch : 1 rapport → PDF direct ; plusieurs → ZIP
+  function download(items, zipBaseName) {
+    if (!canDownload || busy || !items.length) return
+    if (items.length === 1) {
+      const base = RAPPORTS_BASE_URL.replace(/\/$/, '')
+      triggerLink(`${base}/${items[0].file}`, items[0].file.split('/').pop())
+      return
+    }
+    fetchAndZip(items, `${zipBaseName}.zip`)
   }
 
   function downloadEpci(epci) {
-    downloadFiles(epci.communes.map(c => c.file))
+    download(epci.communes, `Rapports_PCRS_${slugify(epci.label)}`)
   }
 
   function downloadSelection() {
-    // Ordre du manifeste pour un téléchargement déterministe
-    const files = []
+    const items = []
     if (manifest) for (const e of manifest.epci)
-      for (const c of e.communes) if (selected.has(c.file)) files.push(c.file)
-    downloadFiles(files)
+      for (const c of e.communes) if (selected.has(c.file)) items.push(c)
+    download(items, 'Rapports_PCRS_selection')
   }
 
   const canZip = RAPPORTS_BASE_URL && RAPPORTS_ZIP_FILE
 
   function handleDownloadAll() {
-    if (!canZip) return
-    downloadFiles([RAPPORTS_ZIP_FILE])
+    if (!canZip || busy) return
+    // ZIP départemental (~1,3 Go) déjà généré côté serveur → lien direct
+    const base = RAPPORTS_BASE_URL.replace(/\/$/, '')
+    triggerLink(`${base}/${RAPPORTS_ZIP_FILE}`, RAPPORTS_ZIP_FILE)
   }
 
   const selCount = selected.size
+
+  const progressLabel = !progress ? ''
+    : progress.phase === 'zip'
+      ? 'Compression du ZIP…'
+      : `Téléchargement… ${progress.done}/${progress.total}`
 
   return (
     <div className="rapport-overlay" onClick={onClose}>
@@ -127,7 +158,7 @@ export default function RapportModal({ onClose }) {
               <button
                 className="rapport-dl-all-btn"
                 onClick={handleDownloadAll}
-                disabled={downloading}
+                disabled={busy}
               >
                 ⬇ Télécharger tous les rapports (ZIP)
               </button>
@@ -138,8 +169,8 @@ export default function RapportModal({ onClose }) {
           )}
 
           <p className="rapport-hint">
-            …ou cochez une ou plusieurs communes (ou un EPCI entier) pour
-            télécharger les rapports de détection des changements PCRS.
+            …ou cochez une ou plusieurs communes (ou un EPCI entier) : les
+            rapports sélectionnés sont regroupés dans une seule archive ZIP.
           </p>
 
           {!canDownload && (
@@ -184,9 +215,9 @@ export default function RapportModal({ onClose }) {
                     </label>
                     <button
                       className="rapport-epci-dl"
-                      title={`Télécharger les ${e.communes.length} rapports de ${e.label}`}
+                      title={`Télécharger les ${e.communes.length} rapports de ${e.label} (ZIP)`}
                       onClick={() => downloadEpci(e)}
-                      disabled={!canDownload || downloading}
+                      disabled={!canDownload || busy}
                     >
                       ⬇ EPCI
                     </button>
@@ -211,10 +242,11 @@ export default function RapportModal({ onClose }) {
         </div>
 
         <div className="rapport-modal-footer">
+          {error && <div className="rapport-error">⚠ {error}</div>}
           {selCount > 0 && (
             <div className="rapport-sel-bar">
               <span>{selCount} commune{selCount > 1 ? 's' : ''} sélectionnée{selCount > 1 ? 's' : ''}</span>
-              <button className="rapport-sel-clear" onClick={clearSelection} disabled={downloading}>
+              <button className="rapport-sel-clear" onClick={clearSelection} disabled={busy}>
                 Tout décocher
               </button>
             </div>
@@ -222,17 +254,14 @@ export default function RapportModal({ onClose }) {
           <button
             className="rapport-dl-btn"
             onClick={downloadSelection}
-            disabled={!selCount || !canDownload || downloading}
+            disabled={!selCount || !canDownload || busy}
           >
-            {downloading
-              ? `Téléchargement… ${progress.done}/${progress.total}`
-              : `⬇ Télécharger la sélection${selCount ? ` (${selCount})` : ''}`}
+            {busy
+              ? progressLabel
+              : selCount > 1
+                ? `⬇ Télécharger la sélection (${selCount}) — ZIP`
+                : `⬇ Télécharger la sélection${selCount ? ` (${selCount})` : ''}`}
           </button>
-          {selCount > 1 && !downloading && (
-            <div className="rapport-multi-hint">
-              Votre navigateur peut demander d'autoriser les téléchargements multiples.
-            </div>
-          )}
         </div>
       </div>
     </div>

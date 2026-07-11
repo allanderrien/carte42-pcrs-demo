@@ -613,11 +613,15 @@ body {
   cursor: not-allowed;
 }
 .rapport-dl-all-btn:disabled { opacity: 0.4; cursor: not-allowed; }
-.rapport-multi-hint {
-  font-size: 11px;
-  color: #7a9ab5;
-  margin-top: 6px;
-  text-align: center;
+.rapport-error {
+  font-size: 12px;
+  color: #f0a0a0;
+  background: #3a1a1a;
+  border: 1px solid #6a2a2a;
+  border-radius: 6px;
+  padding: 7px 10px;
+  margin-bottom: 8px;
+  line-height: 1.4;
 }
 
 /* ── Edit inputs ──────────────────────────────────────────────── */
