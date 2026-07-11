@@ -497,19 +497,76 @@ body {
   line-height: 1.5;
   margin: 0 0 12px 0;
 }
-.rapport-commune-btn {
+/* ── En-tête d'un groupe EPCI ─────────────────────────────────── */
+.rapport-epci-group { margin-bottom: 4px; }
+.rapport-epci-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 4px;
+}
+.rapport-epci-group:first-child .rapport-epci-row { margin-top: 0; }
+.rapport-epci-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+}
+.rapport-epci-check input,
+.rapport-commune-row input {
+  accent-color: #4a90d0;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  cursor: pointer;
+  margin: 0;
+}
+.rapport-epci-row .rapport-epci-label {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.rapport-epci-count {
+  color: #56728c;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.rapport-epci-dl {
+  flex-shrink: 0;
+  background: #2a2000;
+  color: #f5d020;
+  border: 1px solid #7a6000;
+  border-radius: 6px;
+  padding: 5px 9px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.rapport-epci-dl:hover:not(:disabled) { background: #3a2c00; }
+.rapport-epci-dl:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ── Ligne commune (case à cocher) ────────────────────────────── */
+.rapport-commune-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   background: #0f2233;
   color: #a8c8e8;
   border: 1px solid #2a4060;
   border-radius: 7px;
-  padding: 9px 14px;
-  text-align: left;
+  padding: 8px 12px;
   font-size: 14px;
   cursor: pointer;
   transition: background 0.12s, border-color 0.12s;
 }
-.rapport-commune-btn:hover { background: #162d42; border-color: #4080b0; }
-.rapport-commune-btn.active {
+.rapport-commune-row:hover { background: #162d42; border-color: #4080b0; }
+.rapport-commune-row.active {
   background: #163d60;
   border-color: #4a90d0;
   color: #fff;
@@ -519,6 +576,25 @@ body {
   padding: 12px 18px 16px;
   border-top: 1px solid #2a4060;
 }
+.rapport-sel-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #7a9ab5;
+  margin-bottom: 8px;
+}
+.rapport-sel-clear {
+  background: none;
+  border: none;
+  color: #7ab8f5;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+.rapport-sel-clear:hover:not(:disabled) { color: #fff; }
+.rapport-sel-clear:disabled { opacity: 0.4; cursor: not-allowed; }
 .rapport-dl-btn {
   width: 100%;
   background: #1a5090;
@@ -535,6 +611,13 @@ body {
 .rapport-dl-btn:disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+.rapport-dl-all-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.rapport-multi-hint {
+  font-size: 11px;
+  color: #7a9ab5;
+  margin-top: 6px;
+  text-align: center;
 }
 
 /* ── Edit inputs ──────────────────────────────────────────────── */
